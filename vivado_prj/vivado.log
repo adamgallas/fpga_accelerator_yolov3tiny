@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue May 10 18:28:34 2022
+# Process ID: 155488
+# Current directory: E:/fpga_accelerator_yolov3tiny/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent158556 E:\fpga_accelerator_yolov3tiny\vivado_prj\base.xpr
+# Log file: E:/fpga_accelerator_yolov3tiny/vivado_prj/vivado.log
+# Journal file: E:/fpga_accelerator_yolov3tiny/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/fpga_accelerator_yolov3tiny/vivado_prj/base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga_accelerator_yolov3tiny/vivado_prj'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'cam.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+cam_auto_pc_0
+cam_v_gamma_lut_0_0
+cam_mipi_csi2_rx_subsyst_0_0
+cam_xbar_0
+cam_axis_subset_converter_2_0
+cam_axis_data_fifo_0_0
+cam_axi_dma_0_0
+cam_clk_wiz_0_0
+cam_axi_smc_0
+cam_axi_interconnect_0_0
+cam_axi_vdma_0_0
+cam_axi_vdma_1_0
+cam_axis_broadcaster_0_0
+cam_smartconnect_0_0
+cam_axis_subset_converter_0_0
+cam_clk_wiz_1_0
+cam_util_vector_logic_0_0
+cam_util_vector_logic_1_0
+cam_v_axi4s_vid_out_0_0
+cam_v_demosaic_0_0
+cam_v_tc_0_0
+cam_zynq_ultra_ps_e_0_0
+cam_axis_subset_converter_1_0
+cam_axi_smc_1_0
+
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1271.312 ; gain = 54.406
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 18:36:51 2022...

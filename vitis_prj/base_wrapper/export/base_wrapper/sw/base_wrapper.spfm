@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="base_wrapper"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+base_wrapper
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="base_wrapper">
+        <sdx:configuration sdx:name="base_wrapper"
+                           sdx:displayName="base_wrapper"
+                           sdx:defaultProcessorGroup="domain_psu_cortexa53_0"
+                           sdx:runtimes="cpp">
+            <sdx:description>base_wrapper</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="base_wrapper/boot/base_wrapper.bif"
+                            sdx:readme="base_wrapper/boot/generic.readme"
+                            sdx:qemuArguments="base_wrapper/qemu/pmu_args.txt:base_wrapper/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="domain_psu_cortexa53_0"
+                            sdx:bif="base_wrapper/boot/base_wrapper.bif"
+                            sdx:readme="base_wrapper/boot/generic.readme"
+                            sdx:qemuArguments="base_wrapper/domain_psu_cortexa53_0/qemu/pmu_args.txt:base_wrapper/domain_psu_cortexa53_0/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="domain_psu_cortexa53_0"
+                                sdx:displayName="domain_psu_cortexa53_0"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="base_wrapper/domain_psu_cortexa53_0/bsplib/lib"
+                        sdx:bspIncludePaths="base_wrapper/domain_psu_cortexa53_0/bspinclude/include"
+                        sdx:bspConfig="base_wrapper/domain_psu_cortexa53_0/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

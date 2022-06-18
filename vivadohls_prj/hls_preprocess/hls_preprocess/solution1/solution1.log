@@ -1,0 +1,763 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from top.cpp:1:
+top.cpp:29:11: error: type 'PIXEL_C4' (aka 'Scalar<4, unsigned char>') does not provide a subscript operator
+   pix_out[0]=round((float)(pix_in[0])*scale);
+   ~~~~~~~^~
+top.cpp:29:35: error: type 'PIXEL_C4' (aka 'Scalar<4, unsigned char>') does not provide a subscript operator
+   pix_out[0]=round((float)(pix_in[0])*scale);
+                            ~~~~~~^~
+top.cpp:30:11: error: type 'PIXEL_C4' (aka 'Scalar<4, unsigned char>') does not provide a subscript operator
+   pix_out[1]=round((float)(pix_in[1])*scale);
+   ~~~~~~~^~
+top.cpp:30:35: error: type 'PIXEL_C4' (aka 'Scalar<4, unsigned char>') does not provide a subscript operator
+   pix_out[1]=round((float)(pix_in[1])*scale);
+                            ~~~~~~^~
+top.cpp:31:11: error: type 'PIXEL_C4' (aka 'Scalar<4, unsigned char>') does not provide a subscript operator
+   pix_out[2]=round((float)(pix_in[2])*scale);
+   ~~~~~~~^~
+top.cpp:31:35: error: type 'PIXEL_C4' (aka 'Scalar<4, unsigned char>') does not provide a subscript operator
+   pix_out[2]=round((float)(pix_in[2])*scale);
+                            ~~~~~~^~
+6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 197.414 ; gain = 107.406
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 197.414 ; gain = 107.406
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::init' into 'hls::Mat<720, 1280, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::init' into 'hls::Mat<258, 418, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>.1' into 'hls::AXIGetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::write' into 'hls::Mat<720, 1280, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator<<' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::read' into 'hls::Mat<720, 1280, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator>>' into 'Downsample' (top.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::write' into 'hls::Mat<258, 418, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Convert' (top.cpp:33).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Downsample' (top.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::read' into 'hls::Mat<258, 418, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'Convert' (top.cpp:29).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>.1' into 'hls::AXISetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:143).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 256.090 ; gain = 166.082
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed6' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_copysign<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:194) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:198) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:211) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:214) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:91) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<unsigned char, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, double>' into '__hls_fptoui_double_i8' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function 'round' into 'Convert' (top.cpp:30) automatically.
+WARNING: [SYNCHK 200-23] D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 326.172 ; gain = 236.164
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'src_img.data_stream.V' (top.cpp:8).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'dst_img.data_stream.V' (top.cpp:9).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'ifm_img.data_stream.V' (top.cpp:10).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:43) in function 'Downsample' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:26) in function 'Convert' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Convert' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Convert' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src_img.data_stream.V' (top.cpp:8) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst_img.data_stream.V' (top.cpp:9) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'ifm_img.data_stream.V' (top.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (top.cpp:39) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_in.val' (top.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_out.val' (top.cpp:21) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_img.data_stream.V' (top.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst_img.data_stream.V' (top.cpp:9) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ifm_img.data_stream.V' (top.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed6' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_copysign<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:194) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:198) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:211) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_round<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_round.h:214) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_round<double>' into 'round' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/rounddouble.cpp:7) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<unsigned char, double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned char, double>' into '__hls_fptoui_double_i8' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_double_i8' into 'Convert' (top.cpp:30) automatically.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 418 for loop 'loop_width' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 258 for loop 'loop_height' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'hls_preprocess', detected/extracted 4 process function(s): 
+	 'hls::AXIvideo2Mat<32, 720, 1280, 6144>172'
+	 'Downsample'
+	 'Convert'
+	 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/rounddouble.cpp:6:23) to (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/rounddouble.cpp:7:12) in function 'round'... converting 5 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'round' into 'Convert' (top.cpp:30->top.cpp:2) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'Downsample' (top.cpp:38)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:45 . Memory (MB): peak = 429.355 ; gain = 339.348
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' to 'Mat2AXIvideo' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>172' to 'AXIvideo2Mat172' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:12:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:48 . Memory (MB): peak = 480.906 ; gain = 390.898
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hls_preprocess' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat172' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 48.667 seconds; current allocated memory: 415.123 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 415.907 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 416.075 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 416.310 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 417.068 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.298 seconds; current allocated memory: 417.874 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.503 seconds; current allocated memory: 418.107 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.148 seconds; current allocated memory: 418.300 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.155 seconds; current allocated memory: 418.427 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.248 seconds; current allocated memory: 418.866 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat172' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat172'.
+INFO: [HLS 200-111]  Elapsed time: 0.352 seconds; current allocated memory: 419.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Downsample'.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 420.034 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Convert_one_half_table2' to 'Convert_one_half_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hls_preprocess_fmul_32ns_32ns_32_6_max_dsp_1' to 'hls_preprocess_fmcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hls_preprocess_uitofp_32ns_32_6_1' to 'hls_preprocess_uidEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hls_preprocess_fpext_32ns_64_2_1' to 'hls_preprocess_fpeOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hls_preprocess_fmcud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hls_preprocess_fpeOg': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hls_preprocess_uidEe': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convert'.
+INFO: [HLS 200-111]  Elapsed time: 0.345 seconds; current allocated memory: 421.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.686 seconds; current allocated memory: 422.314 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/scale' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hls_preprocess' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'scale' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_Downsample_U0' to 'start_for_DownsamfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Convert_U0' to 'start_for_Convertg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIhbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_preprocess'.
+INFO: [HLS 200-111]  Elapsed time: 0.464 seconds; current allocated memory: 423.225 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 285.71 MHz
+INFO: [RTMG 210-279] Implementing memory 'Convert_mask_table1_rom' using block ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Convert_one_half_bkb_rom' using block ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'scale_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DownsamfYi_U(start_for_DownsamfYi)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Convertg8j_U(start_for_Convertg8j)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIhbi_U(start_for_Mat2AXIhbi)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:17 ; elapsed = 00:00:59 . Memory (MB): peak = 507.984 ; gain = 417.977
+INFO: [VHDL 208-304] Generating VHDL RTL for hls_preprocess.
+INFO: [VLOG 209-307] Generating Verilog RTL for hls_preprocess.
+INFO: [HLS 200-112] Total elapsed time: 58.826 seconds; peak allocated memory: 423.225 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 198.020 ; gain = 107.688
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 198.020 ; gain = 107.688
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::init' into 'hls::Mat<720, 1280, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::init' into 'hls::Mat<258, 418, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>.1' into 'hls::AXIGetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::write' into 'hls::Mat<720, 1280, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator<<' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::read' into 'hls::Mat<720, 1280, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator>>' into 'Downsample' (top.cpp:50).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::write' into 'hls::Mat<258, 418, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Convert' (top.cpp:37).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Downsample' (top.cpp:53).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::read' into 'hls::Mat<258, 418, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'Convert' (top.cpp:33).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>.1' into 'hls::AXISetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:143).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 198.020 ; gain = 107.688
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 223.219 ; gain = 132.887
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'src_img.data_stream.V' (top.cpp:12).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'dst_img.data_stream.V' (top.cpp:13).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'ifm_img.data_stream.V' (top.cpp:14).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:47) in function 'Downsample' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:30) in function 'Convert' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Convert' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Convert' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src_img.data_stream.V' (top.cpp:12) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst_img.data_stream.V' (top.cpp:13) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'ifm_img.data_stream.V' (top.cpp:14) .
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (top.cpp:43) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_in.val' (top.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_out.val' (top.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_img.data_stream.V' (top.cpp:12) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst_img.data_stream.V' (top.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ifm_img.data_stream.V' (top.cpp:14) in dimension 1 completely.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 418 for loop 'loop_width' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 258 for loop 'loop_height' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'hls_preprocess', detected/extracted 4 process function(s): 
+	 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'
+	 'Downsample'
+	 'Convert'
+	 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+INFO: [XFORM 203-11] Balancing expressions in function 'Downsample' (top.cpp:42)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 274.875 ; gain = 184.543
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' to 'Mat2AXIvideo' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' to 'AXIvideo2Mat' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:49:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 317.238 ; gain = 226.906
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hls_preprocess' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.529 seconds; current allocated memory: 258.493 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.126 seconds; current allocated memory: 258.829 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.421 seconds; current allocated memory: 258.997 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.117 seconds; current allocated memory: 259.232 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 259.407 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.114 seconds; current allocated memory: 259.631 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.263 seconds; current allocated memory: 259.743 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.128 seconds; current allocated memory: 259.936 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.118 seconds; current allocated memory: 260.072 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.157 seconds; current allocated memory: 260.467 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.155 seconds; current allocated memory: 261.018 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Downsample'.
+INFO: [HLS 200-111]  Elapsed time: 0.221 seconds; current allocated memory: 261.494 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convert'.
+INFO: [HLS 200-111]  Elapsed time: 0.253 seconds; current allocated memory: 261.946 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.202 seconds; current allocated memory: 262.397 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/scale' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hls_preprocess' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'scale' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_Downsample_U0' to 'start_for_Downsambkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Convert_U0' to 'start_for_Convertcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIdEe' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_preprocess'.
+INFO: [HLS 200-111]  Elapsed time: 0.354 seconds; current allocated memory: 263.223 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 285.71 MHz
+INFO: [RTMG 210-279] Implementing memory 'Convert_quant_table_rom' using block ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Downsambkb_U(start_for_Downsambkb)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Convertcud_U(start_for_Convertcud)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIdEe_U(start_for_Mat2AXIdEe)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 336.691 ; gain = 246.359
+INFO: [VHDL 208-304] Generating VHDL RTL for hls_preprocess.
+INFO: [VLOG 209-307] Generating Verilog RTL for hls_preprocess.
+INFO: [HLS 200-112] Total elapsed time: 35.275 seconds; peak allocated memory: 263.223 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+ERROR: [HLS 214-124] use of undeclared identifier 'scale': top.cpp:7
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 197.551 ; gain = 107.324
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 197.551 ; gain = 107.324
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::init' into 'hls::Mat<720, 1280, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::init' into 'hls::Mat<258, 418, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>.1' into 'hls::AXIGetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::write' into 'hls::Mat<720, 1280, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator<<' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::read' into 'hls::Mat<720, 1280, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator>>' into 'Downsample' (top.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::write' into 'hls::Mat<258, 418, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Convert' (top.cpp:36).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Downsample' (top.cpp:52).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::read' into 'hls::Mat<258, 418, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'Convert' (top.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>.1' into 'hls::AXISetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:143).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 197.551 ; gain = 107.324
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 223.359 ; gain = 133.133
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'src_img.data_stream.V' (top.cpp:11).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'dst_img.data_stream.V' (top.cpp:12).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'ifm_img.data_stream.V' (top.cpp:13).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:46) in function 'Downsample' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:29) in function 'Convert' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Convert' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Convert' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src_img.data_stream.V' (top.cpp:11) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst_img.data_stream.V' (top.cpp:12) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'ifm_img.data_stream.V' (top.cpp:13) .
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (top.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_in.val' (top.cpp:23) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_out.val' (top.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_img.data_stream.V' (top.cpp:11) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst_img.data_stream.V' (top.cpp:12) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ifm_img.data_stream.V' (top.cpp:13) in dimension 1 completely.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 418 for loop 'loop_width' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 258 for loop 'loop_height' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'hls_preprocess', detected/extracted 4 process function(s): 
+	 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'
+	 'Downsample'
+	 'Convert'
+	 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+INFO: [XFORM 203-11] Balancing expressions in function 'Downsample' (top.cpp:41)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 275.426 ; gain = 185.199
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' to 'Mat2AXIvideo' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' to 'AXIvideo2Mat' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:49:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 316.863 ; gain = 226.637
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hls_preprocess' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.224 seconds; current allocated memory: 258.583 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 258.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.398 seconds; current allocated memory: 259.050 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.117 seconds; current allocated memory: 259.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.405 seconds; current allocated memory: 259.497 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.121 seconds; current allocated memory: 259.725 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.268 seconds; current allocated memory: 259.837 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.417 seconds; current allocated memory: 260.030 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 260.148 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.156 seconds; current allocated memory: 260.537 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 261.088 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Downsample'.
+INFO: [HLS 200-111]  Elapsed time: 0.231 seconds; current allocated memory: 261.579 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convert'.
+INFO: [HLS 200-111]  Elapsed time: 0.214 seconds; current allocated memory: 262.041 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.198 seconds; current allocated memory: 262.491 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hls_preprocess' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_Downsample_U0' to 'start_for_Downsambkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Convert_U0' to 'start_for_Convertcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIdEe' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_preprocess'.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 263.345 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 285.71 MHz
+INFO: [RTMG 210-279] Implementing memory 'Convert_quant_table_rom' using block ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Downsambkb_U(start_for_Downsambkb)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Convertcud_U(start_for_Convertcud)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIdEe_U(start_for_Mat2AXIdEe)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 335.871 ; gain = 245.645
+INFO: [VHDL 208-304] Generating VHDL RTL for hls_preprocess.
+INFO: [VLOG 209-307] Generating Verilog RTL for hls_preprocess.
+INFO: [HLS 200-112] Total elapsed time: 34.687 seconds; peak allocated memory: 263.345 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

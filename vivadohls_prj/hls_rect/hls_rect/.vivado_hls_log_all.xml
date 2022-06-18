@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:27.222+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'hls_rect.entry304' to 'hls_rect_entry304'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:27.179+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'hls_rect.entry3' to 'hls_rect_entry3'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:27.168+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 6144>' to 'AXIvideo2Mat' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:49:9)" projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:27.137+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;32, 720, 1280, 6144>' to 'Mat2AXIvideo' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)" projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:23.690+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 6144>'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:19.606+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 6144>'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:19.301+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::Mat2AXIvideo&lt;32, 720, 1280, 6144>'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:19.288+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::Mat2AXIvideo&lt;32, 720, 1280, 6144>'." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:19.279+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'letter_img_1.data_stream.V' (top.cpp:32)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:18.103+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'letter_img_2.data_stream.V' (top.cpp:33)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.821+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'letter_img_3.data_stream.V' (top.cpp:34)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.812+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'letter_img_4.data_stream.V' (top.cpp:35)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.801+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'letter_img_5.data_stream.V' (top.cpp:36)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.792+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'letter_img_6.data_stream.V' (top.cpp:37)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.783+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'output_img.data_stream.V' (top.cpp:31)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.774+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'rgb_img.data_stream.V' (top.cpp:30)." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.765+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR." projectName="hls_rect" solutionName="solution1" date="2021-08-20T09:07:17.421+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

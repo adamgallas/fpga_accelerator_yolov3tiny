@@ -1,0 +1,57 @@
+16:51:08 **** Build of configuration Debug for project base ****
+make all 
+'Building file: ../src/accel.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/accel.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/accel.d" -MT"src/accel.o" -o "src/accel.o" "../src/accel.c"
+In file included from ../src/accel_data.h:9,
+                 from ../src/accel.h:5,
+                 from ../src/accel.c:1:
+D:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+'Finished building: ../src/accel.c'
+' '
+'Building file: ../src/accel_data.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/accel_data.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/accel_data.d" -MT"src/accel_data.o" -o "src/accel_data.o" "../src/accel_data.c"
+In file included from ../src/accel.h:8,
+                 from ../src/accel_data.h:8,
+                 from ../src/accel_data.c:1:
+D:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+'Finished building: ../src/accel_data.c'
+' '
+'Building file: ../src/dp_interrupt.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dp_interrupt.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/dp_interrupt.d" -MT"src/dp_interrupt.o" -o "src/dp_interrupt.o" "../src/dp_interrupt.c"
+'Finished building: ../src/dp_interrupt.c'
+' '
+'Building file: ../src/dp_setup.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dp_setup.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/dp_setup.d" -MT"src/dp_setup.o" -o "src/dp_setup.o" "../src/dp_setup.c"
+'Finished building: ../src/dp_setup.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:
+D:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: base.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bsplib/lib -o "base.elf"  ./src/accel.o ./src/accel_data.o ./src/dp_interrupt.o ./src/dp_setup.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: base.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size base.elf  |tee "base.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185172	   7140	422500928	422693240	1931c978	base.elf
+'Finished building: base.elf.size'
+' '
+
+16:51:11 Build Finished (took 3s.216ms)
+

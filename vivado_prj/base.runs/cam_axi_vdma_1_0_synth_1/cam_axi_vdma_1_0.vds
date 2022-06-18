@@ -1,0 +1,2123 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jul 20 23:56:24 2021
+# Process ID: 3320
+# Current directory: D:/base/base.runs/cam_axi_vdma_1_0_synth_1
+# Command line: vivado.exe -log cam_axi_vdma_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_axi_vdma_1_0.tcl
+# Log file: D:/base/base.runs/cam_axi_vdma_1_0_synth_1/cam_axi_vdma_1_0.vds
+# Journal file: D:/base/base.runs/cam_axi_vdma_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cam_axi_vdma_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1100.207 ; gain = 26.438
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/base/base.runs/cam_axi_vdma_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1100.207 ; gain = 0.000
+Command: synth_design -top cam_axi_vdma_1_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8568
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 1542.043 ; gain = 78.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cam_axi_vdma_1_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/synth/cam_axi_vdma_1_0.vhd:109]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_ENABLE_VIDPRMTR_READS bound to: 1 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter C_USE_MM2S_FSYNC bound to: 0 - type: integer 
+	Parameter C_USE_S2MM_FSYNC bound to: 2 - type: integer 
+	Parameter C_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_INCLUDE_INTERNAL_GENLOCK bound to: 1 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_MM2S_GENLOCK_MODE bound to: 0 - type: integer 
+	Parameter C_MM2S_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_MM2S_GENLOCK_REPEAT_EN bound to: 0 - type: integer 
+	Parameter C_MM2S_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_SF bound to: 0 - type: integer 
+	Parameter C_MM2S_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_MM2S_LINEBUFFER_THRESH bound to: 4 - type: integer 
+	Parameter C_MM2S_MAX_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_MM2S_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_S2MM_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_S2MM_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_S2MM_GENLOCK_REPEAT_EN bound to: 1 - type: integer 
+	Parameter C_S2MM_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
+	Parameter C_S2MM_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_S2MM_LINEBUFFER_THRESH bound to: 4 - type: integer 
+	Parameter C_S2MM_MAX_BURST_LENGTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_INSTANCE bound to: axi_vdma - type: string 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-3491] module 'axi_vdma' declared at 'd:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:69488' bound to instance 'U0' of component 'axi_vdma' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/synth/cam_axi_vdma_1_0.vhd:345]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:69927]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_ENABLE_VIDPRMTR_READS bound to: 1 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter C_USE_MM2S_FSYNC bound to: 0 - type: integer 
+	Parameter C_USE_S2MM_FSYNC bound to: 2 - type: integer 
+	Parameter C_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_INCLUDE_INTERNAL_GENLOCK bound to: 1 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_MM2S_GENLOCK_MODE bound to: 0 - type: integer 
+	Parameter C_MM2S_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_MM2S_GENLOCK_REPEAT_EN bound to: 0 - type: integer 
+	Parameter C_MM2S_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_SF bound to: 0 - type: integer 
+	Parameter C_MM2S_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_MM2S_LINEBUFFER_THRESH bound to: 4 - type: integer 
+	Parameter C_MM2S_MAX_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_MM2S_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_S2MM_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_S2MM_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_S2MM_GENLOCK_REPEAT_EN bound to: 1 - type: integer 
+	Parameter C_S2MM_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
+	Parameter C_S2MM_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_S2MM_LINEBUFFER_THRESH bound to: 4 - type: integer 
+	Parameter C_S2MM_MAX_BURST_LENGTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_INSTANCE bound to: axi_vdma - type: string 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:16461]
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:14866]
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 1 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 0 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 1 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'REG_P_IN_cdc_from' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:219]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'REG_P_IN2_cdc_to' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:232]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d2' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:269]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d3' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:279]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d4' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:289]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d5' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:299]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d6' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:309]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d7' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:320]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_scndry_out' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:330]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d1' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:339]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d2' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:347]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d3' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:355]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d4' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:364]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d5' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:374]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d6' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:383]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d7' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:392]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 1 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (1#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (2#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:14866]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (3#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:16461]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:39917]
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_ENABLE_VIDPRMTR_READS bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_REGISTER bound to: 62 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 1 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_VERSION_MAJOR bound to: 4'b0110 
+	Parameter C_VERSION_MINOR bound to: 8'b00100000 
+	Parameter C_VERSION_REVISION bound to: 4'b0000 
+	Parameter C_REVISION_NUMBER bound to: Build Number: P80 - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:16956]
+	Parameter C_MM2S_IS bound to: 0 - type: integer 
+	Parameter C_S2MM_IS bound to: 1 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 1 - type: integer 
+	Parameter C_NUM_CE bound to: 62 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 0 - type: integer 
+	Parameter C_RESET_STATE bound to: 1 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 1 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'REG_P_IN_cdc_from' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:219]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'REG_P_IN2_cdc_to' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:232]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d2' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:269]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d3' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:279]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d4' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:289]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d5' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:299]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d6' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:309]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d7' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:320]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_scndry_out' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:330]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d1' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:339]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d2' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:347]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d3' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:355]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d4' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:364]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d5' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:374]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d6' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:383]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 's_rst_d7' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:392]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (3#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:16956]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 1 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 1 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 3 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:39917]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:40643]
+	Parameter C_INCLUDE_CH1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_INCLUDE_CH2 bound to: 1 - type: integer 
+	Parameter C_INCLUDE_DLYTMR bound to: 1 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (6#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:40643]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:41500]
+	Parameter C_WDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (7#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:41500]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:39071]
+	Parameter C_TOTAL_NUM_REGISTER bound to: 62 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_CHANNEL_IS_MM2S bound to: 0 - type: integer 
+	Parameter C_ENABLE_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_ENABLE_VIDPRMTR_READS bound to: 1 - type: integer 
+	Parameter C_INTERNAL_GENLOCK_ENABLE bound to: 0 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_NUM_FSTORES_64 bound to: 3 - type: integer 
+	Parameter C_LINEBUFFER_THRESH bound to: 8 - type: integer 
+	Parameter C_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:18717]
+	Parameter C_NUM_REGISTERS bound to: 8 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_NUM_FSTORES_64 bound to: 3 - type: integer 
+	Parameter C_CHANNEL_IS_MM2S bound to: 0 - type: integer 
+	Parameter C_LINEBUFFER_THRESH bound to: 8 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_INTERNAL_GENLOCK_ENABLE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_ENABLE_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (8#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:18717]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:20533]
+	Parameter C_NUM_REGISTERS bound to: 19 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_NUM_FSTORES_64 bound to: 3 - type: integer 
+	Parameter C_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (9#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:20533]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:29596]
+	Parameter C_TOTAL_NUM_REGISTER bound to: 62 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_CHANNEL_IS_MM2S bound to: 0 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_NUM_FSTORES_64 bound to: 3 - type: integer 
+	Parameter C_ENABLE_VIDPRMTR_READS bound to: 1 - type: integer 
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (10#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:29596]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (11#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:39071]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:64248]
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRMY_CMDFIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_SF bound to: 1 - type: integer 
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
+	Parameter C_ENABLE_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_INTERNAL_GENLOCK_ENABLE bound to: 0 - type: integer 
+	Parameter C_EXTEND_DM_COMMAND bound to: 0 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_SG_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_DM_STATUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2MM_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_MM2S_SOF_ENABLE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:61909]
+	Parameter C_INCLUDE_SF bound to: 1 - type: integer 
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter C_ENABLE_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_EXTEND_DM_COMMAND bound to: 0 - type: integer 
+	Parameter C_PRMY_CMDFIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_S2MM_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_MM2S_SOF_ENABLE bound to: 0 - type: integer 
+	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (12#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:61909]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:63125]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_DM_STATUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_ENABLE_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (13#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:63125]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:63632]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (14#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:63632]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:56087]
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:53973]
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (15#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:53973]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:55564]
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (16#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:55564]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (17#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:56087]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:58630]
+	Parameter C_GENLOCK_MODE bound to: 2 - type: integer 
+	Parameter C_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_INTERNAL_GENLOCK_ENABLE bound to: 0 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mux' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:57368]
+	Parameter C_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_INTERNAL_GENLOCK_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mux' (18#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:57368]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (19#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+	Parameter C_DWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder__parameterized0' (19#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (20#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:58630]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (21#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:64248]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:53102]
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter ENABLE_FLUSH_ON_MM2S_FSYNC bound to: 0 - type: integer 
+	Parameter ENABLE_FLUSH_ON_S2MM_FSYNC bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_SOF_ENABLE bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (22#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:53102]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:13253]
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_GENLOCK_MSTR_PTR_DWIDTH bound to: 6 - type: integer 
+	Parameter C_GENLOCK_SLVE_PTR_DWIDTH bound to: 6 - type: integer 
+	Parameter C_INTERNAL_GENLOCK_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (23#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:13253]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:41253]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (24#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:41253]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_linebuf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:49284]
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_S_AXIS_S2MM_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_TOPLVL_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_LINEBUFFER_AF_THRESH bound to: 8 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter ENABLE_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_USE_S2MM_FSYNC bound to: 2 - type: integer 
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sfifo' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:42057]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter UW_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter UW_FIFO_DEPTH bound to: 512 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1717 - type: string 
+	Parameter READ_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:42264]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1717 - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_SYNC bound to: 16'b0001011100010111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1717 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 65 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 512 - type: integer 
+	Parameter FIFO_SIZE bound to: 33280 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 7 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 9 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 507 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 507 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0001011100010111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b1 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 33280 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 65 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 65 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 65 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 65 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 65 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 65 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 65 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 65 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 65 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 65 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 512 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 65 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 65 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 68 - type: integer 
+	Parameter rstb_loop_iter bound to: 68 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 65 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (25#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1798]
+	Parameter RST_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (26#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1798]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1189]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1235]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1246]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (27#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1514]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (28#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1514]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (28#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (28#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (28#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (29#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (30#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sfifo' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:42057]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_s2mm_linebuf' (32#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:49284]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_M_AXI_MM2S_ARID bound to: 0 - type: integer 
+	Parameter C_M_AXI_MM2S_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 8 - type: integer 
+	Parameter C_MM2S_BTT_USED bound to: 16 - type: integer 
+	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_MM2S_INCLUDE_SF bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_M_AXI_S2MM_AWID bound to: 1 - type: integer 
+	Parameter C_M_AXI_S2MM_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 64 - type: integer 
+	Parameter C_S2MM_BTT_USED bound to: 16 - type: integer 
+	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 1 - type: integer 
+	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_S2MM_INCLUDE_SF bound to: 1 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11100 - type: string 
+	Parameter C_ENABLE_MM2S_TKEEP bound to: 0 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 0 - type: integer 
+	Parameter C_ENABLE_S2MM_ADV_SIG bound to: 0 - type: integer 
+	Parameter C_ENABLE_MM2S_ADV_SIG bound to: 0 - type: integer 
+	Parameter C_MICRO_DMA bound to: 0 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 72 - type: integer 
+	Parameter C_MCDMA bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_omit_wrap' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:53209]
+	Parameter C_INCLUDE_MM2S bound to: 0 - type: integer 
+	Parameter C_MM2S_ARID bound to: 0 - type: integer 
+	Parameter C_MM2S_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MM2S_MDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_MM2S_SDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
+	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_MM2S_BURST_SIZE bound to: 8 - type: integer 
+	Parameter C_MM2S_BTT_USED bound to: 16 - type: integer 
+	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_MCDMA bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_omit_wrap' (33#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:53209]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+	Parameter C_INCLUDE_S2MM bound to: 1 - type: integer 
+	Parameter C_S2MM_AWID bound to: 1 - type: integer 
+	Parameter C_S2MM_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2MM_MDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S2MM_SDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
+	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_S2MM_BURST_SIZE bound to: 64 - type: integer 
+	Parameter C_S2MM_BTT_USED bound to: 16 - type: integer 
+	Parameter C_S2MM_SUPPORT_INDET_BTT bound to: 1 - type: integer 
+	Parameter C_S2MM_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_INCLUDE_S2MM_GP_SF bound to: 1 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 0 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11100 - type: string 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_MCDMA bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (34#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_STSFIFO bound to: 1 - type: integer 
+	Parameter C_STSCMD_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 68 - type: integer 
+	Parameter C_STS_WIDTH bound to: 32 - type: integer 
+	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 68 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 68 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 68 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 3 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (35#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 68 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (36#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (37#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (38#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (39#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (39#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (39#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (39#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (39#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
+	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 16 - type: integer 
+	Parameter C_STS_FIFO_DEPTH bound to: 6 - type: integer 
+	Parameter C_STS_WIDTH bound to: 32 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_MCDMA bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_DWIDTH bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 23 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 23 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 23 - type: integer 
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 6 - type: integer 
+	Parameter C_DWIDTH bound to: 23 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (41#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
+	Parameter C_SF_XFER_BYTES_WIDTH bound to: 10 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 64 - type: integer 
+	Parameter C_CMD_WIDTH bound to: 68 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_BTT_USED bound to: 16 - type: integer 
+	Parameter C_NATIVE_XFER_WIDTH bound to: 64 - type: integer 
+	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_MCDMA bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (42#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
+	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
+	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
+	Parameter C_DRE_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_SUPPORT_SCATTER bound to: 1 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 0 - type: integer 
+	Parameter C_BTT_USED bound to: 16 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 27 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (42#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (42#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (42#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (42#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:45117]
+	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_BTT_USED bound to: 16 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
+	Parameter C_WDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INDEX_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
+	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_INDEX_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (43#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (44#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+	Parameter C_OP_MODE bound to: 0 - type: integer 
+	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
+	Parameter C_OFFSET_WIDTH bound to: 3 - type: integer 
+	Parameter C_NUM_BYTES_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (45#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
+	Parameter C_DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (46#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 6 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 6 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 6 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+	Parameter C_SIZE bound to: 5 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized1' (46#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DWIDTH bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (46#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (46#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (46#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (46#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (47#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:45117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (48#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
+	Parameter C_SF_FIFO_DEPTH bound to: 512 - type: integer 
+	Parameter C_IBTT_XFER_BYTES_WIDTH bound to: 10 - type: integer 
+	Parameter C_STRT_OFFSET_WIDTH bound to: 1 - type: integer 
+	Parameter C_MAX_BURST_LEN bound to: 64 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_ENABLE_SKID_BUF bound to: 11100 - type: string 
+	Parameter C_ENABLE_S2MM_TKEEP bound to: 0 - type: integer 
+	Parameter C_ENABLE_DRE bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set_nodre' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:24209]
+	Parameter C_STROBE_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set_nodre' (49#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:24209]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+	Parameter C_DWIDTH bound to: 12 - type: integer 
+	Parameter C_DEPTH bound to: 16 - type: integer 
+	Parameter C_DATA_CNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_NEED_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_NEED_ALMOST_FULL bound to: 1 - type: integer 
+	Parameter C_USE_BLKMEM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [d:/base/base.srcs/sources_1/bd/cam/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DCOUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_HAS_DCOUNT bound to: 1 - type: integer 
+	Parameter C_HAS_RD_ACK bound to: 1 - type: integer 
+	Parameter C_HAS_RD_ERR bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 1 - type: integer 
+	Parameter C_HAS_WR_ERR bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter C_PORTS_DIFFER bound to: 0 - type: integer 
+	Parameter C_RD_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter C_READ_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_ERR_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ERR_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_XPM_FIFO bound to: 1 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [d:/base/base.srcs/sources_1/bd/cam/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2627]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_SYNC bound to: 16'b0001111100011111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
+	Parameter FIFO_SIZE bound to: 192 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 4 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b1 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 11 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 11 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0001111100011111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b1 
+	Parameter EN_WACK bound to: 1'b1 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b1 
+	Parameter EN_DVLD bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 192 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 12 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 12 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 12 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 12 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 12 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 12 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 12 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 12 - type: integer 
+	Parameter rstb_loop_iter bound to: 12 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1189]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1235]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1246]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized1' (49#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (50#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (51#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+	Parameter C_DWIDTH bound to: 66 - type: integer 
+	Parameter C_DEPTH bound to: 512 - type: integer 
+	Parameter C_DATA_CNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_NEED_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_NEED_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_USE_BLKMEM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DCOUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_HAS_DCOUNT bound to: 1 - type: integer 
+	Parameter C_HAS_RD_ACK bound to: 1 - type: integer 
+	Parameter C_HAS_RD_ERR bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 1 - type: integer 
+	Parameter C_HAS_WR_ERR bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_PORTS_DIFFER bound to: 0 - type: integer 
+	Parameter C_RD_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter C_READ_DEPTH bound to: 512 - type: integer 
+	Parameter C_RD_ERR_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ERR_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter C_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_XPM_FIFO bound to: 1 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [d:/base/base.srcs/sources_1/bd/cam/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2627]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized3' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843]
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_SYNC bound to: 16'b0001111100011111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 2 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 512 - type: integer 
+	Parameter FIFO_SIZE bound to: 33792 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 7 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 9 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b1 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 507 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 507 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 10 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0001111100011111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b1 
+	Parameter EN_WACK bound to: 1'b1 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b1 
+	Parameter EN_DVLD bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (51#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1750]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 33792 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 66 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 66 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 66 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 66 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 66 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 66 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 66 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 66 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 66 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 66 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 512 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 66 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 66 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 9 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
+	Parameter rsta_loop_iter bound to: 68 - type: integer 
+	Parameter rstb_loop_iter bound to: 68 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 66 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (51#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1189]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1235]
+INFO: [Synth 8-226] default block is never used [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1246]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (51#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized3' (51#1) [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1843]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg__parameterized0' (51#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (51#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+	Parameter C_WDATA_WIDTH bound to: 72 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (52#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (53#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_ID bound to: 1 - type: integer 
+	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 59 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (53#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (53#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (53#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (53#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (54#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+	Parameter C_REALIGNER_INCLUDED bound to: 1 - type: integer 
+	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
+	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 16 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_IS_ASYNC bound to: 0 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized6' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized6' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized6' [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized6' (54#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized6' (54#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized6' (54#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (54#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (55#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+	Parameter C_MDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_SDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_ADDR_LSB_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (56#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (57#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (58#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (59#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/af86/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (60#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/7af1/hdl/axi_vdma_v6_3_rfs.vhd:69927]
+INFO: [Synth 8-256] done synthesizing module 'cam_axi_vdma_1_0' (61#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/synth/cam_axi_vdma_1_0.vhd:109]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:01:28 . Memory (MB): peak = 1791.602 ; gain = 327.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:31 . Memory (MB): peak = 1791.602 ; gain = 327.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:31 . Memory (MB): peak = 1791.602 ; gain = 327.637
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.701 . Memory (MB): peak = 1791.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1872.496 ; gain = 3.402
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cam_axi_vdma_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cam_axi_vdma_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/base/base.runs/cam_axi_vdma_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/base/base.runs/cam_axi_vdma_1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0_clocks.xdc] for cell 'U0'
+Sourcing Tcl File [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst'
+Sourcing Tcl File [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Sourcing Tcl File [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Programs/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cam_axi_vdma_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cam_axi_vdma_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1872.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 129 instances were transformed.
+  FDR => FDRE: 129 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.305 . Memory (MB): peak = 1872.828 ; gain = 0.266
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:20 ; elapsed = 00:02:09 . Memory (MB): peak = 1872.828 ; gain = 408.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:20 ; elapsed = 00:02:09 . Memory (MB): peak = 1872.828 ; gain = 408.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/base/base.runs/cam_axi_vdma_1_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0/\GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I /\GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO /xpm_fifo_sync_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:02:09 . Memory (MB): peak = 1872.828 ; gain = 408.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'dmacntrl_cs_reg' in module 'axi_vdma_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_psm_state_reg' in module 'axi_datamover_ibttcc'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_csm_state_reg' in module 'axi_datamover_ibttcc'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_cmdcntl_sm_state_reg' in module 'axi_datamover_s2mm_realign'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              wait_pipe1 |                              001 |                              001
+              wait_pipe2 |                              010 |                              010
+            execute_xfer |                              011 |                              100
+              check_done |                              100 |                              101
+           calc_cmd_addr |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dmacntrl_cs_reg' using encoding 'sequential' in module 'axi_vdma_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ch_init |                          0000001 |                              000
+           wait_for_pcmd |                          0000010 |                              001
+          ch_error_trap1 |                          0000100 |                              101
+          ch_error_trap2 |                          0001000 |                              110
+      ch_wait_for_sf_cmd |                          0010000 |                              010
+         ch_ld_child_cmd |                          0100000 |                              011
+          ch_chk_if_done |                          1000000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_csm_state_reg' using encoding 'one-hot' in module 'axi_datamover_ibttcc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  p_init |                              000 |                              000
+          p_wait_for_cmd |                              001 |                              001
+          p_ld_first_cmd |                              010 |                              010
+          p_ld_child_cmd |                              011 |                              011
+            p_error_trap |                              100 |                              111
+           p_ld_last_cmd |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_psm_state_reg' using encoding 'sequential' in module 'axi_datamover_ibttcc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                              000 |                              000
+    ld_dre_scatter_first |                              001 |                              001
+           chk_pop_first |                              010 |                              010
+   ld_dre_scatter_second |                              011 |                              011
+              error_trap |                              100 |                              101
+          chk_pop_second |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_cmdcntl_sm_state_reg' using encoding 'sequential' in module 'axi_datamover_s2mm_realign'
+INFO: [Synth 8-6904] The RAM "xpm_memory_base__parameterized0:/gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=12) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:02:21 . Memory (MB): peak = 1872.828 ; gain = 408.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 3     
+	   4 Input   10 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 7     
+	   4 Input    9 Bit       Adders := 8     
+	   3 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 6     
+	   4 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 8     
+	   3 Input    4 Bit       Adders := 5     
+	   4 Input    4 Bit       Adders := 5     
+	   3 Input    3 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 3     
+	   4 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               72 Bit    Registers := 4     
+	               66 Bit    Registers := 2     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 6     
+	               32 Bit    Registers := 17    
+	               16 Bit    Registers := 15    
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 15    
+	                8 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 26    
+	                4 Bit    Registers := 32    
+	                3 Bit    Registers := 15    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 398   
++---RAMs : 
+	              33K Bit	(512 X 66 bit)          RAMs := 1     
+	              32K Bit	(512 X 65 bit)          RAMs := 1     
+	              192 Bit	(16 X 12 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   72 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 5     
+	  13 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 8     
+	   4 Input   16 Bit        Muxes := 2     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 5     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 15    
+	   3 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 4     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 6     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 7     
+	  13 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 19    
+	   2 Input    2 Bit        Muxes := 98    
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 21    
+	   2 Input    1 Bit        Muxes := 207   
+	  13 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 12    
+	   8 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /\I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=12) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=12) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:53 . Memory (MB): peak = 1872.828 ; gain = 408.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                                                                                                      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|U0/\GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I /\GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                    | gen_wr_a.gen_word_narrow.mem_reg | 512 x 65(READ_FIRST)   | W |   | 512 x 65(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      |                 | 
+|U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 66(NO_CHANGE)    | W |   | 512 x 66(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      |                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name                                                                                                                                                                                                                        | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 12              | RAM32M16 x 1	 | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:26 ; elapsed = 00:03:26 . Memory (MB): peak = 2372.230 ; gain = 908.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:03:34 . Memory (MB): peak = 2438.273 ; gain = 974.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                                                                                                      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|U0/\GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I /\GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                    | gen_wr_a.gen_word_narrow.mem_reg | 512 x 65(READ_FIRST)   | W |   | 512 x 65(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      |                 | 
+|U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 66(NO_CHANGE)    | W |   | 512 x 66(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      |                 | 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping	Report
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name                                                                                                                                                                                                                        | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+|U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 12              | RAM32M16 x 1	 | 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:03:39 . Memory (MB): peak = 2448.367 ; gain = 984.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:47 ; elapsed = 00:03:49 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:47 ; elapsed = 00:03:49 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:48 ; elapsed = 00:03:50 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:48 ; elapsed = 00:03:50 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:49 ; elapsed = 00:03:50 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:49 ; elapsed = 00:03:50 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_vdma    | AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.prepare_wrce_pulse_lite_d6_reg | 6      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|axi_vdma    | AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.sig_arvalid_arrived_d4_reg     | 3      | 1     | NO           | NO                 | NO                | 1      | 0       | 
++------------+-----------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                  | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | INFERRED_GEN.data_reg[3]  | 68     | 68         | 68     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[3]  | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | INFERRED_GEN.data_reg[5]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | INFERRED_GEN.data_reg[5]  | 23     | 23         | 23     | 0       | 0      | 0      | 0      | 
+|dsrl__4     | INFERRED_GEN.data_reg[3]  | 27     | 27         | 27     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | INFERRED_GEN.data_reg[15] | 6      | 6          | 6      | 0       | 0      | 0      | 0      | 
+|dsrl__6     | INFERRED_GEN.data_reg[3]  | 59     | 59         | 59     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | INFERRED_GEN.data_reg[3]  | 36     | 36         | 36     | 0       | 0      | 0      | 0      | 
++------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    32|
+|2     |LUT1     |   241|
+|3     |LUT2     |   246|
+|4     |LUT3     |   443|
+|5     |LUT4     |   346|
+|6     |LUT5     |   312|
+|7     |LUT6     |   374|
+|8     |RAM32M16 |     1|
+|9     |RAMB36E2 |     2|
+|11    |SRL16E   |   165|
+|12    |FDR      |    94|
+|13    |FDRE     |  2183|
+|14    |FDSE     |    85|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:49 ; elapsed = 00:03:50 . Memory (MB): peak = 2449.941 ; gain = 985.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:03:25 . Memory (MB): peak = 2449.941 ; gain = 904.750
+Synthesis Optimization Complete : Time (s): cpu = 00:02:49 ; elapsed = 00:03:51 . Memory (MB): peak = 2449.941 ; gain = 985.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.245 . Memory (MB): peak = 2458.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 127 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2473.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 95 instances were transformed.
+  FDR => FDRE: 94 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+334 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:19 ; elapsed = 00:04:48 . Memory (MB): peak = 2473.957 ; gain = 1373.750
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_axi_vdma_1_0_synth_1/cam_axi_vdma_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cam_axi_vdma_1_0, cache-ID = a2ad4b5fa4dc6305
+INFO: [Coretcl 2-1174] Renamed 128 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_axi_vdma_1_0_synth_1/cam_axi_vdma_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_axi_vdma_1_0_utilization_synth.rpt -pb cam_axi_vdma_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:01:48 2021...

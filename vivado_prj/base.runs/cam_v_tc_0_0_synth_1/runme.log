@@ -1,0 +1,412 @@
+
+*** Running vivado
+    with args -log cam_v_tc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_v_tc_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cam_v_tc_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1080.816 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/base/base.runs/cam_v_tc_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1080.816 ; gain = 0.000
+Command: synth_design -top cam_v_tc_0_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10532
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1537.004 ; gain = 74.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cam_v_tc_0_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/synth/cam_v_tc_0_0.vhd:96]
+	Parameter C_HAS_AXI4_LITE bound to: 1 - type: integer 
+	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
+	Parameter C_GEN_INTERLACED bound to: 0 - type: integer 
+	Parameter C_GEN_HACTIVE_SIZE bound to: 1280 - type: integer 
+	Parameter C_GEN_VACTIVE_SIZE bound to: 720 - type: integer 
+	Parameter C_GEN_CPARITY bound to: 0 - type: integer 
+	Parameter C_GEN_FIELDID_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VBLANK_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_HBLANK_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VSYNC_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_HSYNC_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_AVIDEO_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_ACHROMA_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VIDEO_FORMAT bound to: 2 - type: integer 
+	Parameter C_GEN_HFRAME_SIZE bound to: 1650 - type: integer 
+	Parameter C_GEN_F0_VFRAME_SIZE bound to: 750 - type: integer 
+	Parameter C_GEN_F1_VFRAME_SIZE bound to: 750 - type: integer 
+	Parameter C_GEN_HSYNC_START bound to: 1390 - type: integer 
+	Parameter C_GEN_HSYNC_END bound to: 1430 - type: integer 
+	Parameter C_GEN_F0_VBLANK_HSTART bound to: 1280 - type: integer 
+	Parameter C_GEN_F0_VBLANK_HEND bound to: 1280 - type: integer 
+	Parameter C_GEN_F0_VSYNC_VSTART bound to: 724 - type: integer 
+	Parameter C_GEN_F0_VSYNC_VEND bound to: 729 - type: integer 
+	Parameter C_GEN_F0_VSYNC_HSTART bound to: 1280 - type: integer 
+	Parameter C_GEN_F0_VSYNC_HEND bound to: 1280 - type: integer 
+	Parameter C_GEN_F1_VBLANK_HSTART bound to: 1280 - type: integer 
+	Parameter C_GEN_F1_VBLANK_HEND bound to: 1280 - type: integer 
+	Parameter C_GEN_F1_VSYNC_VSTART bound to: 724 - type: integer 
+	Parameter C_GEN_F1_VSYNC_VEND bound to: 729 - type: integer 
+	Parameter C_GEN_F1_VSYNC_HSTART bound to: 1280 - type: integer 
+	Parameter C_GEN_F1_VSYNC_HEND bound to: 1280 - type: integer 
+	Parameter C_FSYNC_HSTART0 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART0 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART1 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART1 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART2 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART2 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART3 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART3 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART4 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART4 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART5 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART5 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART6 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART6 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART7 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART7 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART8 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART8 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART9 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART9 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART10 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART10 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART11 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART11 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART12 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART12 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART13 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART13 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART14 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART14 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART15 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART15 bound to: 0 - type: integer 
+	Parameter C_MAX_PIXELS bound to: 4096 - type: integer 
+	Parameter C_MAX_LINES bound to: 4096 - type: integer 
+	Parameter C_NUM_FSYNCS bound to: 1 - type: integer 
+	Parameter C_INTERLACE_EN bound to: 0 - type: integer 
+	Parameter C_GEN_AUTO_SWITCH bound to: 0 - type: integer 
+	Parameter C_DETECT_EN bound to: 0 - type: integer 
+	Parameter C_SYNC_EN bound to: 0 - type: integer 
+	Parameter C_GENERATE_EN bound to: 1 - type: integer 
+	Parameter C_DET_HSYNC_EN bound to: 1 - type: integer 
+	Parameter C_DET_VSYNC_EN bound to: 1 - type: integer 
+	Parameter C_DET_HBLANK_EN bound to: 1 - type: integer 
+	Parameter C_DET_VBLANK_EN bound to: 1 - type: integer 
+	Parameter C_DET_AVIDEO_EN bound to: 1 - type: integer 
+	Parameter C_DET_ACHROMA_EN bound to: 0 - type: integer 
+	Parameter C_GEN_HSYNC_EN bound to: 1 - type: integer 
+	Parameter C_GEN_VSYNC_EN bound to: 1 - type: integer 
+	Parameter C_GEN_HBLANK_EN bound to: 1 - type: integer 
+	Parameter C_GEN_VBLANK_EN bound to: 1 - type: integer 
+	Parameter C_GEN_AVIDEO_EN bound to: 1 - type: integer 
+	Parameter C_GEN_ACHROMA_EN bound to: 0 - type: integer 
+	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
+	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'v_tc' declared at 'd:/base/base.srcs/sources_1/bd/cam/ipshared/111e/hdl/v_tc_v6_2_vh_rfs.vhd:7218' bound to instance 'U0' of component 'v_tc' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/synth/cam_v_tc_0_0.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010100001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010110111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 10 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 512 - type: integer 
+	Parameter C_FAMILY bound to: virtex5 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010100001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010110111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b100000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'cam_v_tc_0_0' (11#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/synth/cam_v_tc_0_0.vhd:96]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1678.766 ; gain = 216.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1678.766 ; gain = 216.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1678.766 ; gain = 216.453
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.328 . Memory (MB): peak = 1678.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1757.801 ; gain = 14.141
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/base/base.runs/cam_v_tc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/base/base.runs/cam_v_tc_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cam_v_tc_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cam_v_tc_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1757.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 1759.738 ; gain = 1.938
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 1759.738 ; gain = 297.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 1759.738 ; gain = 297.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/base/base.runs/cam_v_tc_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 1759.738 ; gain = 297.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 1759.738 ; gain = 297.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               45 Bit    Registers := 4     
+	               34 Bit    Registers := 3     
+	               32 Bit    Registers := 101   
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 19    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 57    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 82    
+	   4 Input   32 Bit        Muxes := 2     
+	   4 Input   29 Bit        Muxes := 11    
+	   4 Input   28 Bit        Muxes := 17    
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 16    
+	   3 Input   12 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 56    
+	   4 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:32 . Memory (MB): peak = 1759.738 ; gain = 297.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:02:02 . Memory (MB): peak = 2343.844 ; gain = 881.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:02:05 . Memory (MB): peak = 2354.168 ; gain = 891.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:54 ; elapsed = 00:02:11 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|video_ctrl  | AXI4_LITE_INTERFACE.GENR_MUX0/GEN_SEL_DELAY[5].sel_int_reg[5][0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|video_ctrl  | AXI4_LITE_INTERFACE.CORE_MUX0/GEN_SEL_DELAY[3].sel_int_reg[3][0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|video_ctrl  | AXI4_LITE_INTERFACE.GENR_MUX0/GEN_SEL_DELAY[4].sel_int_reg[4][0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_tc        | U_TC_TOP/detect_en_d_reg[3]                                      | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|v_tc        | U_TC_TOP/generate_en_d_reg[3]                                    | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    10|
+|2     |LUT1   |    47|
+|3     |LUT2   |    50|
+|4     |LUT3   |   575|
+|5     |LUT4   |    83|
+|6     |LUT5   |    94|
+|7     |LUT6   |   433|
+|8     |MUXF7  |   134|
+|9     |SRL16E |     5|
+|10    |FDRE   |  2787|
+|11    |FDSE   |   197|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 2383.285 ; gain = 920.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:02:03 . Memory (MB): peak = 2383.285 ; gain = 840.000
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:02:25 . Memory (MB): peak = 2383.285 ; gain = 920.973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.335 . Memory (MB): peak = 2394.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2412.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:03:00 . Memory (MB): peak = 2412.383 ; gain = 1331.566
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_v_tc_0_0_synth_1/cam_v_tc_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cam_v_tc_0_0, cache-ID = f903f9942fd5ac13
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_v_tc_0_0_synth_1/cam_v_tc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_v_tc_0_0_utilization_synth.rpt -pb cam_v_tc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:10:02 2021...

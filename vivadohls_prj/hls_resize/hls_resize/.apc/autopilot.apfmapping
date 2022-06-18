@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="top.cpp" path="D:\fpga-yolo-v3_v2\day_07_15\hls_resize\top.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="src.jpg" path="D:\fpga-yolo-v3_v2\day_07_15\hls_resize\src.jpg"/>
+    <originFiles name="tb.cpp" path="D:\fpga-yolo-v3_v2\day_07_15\hls_resize\tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

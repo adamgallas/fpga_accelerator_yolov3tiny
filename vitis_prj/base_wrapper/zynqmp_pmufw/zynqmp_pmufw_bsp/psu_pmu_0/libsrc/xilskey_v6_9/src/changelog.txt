@@ -1,0 +1,170 @@
+/*****************************************************************************
+ * MODIFICATION HISTORY:
+ *
+ * Ver   Who  Date     Changes
+ * ----- ---- -------- ---------------------------------------------------
+ *
+ * 1.02a hk   10/28/13  PS eFuse:
+ *			Added API to read status register:
+ *			u32 XilSKey_EfusePs_ReadStatus(
+ *				XilSKey_EPs *InstancePtr, u32 *StatusBits)
+ *                      RSA key read back is stored in RsaKeyReadback in
+ *                      Instance structure instead of RsaKeyHashValue -
+ *			Change in API:
+ *			u32 XilSKey_EfusePs_Read(XilSKey_EPs *PsInstancePtr)
+ *			PL eFUSE:
+ *			Added API's to read status bits and key :
+ * 			u32 XilSKey_EfusePl_ReadKey(XilSKey_EPl *InstancePtr)
+ *			u32 XilSKey_EfusePl_ReadKey(XilSKey_EPl *InstancePtr)
+ * 2.00  hk   23/01/14  Corrected PL voltage checks to VCCINT and VCCAUX.
+ *                        CR#768077
+ *                      Changed PS efuse error codes for voltage out of range
+ * 2.00  hk   02/12/14  Changed makefile to remove '-p' option with mkdir.
+ *                      CR#773090
+ * 2.1   kvn  04/01/15  Fixed warnings. CR#716453.
+ * 2.1   sk   04/03/15  Initialized RSAKeyReadback with Zeros CR# 829723.
+ * 3.0   vns  10/08/15  Added eFusePL functionality for Ultrascale.
+ *                      Added new API u32 Xilskey_CrcCalculation(u8 *Key)
+ *                      to calculate CRC of AES key.
+ *                      Added new parameters to XilSKey_EPl instance which
+ *                      supports Ultrascale.
+ *                      For programming and reading APIs used for Zynq efuse PL
+ *                      can be used in Ultrascale's efuse PL also, however inputs
+ *                      will differ.
+ *                      In Ultrascale there is a feasibility of programming and
+ *                      reading AES key, User key and RSA hash separately.
+ *                      It also has its own control bits which can be programmed.
+ * 4.0   vns  10/08/15  Added eFusePs and bbram Ps functionality for
+ *                      Zynq Ultrascle+ Mp.
+ *                      Added new APIs for accessing eFusePs and BbramPS
+ *                      u32 Xilskey_ZynqMp_EfusePs_CheckAesKeyCrc(u32 CrcValue);
+ *                      u32 Xilskey_ZynqMp_EfusePs_ReadUserKey(u32 *UseKeyPtr,
+ *                       u8 ReadOption);
+ *                      u32 Xilskey_ZynqMp_EfusePs_ReadPpk0Sha3Hash(
+ *                                u32 *Sha3Hash, u8 ReadOption);
+ *                      u32 Xilskey_ZynqMp_EfusePs_ReadPpk1Sha3Hash(u32 *Sha3Hash,
+ *                      u8 ReadOption); u32 Xilskey_ZynqMp_EfusePs_ReadSpkId(
+ *                      u32 *SpkId, u8 ReadOption);
+ *                      u32 Xilskey_ZynqMp_EfusePs_ReadJtagUsrCode(
+ *                      u32 *JtagUsrCode, u8 ReadOption);
+ *                      void Xilskey_ZynqMp_EfusePs_ReadDna(u32 *DnaRead);
+ *                      u32 Xilskey_ZynqMp_EfusePs_ReadSecCtrlBits(
+ *                      Xilskey_SecCtrlBits *ReadBackSecCtrlBits, u8 ReadOption);
+ *                      u32 Xilskey_ZynqMp_EfusePs_CacheLoad();
+ *                      u32 Xilskey_ZynqMp_EfusePs_Write(
+ *                                   XilSKey_ZynqMpEPs *InstancePtr);
+ *                      u32 XilSKey_ZynqMp_Bbram_Program(u32 *AesKey);
+ *                      void Xilskey_ZynqMp_Bbram_Zeroise();
+ *
+ *                      Added DFT control bits programming for Zynq efuse PS.
+ *
+ *                      Modified Zynq efuse PL jtagwrite API by adding clock after
+ *                      RTI state and one more clock at the end of 11us.
+ *                      (CR #885421).
+ *       vns  10/20/15 Added cplusplus boundary blocks. (CR #911062)
+ *                     Modified XilSKey_ZynqMp_EfusePs_ReadSecCtrlBits API
+ *                     when reading from efuse memory to return both bits
+ *                     of secure control feature for RSA enable, PPK hash
+ *                     bits invalid bits. (CR #911063)
+ * 5.0   vns  09/01/16 Modified JtagWrite_Ultrascale API as per IEEE 1149.1
+*                      standard added TCK toggle after RTI state change where
+*                      programming will start and ends programming at
+*                      TCK toggle after DR_SELECT state. CR #924262
+*                      Added Ultrascale BBRAM programming functionality.
+*                      Modified JtagServerInitBbram to support Ultrascale
+*                      BBRAM programming, added Bbram_Init_Ultra,
+*                      Bbram_ProgramKey_Ultra, Bbram_VerifyKey_Ultra
+*                      and Bbram_DeInit_Ultra APIs.
+*                      Verificaion of programming bits are verified by
+*                      performing all Margin reads.
+*                      Added conditions for programming control and
+*                      secure bits for Ultrascale efuse.
+*        vns  27/01/16 Fixed array out of bounds error CR #931207
+* 6.0    vns  18/08/16 Added margin 2 read checks for Zynq eFUSE PS and PL.
+*                      Ultrscale eFUSE programming is handled using hardware
+*                      module, Hardware module is controlled through GPIO pins,
+*                      Modified Ultrascale eFUSE example and input.h files to
+*                      accept GPIO pin numbers from user, Corrected sysmon
+*                      temperature read to 16-bit resolution.
+*                      Fixed CR #954260 to correct the sequence of programming
+*                      Modified ZynqMP PS eFUSE's single USER key programming to
+*                      separate 32 bit User keys. Provided single bit programming
+*                      for User Key.
+*                      For Ultrascale: Added 128 bit user key programming.
+*                      Provided single bit programming for User keys 32 and
+*                      128 bit User keys. Added error codes on failures.
+*                      BBRAM is updated to have DPA protection, and
+*                      count configuration.
+* 6.1    vns  10/20/16 Added support for PUF registration, programming eFUSE
+*                      with syndrome data, Auxiliary value and CHash value.
+*        vns  10/25/16 Removed ForcePowerCycle and JtagDisable, from BBRAM Zynq
+*                      PL instance as they are not actually programming any
+*                      control bit. These are already exists in Zynq eFUSE PL
+*                      instance.
+* 6.2    vns  02/28/17 Fixed compilation warnings.
+*                      On ZynqMP:
+*                      Added CRC check after programming whole AES key.
+*                      Modified temperature and voltage checks at each eFUSE
+*                      bit programming, only checking before eFUSE programming
+*                      and after finishing programming of all the user requested
+*                      bits.Verifying each eFUSE programmed bit with all 3
+*                      margin reads
+*        vns  03/10/17 CR #971154 - efuse PS of ZynqMP
+*                      Modified PROG_GATE feature support, if user requests
+*                      programming library programs all 3 bits of PROG_GATE.
+*                      Modified secure control bits of efuse.
+*                      Modified macros in header file for secure control bits
+*                      Provided support for programming LBIST, LPD and FPD SC
+*                      enable bits and some of the reserved bits.
+* 6.3    vns  07/12/17 Added support for programming eFUSE and BBRAM of kintex
+*                      Ultrascale plus.
+* 6.4    vns  02/19/18 Added XilSKey_ZynqMp_EfusePs_CacheLoad() call in
+*                      XilSKey_ZynqMp_EfusePs_Write(), on successul programming
+*                      of all requested efuse bits updated efuse can directly
+*                      read from eufse cache.
+*        vns  02/27/18 Added support for virtex ultrascale and untrascale plus
+*                      Provided efuse secure bit(obfuscation enable feature)
+*                      programming support for ultrascale and untrascale plus.
+*        vns  03/09/18 Added correct status bits for ultrascale plus
+* 6.5    vns  03/16/18 Fixed hanging issue when program/zeroise is requested
+*                      while programming mode in enabled state.
+* 6.6    vns  06/06/18 Added doxygen tags
+*        vns  09/18/18 Added support API for programming zynqmp efuseps from
+*		       Linux
+*                      Added APIs to support PUF regeneration
+*        vns  10/11/18 Added support for re-programming SPKID without reverting
+*                      existing programmed bits.
+* 6.7    arc  10/29/18 Fixed ARMCC compiler warnings
+*                      Added support to program SSIT microblaze devices
+* 6.8    vns  09/17/19 Fixed MISRAC violations and coverity warnings
+*                      Updated doxygen comments.
+*                      Added support for user to add IDCODES for microblaze
+*                      Moved floating point calculation to compile time
+*                      Added assert statements
+*                      Corrected length of data to be read.
+*                      Fixed CHASH reading from wrong location of syndrome
+*                      data in Zynqmp
+*                      Fixed controller locking back in ZU+
+*                      Reporting puf_acc_error to user.
+*                      Added Debug define for dummy programming for microblaze
+*                      Initialized Status variables to XST_FAILURE
+*                      Added support to access ZU+ PL efuse and BBRAM
+*                      Aligned spaces in dependecies.props
+*                      Removed Tbits programming code in ZU+
+*                      Added sysmon override or not option under BSP settings
+*                      for ZU+, added master SLR number in user device adding
+*                      under BSP settings.
+*                      Modified Microblaze SSIT devices based on CONFIG ORDER
+*                      INDEX.
+* 6.9    kpt  02/16/20 Fixed Coverity warnings
+*                      Disabled BBRAM programming mode after key write
+*                      Depecrated XilSKey_Puf_Fetch_Dbg_Mode2_result function
+*                      Fixed ARMCC compilation errors
+*                      Removed ZynqMP efuse temperature and voltage checks for
+*                      efuse reads
+*                      Deprecated support to read from efuse memory,
+*                      if requested throws an error
+*                      Placed temperature and voltage checks before enabling
+*                      programming
+*
+ ********************************************************************************/

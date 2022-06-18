@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Aug 20 09:20:14 2021
+# Process ID: 8860
+# Current directory: D:/FINAL/base/base.runs/cam_hls_rect_1_0_synth_1
+# Command line: vivado.exe -log cam_hls_rect_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_hls_rect_1_0.tcl
+# Log file: D:/FINAL/base/base.runs/cam_hls_rect_1_0_synth_1/cam_hls_rect_1_0.vds
+# Journal file: D:/FINAL/base/base.runs/cam_hls_rect_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cam_hls_rect_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FINAL/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/FINAL/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/FINAL/base/base.runs/cam_hls_rect_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP cam_hls_rect_1_0, cache-ID = ccb78882bd317ec4.
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 20 09:20:23 2021...

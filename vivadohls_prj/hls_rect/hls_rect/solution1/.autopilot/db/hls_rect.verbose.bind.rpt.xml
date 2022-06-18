@@ -1,0 +1,57 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hls_rect'" level="0">
+<item name = "Date">Fri Aug 20 09:07:38 2021
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">hls_rect</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.500 ns, 0.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">925215, 925215, 3.701 ms, 3.701 ms, 925204, 925204, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Add_Char1_fu_2000">Add_Char1, 925201, 925201, 3.701 ms, 3.701 ms, 925201, 925201, none</column>
+<column name="grp_Add_Char2_fu_2024">Add_Char2, 925201, 925201, 3.701 ms, 3.701 ms, 925201, 925201, none</column>
+<column name="grp_Add_Char3_fu_2048">Add_Char3, 925201, 925201, 3.701 ms, 3.701 ms, 925201, 925201, none</column>
+<column name="grp_Add_Char4_fu_2072">Add_Char4, 925201, 925201, 3.701 ms, 3.701 ms, 925201, 925201, none</column>
+<column name="grp_Add_Char5_fu_2096">Add_Char5, 925201, 925201, 3.701 ms, 3.701 ms, 925201, 925201, none</column>
+<column name="grp_Add_Rectangle_fu_2120">Add_Rectangle, 924481, 924481, 3.698 ms, 3.698 ms, 924481, 924481, none</column>
+<column name="grp_Add_Char6_fu_2144">Add_Char6, 925201, 925201, 3.701 ms, 3.701 ms, 925201, 925201, none</column>
+<column name="grp_AXIvideo2Mat_fu_2164">AXIvideo2Mat, 925203, 925203, 3.701 ms, 3.701 ms, 925203, 925203, none</column>
+<column name="grp_Mat2AXIvideo_fu_2186">Mat2AXIvideo, 924481, 924481, 3.698 ms, 3.698 ms, 924481, 924481, none</column>
+<column name="grp_Block_proc_fu_2208">Block_proc, 1, 1, 4.000 ns, 4.000 ns, 1, 1, none</column>
+<column name="call_ln48_hls_rect_entry304_fu_2218">hls_rect_entry304, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="call_ln8_hls_rect_entry3_fu_2249">hls_rect_entry3, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

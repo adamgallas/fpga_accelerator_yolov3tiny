@@ -1,0 +1,547 @@
+
+*** Running vivado
+    with args -log cam_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_wrapper.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cam_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FINAL/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/FINAL/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/FINAL/base/base.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1080.488 ; gain = 0.000
+Command: synth_design -top cam_wrapper -part xczu3eg-sfvc784-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5768
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1618.977 ; gain = 74.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cam_wrapper' [D:/FINAL/base/base.srcs/sources_1/bd/cam/hdl/cam_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'cam' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cam_Accel_Conv_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_Accel_Conv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_Accel_Conv_0_0' (1#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_Accel_Conv_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_axi_dma_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axi_dma_0_0' (2#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'cam_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'cam_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'cam_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'cam_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'cam_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'cam_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'cam_axi_dma_0_0' has 64 connections declared, but only 58 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:595]
+INFO: [Synth 8-6157] synthesizing module 'cam_axi_interconnect_0_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1754]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1734YFW' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3444]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1734YFW' (3#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3444]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_JNX2VT' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3576]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_JNX2VT' (4#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3576]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1XNZY8N' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3708]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1XNZY8N' (5#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3708]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_AOPFGY' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3840]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_AOPFGY' (6#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3840]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_PID13E' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3965]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_PID13E' (7#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3965]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_11AH8WF' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4097]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_11AH8WF' (8#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4097]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_GK1VGH' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4229]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_GK1VGH' (9#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4229]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1RVPEDG' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4354]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1RVPEDG' (10#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4354]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1HMPS8H' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4486]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1HMPS8H' (11#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4486]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_80B1KK' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4611]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_80B1KK' (12#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4611]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_1QO0MI' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4757]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_1QO0MI' (13#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4757]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_DYVXIE' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4889]
+INFO: [Synth 8-6157] synthesizing module 'cam_auto_pc_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_auto_pc_0' (14#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_DYVXIE' (15#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:4889]
+INFO: [Synth 8-6157] synthesizing module 'cam_xbar_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_xbar_0' (16#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (30) of port connection 'm_axi_arprot' does not match port width (33) of module 'cam_xbar_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3405]
+WARNING: [Synth 8-689] width (30) of port connection 'm_axi_awprot' does not match port width (33) of module 'cam_xbar_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:3409]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axi_interconnect_0_0' (17#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1754]
+INFO: [Synth 8-6157] synthesizing module 'cam_axi_smc_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axi_smc_0' (18#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_axi_smc_1_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axi_smc_1_0' (19#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_axi_vdma_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axi_vdma_0_0' (20#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_vdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'cam_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1043]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'cam_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1043]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'cam_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1043]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'cam_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1043]
+WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'cam_axi_vdma_0_0' has 67 connections declared, but only 63 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1043]
+INFO: [Synth 8-6157] synthesizing module 'cam_axi_vdma_1_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_vdma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axi_vdma_1_0' (21#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axi_vdma_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'cam_axi_vdma_1_0' is unconnected for instance 'axi_vdma_1' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1107]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'cam_axi_vdma_1_0' is unconnected for instance 'axi_vdma_1' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1107]
+WARNING: [Synth 8-7023] instance 'axi_vdma_1' of module 'cam_axi_vdma_1_0' has 45 connections declared, but only 43 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1107]
+INFO: [Synth 8-6157] synthesizing module 'cam_axis_broadcaster_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axis_broadcaster_0_0' (22#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_axis_data_fifo_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axis_data_fifo_0_0' (23#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_axis_subset_converter_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axis_subset_converter_0_0' (24#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_subset_converter_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'cam_axis_subset_converter_0_0' is unconnected for instance 'axis_subset_converter_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1193]
+WARNING: [Synth 8-7023] instance 'axis_subset_converter_0' of module 'cam_axis_subset_converter_0_0' has 14 connections declared, but only 13 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1193]
+INFO: [Synth 8-6157] synthesizing module 'cam_axis_subset_converter_1_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_subset_converter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axis_subset_converter_1_0' (25#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_subset_converter_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_axis_subset_converter_2_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_subset_converter_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_axis_subset_converter_2_0' (26#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_axis_subset_converter_2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'cam_axis_subset_converter_2_0' is unconnected for instance 'axis_subset_converter_2' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1228]
+WARNING: [Synth 8-7071] port 'm_axis_tid' of module 'cam_axis_subset_converter_2_0' is unconnected for instance 'axis_subset_converter_2' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1228]
+WARNING: [Synth 8-7071] port 'm_axis_tdest' of module 'cam_axis_subset_converter_2_0' is unconnected for instance 'axis_subset_converter_2' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1228]
+WARNING: [Synth 8-7023] instance 'axis_subset_converter_2' of module 'cam_axis_subset_converter_2_0' has 20 connections declared, but only 17 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1228]
+INFO: [Synth 8-6157] synthesizing module 'cam_clk_wiz_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cam_clk_wiz_0_0' (27#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cam_clk_wiz_1_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cam_clk_wiz_1_0' (28#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cam_hls_preprocess_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_hls_preprocess_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_hls_preprocess_0_0' (29#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_hls_preprocess_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'cam_hls_preprocess_0_0' is unconnected for instance 'hls_preprocess_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1253]
+WARNING: [Synth 8-7023] instance 'hls_preprocess_0' of module 'cam_hls_preprocess_0_0' has 38 connections declared, but only 37 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1253]
+INFO: [Synth 8-6157] synthesizing module 'cam_hls_rect_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_hls_rect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_hls_rect_0_0' (30#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_hls_rect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'cam_hls_rect_0_0' is unconnected for instance 'hls_rect_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1291]
+WARNING: [Synth 8-7023] instance 'hls_rect_0' of module 'cam_hls_rect_0_0' has 38 connections declared, but only 37 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1291]
+INFO: [Synth 8-6157] synthesizing module 'cam_hls_rect_1_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_hls_rect_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_hls_rect_1_0' (31#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_hls_rect_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'cam_hls_rect_1_0' is unconnected for instance 'hls_rect_1' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1329]
+WARNING: [Synth 8-7071] port 'video_dst_TSTRB' of module 'cam_hls_rect_1_0' is unconnected for instance 'hls_rect_1' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1329]
+WARNING: [Synth 8-7071] port 'video_dst_TID' of module 'cam_hls_rect_1_0' is unconnected for instance 'hls_rect_1' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1329]
+WARNING: [Synth 8-7071] port 'video_dst_TDEST' of module 'cam_hls_rect_1_0' is unconnected for instance 'hls_rect_1' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1329]
+WARNING: [Synth 8-7023] instance 'hls_rect_1' of module 'cam_hls_rect_1_0' has 38 connections declared, but only 34 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1329]
+INFO: [Synth 8-6157] synthesizing module 'cam_mipi_csi2_rx_subsyst_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_mipi_csi2_rx_subsyst_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_mipi_csi2_rx_subsyst_0_0' (32#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_mipi_csi2_rx_subsyst_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rxbyteclkhs' of module 'cam_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1364]
+WARNING: [Synth 8-7071] port 'clkoutphy_out' of module 'cam_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1364]
+WARNING: [Synth 8-7071] port 'system_rst_out' of module 'cam_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1364]
+WARNING: [Synth 8-7071] port 'pll_lock_out' of module 'cam_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1364]
+WARNING: [Synth 8-7071] port 'csirxss_csi_irq' of module 'cam_mipi_csi2_rx_subsyst_0_0' is unconnected for instance 'mipi_csi2_rx_subsyst_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1364]
+WARNING: [Synth 8-7023] instance 'mipi_csi2_rx_subsyst_0' of module 'cam_mipi_csi2_rx_subsyst_0_0' has 37 connections declared, but only 32 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1364]
+INFO: [Synth 8-6157] synthesizing module 'cam_rst_ps8_0_250M_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_rst_ps8_0_250M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_rst_ps8_0_250M_0' (33#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_rst_ps8_0_250M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'cam_rst_ps8_0_250M_0' is unconnected for instance 'rst_ps8_0_250M' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1397]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'cam_rst_ps8_0_250M_0' is unconnected for instance 'rst_ps8_0_250M' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1397]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'cam_rst_ps8_0_250M_0' is unconnected for instance 'rst_ps8_0_250M' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1397]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_250M' of module 'cam_rst_ps8_0_250M_0' has 10 connections declared, but only 7 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1397]
+INFO: [Synth 8-6157] synthesizing module 'cam_smartconnect_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_smartconnect_0_0' (34#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_util_vector_logic_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_util_vector_logic_0_0' (35#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_util_vector_logic_1_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_util_vector_logic_1_0' (36#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_axi4s_vid_out_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_axi4s_vid_out_0_0' (37#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'vid_vblank' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'vid_hblank' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'vid_field_id' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'locked' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'overflow' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'underflow' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7071] port 'status' of module 'cam_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'cam_v_axi4s_vid_out_0_0' has 31 connections declared, but only 23 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1450]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_demosaic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0' (38#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_demosaic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'cam_v_demosaic_0_0' is unconnected for instance 'v_demosaic_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1474]
+WARNING: [Synth 8-7023] instance 'v_demosaic_0' of module 'cam_v_demosaic_0_0' has 38 connections declared, but only 37 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1474]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_gamma_lut_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_gamma_lut_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_gamma_lut_0_0' (39#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_gamma_lut_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'cam_v_gamma_lut_0_0' is unconnected for instance 'v_gamma_lut_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1512]
+WARNING: [Synth 8-7023] instance 'v_gamma_lut_0' of module 'cam_v_gamma_lut_0_0' has 38 connections declared, but only 37 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1512]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_tc_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_tc_0_0' (40#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_v_tc_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'irq' of module 'cam_v_tc_0_0' is unconnected for instance 'v_tc_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1550]
+WARNING: [Synth 8-7071] port 'fsync_out' of module 'cam_v_tc_0_0' is unconnected for instance 'v_tc_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1550]
+WARNING: [Synth 8-7023] instance 'v_tc_0' of module 'cam_v_tc_0_0' has 32 connections declared, but only 30 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1550]
+INFO: [Synth 8-6157] synthesizing module 'cam_xlconstant_0_0' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_xlconstant_0_0/synth/cam_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (41#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cam_xlconstant_0_0' (42#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_xlconstant_0_0/synth/cam_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'cam_zynq_ultra_ps_e_0_0' [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_zynq_ultra_ps_e_0_0' (43#1) [D:/FINAL/base/base.runs/synth_1/.Xil/Vivado-7008-ADAM-GALLAS/realtime/cam_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_bid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_arready' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_rid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_rdata' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_rresp' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_rlast' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp1_rvalid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'emio_enet0_enet_tsu_timer_cnt' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'emio_gpio_t' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'emio_uart1_txd' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'dp_video_out_hsync' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'dp_video_out_vsync' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'dp_video_out_pixel1' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7071] port 'dp_live_video_de_out' of module 'cam_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'cam_zynq_ultra_ps_e_0_0' has 188 connections declared, but only 168 given [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:1583]
+INFO: [Synth 8-6155] done synthesizing module 'cam' (44#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/synth/cam.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cam_wrapper' (45#1) [D:/FINAL/base/base.srcs/sources_1/bd/cam/hdl/cam_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1681.668 ; gain = 137.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1699.594 ; gain = 155.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1699.594 ; gain = 155.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1699.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_xbar_0/cam_xbar_0/cam_xbar_0_in_context.xdc] for cell 'cam_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_xbar_0/cam_xbar_0/cam_xbar_0_in_context.xdc] for cell 'cam_i/axi_interconnect_0/xbar'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_smc_0/cam_axi_smc_0/cam_axi_smc_0_in_context.xdc] for cell 'cam_i/axi_smc'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_smc_0/cam_axi_smc_0/cam_axi_smc_0_in_context.xdc] for cell 'cam_i/axi_smc'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_0_0/cam_axi_vdma_0_0/cam_axi_vdma_0_0_in_context.xdc] for cell 'cam_i/axi_vdma_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_0_0/cam_axi_vdma_0_0/cam_axi_vdma_0_0_in_context.xdc] for cell 'cam_i/axi_vdma_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0/cam_axi_vdma_1_0_in_context.xdc] for cell 'cam_i/axi_vdma_1'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_vdma_1_0/cam_axi_vdma_1_0/cam_axi_vdma_1_0_in_context.xdc] for cell 'cam_i/axi_vdma_1'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_broadcaster_0_0/cam_axis_broadcaster_0_0/cam_axis_broadcaster_0_0_in_context.xdc] for cell 'cam_i/axis_broadcaster_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_broadcaster_0_0/cam_axis_broadcaster_0_0/cam_axis_broadcaster_0_0_in_context.xdc] for cell 'cam_i/axis_broadcaster_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_data_fifo_0_0/cam_axis_data_fifo_0_0/cam_axis_data_fifo_0_0_in_context.xdc] for cell 'cam_i/axis_data_fifo_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_data_fifo_0_0/cam_axis_data_fifo_0_0/cam_axis_data_fifo_0_0_in_context.xdc] for cell 'cam_i/axis_data_fifo_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_subset_converter_0_0/cam_axis_subset_converter_0_0/cam_axis_subset_converter_0_0_in_context.xdc] for cell 'cam_i/axis_subset_converter_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_subset_converter_0_0/cam_axis_subset_converter_0_0/cam_axis_subset_converter_0_0_in_context.xdc] for cell 'cam_i/axis_subset_converter_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_0_0/cam_clk_wiz_0_0/cam_clk_wiz_0_0_in_context.xdc] for cell 'cam_i/clk_wiz_0'
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_0_0/cam_clk_wiz_0_0/cam_clk_wiz_0_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_0_0/cam_clk_wiz_0_0/cam_clk_wiz_0_0_in_context.xdc:4]
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_0_0/cam_clk_wiz_0_0/cam_clk_wiz_0_0_in_context.xdc] for cell 'cam_i/clk_wiz_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_1_0/cam_clk_wiz_1_0/cam_clk_wiz_1_0_in_context.xdc] for cell 'cam_i/clk_wiz_1'
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_1_0/cam_clk_wiz_1_0/cam_clk_wiz_1_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_1_0/cam_clk_wiz_1_0/cam_clk_wiz_1_0_in_context.xdc:4]
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_clk_wiz_1_0/cam_clk_wiz_1_0/cam_clk_wiz_1_0_in_context.xdc] for cell 'cam_i/clk_wiz_1'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'cam_i/mipi_csi2_rx_subsyst_0'
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc:5]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc:8]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc:10]
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc] for cell 'cam_i/mipi_csi2_rx_subsyst_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_rst_ps8_0_250M_0/cam_rst_ps8_0_250M_0/cam_rst_ps8_0_250M_0_in_context.xdc] for cell 'cam_i/rst_ps8_0_250M'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_rst_ps8_0_250M_0/cam_rst_ps8_0_250M_0/cam_rst_ps8_0_250M_0_in_context.xdc] for cell 'cam_i/rst_ps8_0_250M'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_smartconnect_0_0/cam_smartconnect_0_0/cam_smartconnect_0_0_in_context.xdc] for cell 'cam_i/smartconnect_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_smartconnect_0_0/cam_smartconnect_0_0/cam_smartconnect_0_0_in_context.xdc] for cell 'cam_i/smartconnect_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_util_vector_logic_0_0/cam_util_vector_logic_0_0/cam_util_vector_logic_0_0_in_context.xdc] for cell 'cam_i/util_vector_logic_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_util_vector_logic_0_0/cam_util_vector_logic_0_0/cam_util_vector_logic_0_0_in_context.xdc] for cell 'cam_i/util_vector_logic_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_util_vector_logic_1_0/cam_util_vector_logic_1_0/cam_util_vector_logic_0_0_in_context.xdc] for cell 'cam_i/util_vector_logic_1'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_util_vector_logic_1_0/cam_util_vector_logic_1_0/cam_util_vector_logic_0_0_in_context.xdc] for cell 'cam_i/util_vector_logic_1'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_axi4s_vid_out_0_0/cam_v_axi4s_vid_out_0_0/cam_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'cam_i/v_axi4s_vid_out_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_axi4s_vid_out_0_0/cam_v_axi4s_vid_out_0_0/cam_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'cam_i/v_axi4s_vid_out_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/cam_v_demosaic_0_0/cam_v_demosaic_0_0_in_context.xdc] for cell 'cam_i/v_demosaic_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/cam_v_demosaic_0_0/cam_v_demosaic_0_0_in_context.xdc] for cell 'cam_i/v_demosaic_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/cam_v_gamma_lut_0_0/cam_v_gamma_lut_0_0_in_context.xdc] for cell 'cam_i/v_gamma_lut_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/cam_v_gamma_lut_0_0/cam_v_gamma_lut_0_0_in_context.xdc] for cell 'cam_i/v_gamma_lut_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0/cam_v_tc_0_0_in_context.xdc] for cell 'cam_i/v_tc_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_v_tc_0_0/cam_v_tc_0_0/cam_v_tc_0_0_in_context.xdc] for cell 'cam_i/v_tc_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_zynq_ultra_ps_e_0_0/cam_zynq_ultra_ps_e_0_0/cam_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'cam_i/zynq_ultra_ps_e_0'
+WARNING: [Vivado 12-584] No ports matched ''. [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_zynq_ultra_ps_e_0_0/cam_zynq_ultra_ps_e_0_0/cam_zynq_ultra_ps_e_0_0_in_context.xdc:2]
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_zynq_ultra_ps_e_0_0/cam_zynq_ultra_ps_e_0_0/cam_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'cam_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_subset_converter_1_0/cam_axis_subset_converter_1_0/cam_axis_subset_converter_1_0_in_context.xdc] for cell 'cam_i/axis_subset_converter_1'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_subset_converter_1_0/cam_axis_subset_converter_1_0/cam_axis_subset_converter_1_0_in_context.xdc] for cell 'cam_i/axis_subset_converter_1'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_0_0/cam_hls_rect_0_0/cam_hls_rect_0_0_in_context.xdc] for cell 'cam_i/hls_rect_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_0_0/cam_hls_rect_0_0/cam_hls_rect_0_0_in_context.xdc] for cell 'cam_i/hls_rect_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_preprocess_0_0/cam_hls_preprocess_0_0/cam_hls_preprocess_0_0_in_context.xdc] for cell 'cam_i/hls_preprocess_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_preprocess_0_0/cam_hls_preprocess_0_0/cam_hls_preprocess_0_0_in_context.xdc] for cell 'cam_i/hls_preprocess_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_subset_converter_2_0/cam_axis_subset_converter_2_0/cam_axis_subset_converter_2_0_in_context.xdc] for cell 'cam_i/axis_subset_converter_2'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axis_subset_converter_2_0/cam_axis_subset_converter_2_0/cam_axis_subset_converter_2_0_in_context.xdc] for cell 'cam_i/axis_subset_converter_2'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_dma_0_0/cam_axi_dma_0_0/cam_axi_dma_0_0_in_context.xdc] for cell 'cam_i/axi_dma_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_dma_0_0/cam_axi_dma_0_0/cam_axi_dma_0_0_in_context.xdc] for cell 'cam_i/axi_dma_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_smc_1_0/cam_axi_smc_1_0/cam_axi_smc_1_0_in_context.xdc] for cell 'cam_i/axi_smc_1'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_axi_smc_1_0/cam_axi_smc_1_0/cam_axi_smc_1_0_in_context.xdc] for cell 'cam_i/axi_smc_1'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_Accel_Conv_0_0/cam_Accel_Conv_0_0/cam_Accel_Conv_0_0_in_context.xdc] for cell 'cam_i/Accel_Conv_0'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_Accel_Conv_0_0/cam_Accel_Conv_0_0/cam_Accel_Conv_0_0_in_context.xdc] for cell 'cam_i/Accel_Conv_0'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_1_0/cam_hls_rect_1_0/cam_hls_rect_0_0_in_context.xdc] for cell 'cam_i/hls_rect_1'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_1_0/cam_hls_rect_1_0/cam_hls_rect_0_0_in_context.xdc] for cell 'cam_i/hls_rect_1'
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_auto_pc_0/cam_auto_pc_0/cam_auto_pc_0_in_context.xdc] for cell 'cam_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_auto_pc_0/cam_auto_pc_0/cam_auto_pc_0_in_context.xdc] for cell 'cam_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [D:/FINAL/base/pin_constr.xdc]
+Finished Parsing XDC File [D:/FINAL/base/pin_constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FINAL/base/pin_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cam_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cam_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/FINAL/base/base.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FINAL/base/base.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1788.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1788.094 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'cam_i/axi_vdma_0' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'cam_i/axi_vdma_1' at clock pin 'm_axi_s2mm_aclk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'cam_i/axis_broadcaster_0' at clock pin 'aclk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'cam_i/mipi_csi2_rx_subsyst_0' at clock pin 'lite_aclk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1788.094 ; gain = 243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1788.094 ; gain = 243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_n. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_n. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_p. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_clk_p. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[0]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[0]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[1]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_n[1]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[0]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[0]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[1]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_0_data_p[1]. (constraint file  d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_in_context.xdc, line 22).
+Applied set_property DONT_TOUCH = true for cam_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_vdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_vdma_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axis_broadcaster_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axis_data_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axis_subset_converter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/mipi_csi2_rx_subsyst_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/rst_ps8_0_250M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/smartconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/v_axi4s_vid_out_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/v_demosaic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/v_gamma_lut_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/v_tc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axis_subset_converter_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/hls_rect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/hls_preprocess_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axis_subset_converter_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_dma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_smc_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/Accel_Conv_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/hls_rect_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cam_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1788.094 ; gain = 243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1788.094 ; gain = 243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1788.094 ; gain = 243.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2407.273 ; gain = 863.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2407.797 ; gain = 863.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2428.660 ; gain = 884.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |cam_xbar_0                    |         1|
+|2     |cam_auto_pc_0                 |         1|
+|3     |cam_Accel_Conv_0_0            |         1|
+|4     |cam_axi_dma_0_0               |         1|
+|5     |cam_axi_smc_0                 |         1|
+|6     |cam_axi_smc_1_0               |         1|
+|7     |cam_axi_vdma_0_0              |         1|
+|8     |cam_axi_vdma_1_0              |         1|
+|9     |cam_axis_broadcaster_0_0      |         1|
+|10    |cam_axis_data_fifo_0_0        |         1|
+|11    |cam_axis_subset_converter_0_0 |         1|
+|12    |cam_axis_subset_converter_1_0 |         1|
+|13    |cam_axis_subset_converter_2_0 |         1|
+|14    |cam_clk_wiz_0_0               |         1|
+|15    |cam_clk_wiz_1_0               |         1|
+|16    |cam_hls_preprocess_0_0        |         1|
+|17    |cam_hls_rect_0_0              |         1|
+|18    |cam_hls_rect_1_0              |         1|
+|19    |cam_mipi_csi2_rx_subsyst_0_0  |         1|
+|20    |cam_rst_ps8_0_250M_0          |         1|
+|21    |cam_smartconnect_0_0          |         1|
+|22    |cam_util_vector_logic_0_0     |         1|
+|23    |cam_util_vector_logic_1_0     |         1|
+|24    |cam_v_axi4s_vid_out_0_0       |         1|
+|25    |cam_v_demosaic_0_0            |         1|
+|26    |cam_v_gamma_lut_0_0           |         1|
+|27    |cam_v_tc_0_0                  |         1|
+|28    |cam_zynq_ultra_ps_e_0_0       |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |cam_Accel_Conv_0            |     1|
+|2     |cam_auto_pc                 |     1|
+|3     |cam_axi_dma_0               |     1|
+|4     |cam_axi_smc                 |     1|
+|5     |cam_axi_smc_1               |     1|
+|6     |cam_axi_vdma_0              |     1|
+|7     |cam_axi_vdma_1              |     1|
+|8     |cam_axis_broadcaster_0      |     1|
+|9     |cam_axis_data_fifo_0        |     1|
+|10    |cam_axis_subset_converter_0 |     1|
+|11    |cam_axis_subset_converter_1 |     1|
+|12    |cam_axis_subset_converter_2 |     1|
+|13    |cam_clk_wiz_0               |     1|
+|14    |cam_clk_wiz_1               |     1|
+|15    |cam_hls_preprocess_0        |     1|
+|16    |cam_hls_rect_0              |     1|
+|17    |cam_hls_rect_1              |     1|
+|18    |cam_mipi_csi2_rx_subsyst_0  |     1|
+|19    |cam_rst_ps8_0_250M          |     1|
+|20    |cam_smartconnect_0          |     1|
+|21    |cam_util_vector_logic_0     |     1|
+|22    |cam_util_vector_logic_1     |     1|
+|23    |cam_v_axi4s_vid_out_0       |     1|
+|24    |cam_v_demosaic_0            |     1|
+|25    |cam_v_gamma_lut_0           |     1|
+|26    |cam_v_tc_0                  |     1|
+|27    |cam_xbar                    |     1|
+|28    |cam_zynq_ultra_ps_e_0       |     1|
+|29    |IBUF                        |     2|
+|30    |OBUF                        |     3|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2435.465 ; gain = 891.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 2435.465 ; gain = 802.691
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2435.465 ; gain = 891.191
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2447.480 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2466.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+109 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 2466.992 ; gain = 1386.504
+INFO: [Common 17-1381] The checkpoint 'D:/FINAL/base/base.runs/synth_1/cam_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_wrapper_utilization_synth.rpt -pb cam_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 20 09:21:50 2021...

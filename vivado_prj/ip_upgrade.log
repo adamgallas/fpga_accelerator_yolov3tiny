@@ -1,0 +1,100 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Aug 20 09:14:23 2021
+| Host         : ADAM-GALLAS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cam_hls_rect_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cam_hls_rect_1_0 (xilinx.com:hls:hls_rect:1.0) from (Rev. 2108081410) to (Rev. 2108200909)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Aug 20 09:14:23 2021
+| Host         : ADAM-GALLAS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cam_hls_rect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cam_hls_rect_0_0 (xilinx.com:hls:hls_rect:1.0) from (Rev. 2108081410) to (Rev. 2108200909)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Aug  8 14:14:01 2021
+| Host         : ADAM-GALLAS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cam_hls_rect_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cam_hls_rect_1_0 (xilinx.com:hls:hls_rect:1.0) from (Rev. 2108081233) to (Rev. 2108081410)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Aug  8 14:14:01 2021
+| Host         : ADAM-GALLAS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cam_hls_rect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cam_hls_rect_0_0 (xilinx.com:hls:hls_rect:1.0) from (Rev. 2108081233) to (Rev. 2108081410)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Aug  8 12:37:57 2021
+| Host         : ADAM-GALLAS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cam_hls_rect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cam_hls_rect_0_0 (xilinx.com:hls:hls_rect:1.0) from (Rev. 2107212152) to (Rev. 2108081233)
+

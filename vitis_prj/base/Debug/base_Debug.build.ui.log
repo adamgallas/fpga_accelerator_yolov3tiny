@@ -1,0 +1,57 @@
+2021-08-29T16:51:08.400080900255-16:51:08 **** Build of configuration Debug for project base ****
+000-make all 
+000-'Building file: ../src/accel.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/accel.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/accel.d" -MT"src/accel.o" -o "src/accel.o" "../src/accel.c"
+000-In file included from ../src/accel_data.h:9,
+000-                 from ../src/accel.h:5,
+000-                 from ../src/accel.c:1:
+000/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h65-1-1#pragma message: For the sleep routines, Global timer is being used0-D:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-'Finished building: ../src/accel.c'
+000-' '
+000-'Building file: ../src/accel_data.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/accel_data.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/accel_data.d" -MT"src/accel_data.o" -o "src/accel_data.o" "../src/accel_data.c"
+000-In file included from ../src/accel.h:8,
+000-                 from ../src/accel_data.h:8,
+000-                 from ../src/accel_data.c:1:
+000/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h65-1-1#pragma message: For the sleep routines, Global timer is being used0-D:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-'Finished building: ../src/accel_data.c'
+000-' '
+000-'Building file: ../src/dp_interrupt.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dp_interrupt.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/dp_interrupt.d" -MT"src/dp_interrupt.o" -o "src/dp_interrupt.o" "../src/dp_interrupt.c"
+000-'Finished building: ../src/dp_interrupt.c'
+000-' '
+000-'Building file: ../src/dp_setup.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dp_setup.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/dp_setup.d" -MT"src/dp_setup.o" -o "src/dp_setup.o" "../src/dp_setup.c"
+000-'Finished building: ../src/dp_setup.c'
+000-' '
+000-'Building file: ../src/main.c'
+000-'Invoking: ARM v8 gcc compiler'
+000-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-In file included from ../src/main.c:22:
+000/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h65-1-1#pragma message: For the sleep routines, Global timer is being used0-D:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bspinclude/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-'Finished building: ../src/main.c'
+000-' '
+000-'Building target: base.elf'
+000-'Invoking: ARM v8 gcc linker'
+000-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/FINAL/vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/domain_psu_cortexa53_0/bsplib/lib -o "base.elf"  ./src/accel.o ./src/accel_data.o ./src/dp_interrupt.o ./src/dp_setup.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: base.elf'
+000-' '
+000-'Invoking: ARM v8 Print Size'
+000-aarch64-none-elf-size base.elf  |tee "base.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 185172	   7140	422500928	422693240	1931c978	base.elf
+000-'Finished building: base.elf.size'
+000-' '
+00255-
+16:51:11 Build Finished (took 3s.216ms)
+

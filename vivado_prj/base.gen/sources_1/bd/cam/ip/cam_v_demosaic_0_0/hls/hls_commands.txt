@@ -1,0 +1,2 @@
+
+config_interface -input_reg_mode both -output_reg_mode both

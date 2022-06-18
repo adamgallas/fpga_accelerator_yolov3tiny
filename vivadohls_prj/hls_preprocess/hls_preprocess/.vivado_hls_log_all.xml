@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 6144>' to 'AXIvideo2Mat' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:49:9)" projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:51.032+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;32, 258, 418, 6144>' to 'Mat2AXIvideo' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)" projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:50.348+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 6144>'." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:49.212+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 6144>'." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:49.112+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 258 for loop 'loop_height' in function 'hls::Mat2AXIvideo&lt;32, 258, 418, 6144>'." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:49.098+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 418 for loop 'loop_width' in function 'hls::Mat2AXIvideo&lt;32, 258, 418, 6144>'." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:49.089+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'ifm_img.data_stream.V' (top.cpp:13)." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:48.586+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'dst_img.data_stream.V' (top.cpp:12)." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:48.425+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'src_img.data_stream.V' (top.cpp:11)." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:48.414+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR." projectName="hls_preprocess" solutionName="solution1" date="2021-07-20T21:52:48.138+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

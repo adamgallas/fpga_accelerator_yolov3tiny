@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Aug 20 09:21:58 2021
+# Process ID: 5528
+# Current directory: D:/FINAL/base/base.runs/impl_1
+# Command line: vivado.exe -log cam_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cam_wrapper.tcl -notrace
+# Log file: D:/FINAL/base/base.runs/impl_1/cam_wrapper.vdi
+# Journal file: D:/FINAL/base/base.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cam_wrapper.tcl -notrace

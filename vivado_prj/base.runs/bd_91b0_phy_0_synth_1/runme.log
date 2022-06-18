@@ -1,0 +1,2750 @@
+
+*** Running vivado
+    with args -log bd_91b0_phy_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_91b0_phy_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source bd_91b0_phy_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1044.703 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/base/base.runs/bd_91b0_phy_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1044.703 ; gain = 0.000
+Command: synth_design -top bd_91b0_phy_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8640
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_ppm_fifo with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:3713]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5240]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5241]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5242]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5243]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5244]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5245]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5246]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_calib_cntrl with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:5247]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_tx_rst_logic with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:10854]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_rst_logic with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:11368]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_tx_support_rst_logic with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:12099]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_support_rst_logic with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:12474]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_data_lane with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:14908]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_data_lane with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:14909]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_fab_top with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:27476]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_fab_top with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:27477]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_fab_top with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:27478]
+WARNING: [Synth 8-2507] parameter declaration becomes local in mipi_dphy_v4_2_0_rx_fab_top with formal parameter declaration list [d:/base/base.srcs/sources_1/bd/cam/ipshared/3f2e/hdl/mipi_dphy_v4_2_vl_rfs.sv:27512]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:32 . Memory (MB): peak = 1555.598 ; gain = 81.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0.v:91]
+	Parameter C_DPHY_MODE bound to: SLAVE - type: string 
+	Parameter C_DPHY_LANES bound to: 2 - type: integer 
+	Parameter C_HS_LINE_RATE bound to: 280 - type: integer 
+	Parameter C_XMIT_FIRST_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_XMIT_PERIODIC_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_SKEWCAL_FIRST_TIME bound to: 4096 - type: integer 
+	Parameter C_SKEWCAL_PERIODIC_TIME bound to: 128 - type: integer 
+	Parameter C_RCVE_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_LPX_PERIOD bound to: 50 - type: integer 
+	Parameter C_STABLE_CLK_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_ESC_CLK_PERIOD bound to: 50.000000 - type: double 
+	Parameter C_WAKEUP bound to: 1000000 - type: integer 
+	Parameter C_HS_TIMEOUT bound to: 65541 - type: integer 
+	Parameter C_ESC_TIMEOUT bound to: 25600 - type: integer 
+	Parameter MTBF_SYNC_STAGES bound to: 3 - type: integer 
+	Parameter C_EN_TIMEOUT_REGS bound to: 0 - type: integer 
+	Parameter DPHY_PRESET bound to: CSI2RX_XLNX - type: string 
+	Parameter SUPPORT_LEVEL bound to: 1 - type: integer 
+	Parameter C_EN_REG_IF bound to: 0 - type: integer 
+	Parameter C_EN_DEBUG_REGS bound to: 0 - type: integer 
+	Parameter C_EXAMPLE_SIMULATION bound to: false - type: string 
+	Parameter C_TXPLL_CLKIN_PERIOD bound to: 8.000000 - type: double 
+	Parameter C_DIV4_CLK_PERIOD bound to: 28.571000 - type: double 
+	Parameter C_CAL_MODE bound to: FIXED - type: string 
+	Parameter C_EN_SSC bound to: 0 - type: string 
+	Parameter C_IDLY_TAP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_core' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_core.v:93]
+	Parameter C_DPHY_MODE bound to: SLAVE - type: string 
+	Parameter C_DPHY_LANES bound to: 2 - type: integer 
+	Parameter C_HS_LINE_RATE bound to: 280 - type: integer 
+	Parameter C_XMIT_FIRST_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_XMIT_PERIODIC_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_SKEWCAL_FIRST_TIME bound to: 4096 - type: integer 
+	Parameter C_SKEWCAL_PERIODIC_TIME bound to: 128 - type: integer 
+	Parameter C_RCVE_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_LPX_PERIOD bound to: 50 - type: integer 
+	Parameter C_STABLE_CLK_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_ESC_CLK_PERIOD bound to: 50.000000 - type: double 
+	Parameter C_WAKEUP bound to: 1000000 - type: integer 
+	Parameter C_HS_TIMEOUT bound to: 65541 - type: integer 
+	Parameter C_ESC_TIMEOUT bound to: 25600 - type: integer 
+	Parameter MTBF_SYNC_STAGES bound to: 3 - type: integer 
+	Parameter C_EN_TIMEOUT_REGS bound to: 0 - type: integer 
+	Parameter DPHY_PRESET bound to: CSI2RX_XLNX - type: string 
+	Parameter SUPPORT_LEVEL bound to: 1 - type: integer 
+	Parameter C_EN_REG_IF bound to: 0 - type: integer 
+	Parameter C_EN_DEBUG_REGS bound to: 0 - type: integer 
+	Parameter C_EXAMPLE_SIMULATION bound to: false - type: string 
+	Parameter C_TXPLL_CLKIN_PERIOD bound to: 8.000000 - type: double 
+	Parameter C_DIV4_CLK_PERIOD bound to: 28.571000 - type: double 
+	Parameter C_CAL_MODE bound to: FIXED - type: string 
+	Parameter C_EN_SSC bound to: 0 - type: string 
+	Parameter C_IDLY_TAP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_c1' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_c1.v:100]
+	Parameter C_IS_7SERIES bound to: FALSE - type: string 
+	Parameter C_LPRX_DISABLE_EXTPORT bound to: 0 - type: integer 
+	Parameter C_DPHY_MODE bound to: SLAVE - type: string 
+	Parameter C_DPHY_LANES bound to: 2 - type: integer 
+	Parameter C_HS_LINE_RATE bound to: 280 - type: integer 
+	Parameter C_XMIT_FIRST_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_XMIT_PERIODIC_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_SKEWCAL_FIRST_TIME bound to: 4096 - type: integer 
+	Parameter C_SKEWCAL_PERIODIC_TIME bound to: 128 - type: integer 
+	Parameter C_XMIT_ALT_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_RCVE_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_RCVE_ALT_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_LPX_PERIOD bound to: 50 - type: integer 
+	Parameter C_STABLE_CLK_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_ESC_CLK_PERIOD bound to: 50.000000 - type: double 
+	Parameter C_INIT bound to: 100000 - type: integer 
+	Parameter C_WAKEUP bound to: 1000000 - type: integer 
+	Parameter C_EN_ULPS_WAKEUP_CNT bound to: FALSE - type: string 
+	Parameter C_EN_HS_OBUFTDS bound to: FALSE - type: string 
+	Parameter C_USE_LANE0_TXREADYHS bound to: FALSE - type: string 
+	Parameter C_HS_SETTLE_NS bound to: 170 - type: integer 
+	Parameter C_HS_TIMEOUT bound to: 65541 - type: integer 
+	Parameter C_ESC_TIMEOUT bound to: 25600 - type: integer 
+	Parameter MTBF_SYNC_STAGES bound to: 3 - type: integer 
+	Parameter C_EN_TIMEOUT_REGS bound to: 0 - type: integer 
+	Parameter DPHY_PRESET bound to: CSI2RX_XLNX - type: string 
+	Parameter SUPPORT_LEVEL bound to: 1 - type: integer 
+	Parameter C_EN_REG_IF bound to: 0 - type: integer 
+	Parameter C_EN_DEBUG_REGS bound to: 0 - type: integer 
+	Parameter C_EXAMPLE_SIMULATION bound to: false - type: string 
+	Parameter C_TXPLL_CLKIN_PERIOD bound to: 8.000000 - type: double 
+	Parameter C_DIV4_CLK_PERIOD bound to: 28.571000 - type: double 
+	Parameter C_EN_SSC bound to: 0 - type: string 
+	Parameter C_CAL_MODE bound to: FIXED - type: string 
+	Parameter C_IDLY_TAP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_support' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:102]
+	Parameter C_IS_7SERIES bound to: FALSE - type: string 
+	Parameter C_SHARE_IDLYCTRL bound to: false - type: string 
+	Parameter C_DL0_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL1_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL2_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL3_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL4_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL5_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL6_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_DL7_IO_SWAP bound to: 0 - type: integer 
+	Parameter C_EN_CLK300M bound to: FALSE - type: string 
+	Parameter C_LPRX_DISABLE_EXTPORT bound to: 0 - type: integer 
+	Parameter C_DPHY_MODE bound to: SLAVE - type: string 
+	Parameter C_DPHY_LANES bound to: 2 - type: integer 
+	Parameter C_HS_LINE_RATE bound to: 280 - type: integer 
+	Parameter C_XMIT_FIRST_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_XMIT_PERIODIC_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_SKEWCAL_FIRST_TIME bound to: 4096 - type: integer 
+	Parameter C_SKEWCAL_PERIODIC_TIME bound to: 128 - type: integer 
+	Parameter C_XMIT_ALT_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_RCVE_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_RCVE_ALT_DESKEW_SEQ bound to: false - type: string 
+	Parameter C_LPX_PERIOD bound to: 50 - type: integer 
+	Parameter C_STABLE_CLK_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_ESC_CLK_PERIOD bound to: 50.000000 - type: double 
+	Parameter C_INIT bound to: 100000 - type: integer 
+	Parameter C_WAKEUP bound to: 1000000 - type: integer 
+	Parameter C_EN_ULPS_WAKEUP_CNT bound to: FALSE - type: string 
+	Parameter C_EN_HS_OBUFTDS bound to: FALSE - type: string 
+	Parameter C_USE_LANE0_TXREADYHS bound to: FALSE - type: string 
+	Parameter C_HS_SETTLE_NS bound to: 170 - type: integer 
+	Parameter C_HS_TIMEOUT bound to: 65541 - type: integer 
+	Parameter C_ESC_TIMEOUT bound to: 25600 - type: integer 
+	Parameter MTBF_SYNC_STAGES bound to: 3 - type: integer 
+	Parameter C_EN_TIMEOUT_REGS bound to: 0 - type: integer 
+	Parameter DPHY_PRESET bound to: CSI2RX_XLNX - type: string 
+	Parameter SUPPORT_LEVEL bound to: 1 - type: integer 
+	Parameter C_EN_REG_IF bound to: 0 - type: integer 
+	Parameter C_EN_DEBUG_REGS bound to: 0 - type: integer 
+	Parameter C_EXAMPLE_SIMULATION bound to: false - type: string 
+	Parameter C_TXPLL_CLKIN_PERIOD bound to: 8.000000 - type: double 
+	Parameter C_DIV4_CLK_PERIOD bound to: 28.571000 - type: double 
+	Parameter C_CAL_MODE bound to: FIXED - type: string 
+	Parameter C_EN_SSC bound to: 0 - type: string 
+	Parameter C_IDLY_TAP bound to: 0 - type: integer 
+WARNING: [Synth 8-7071] port 'tap_val_dyn_out' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'alt_skew_calb' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'init_periodic_skew_calb' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_valid_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_rd_data_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_addr_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_wr_data_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_wr_en_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_nibble_sel_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'calib_status_l2' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_valid_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_rd_data_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_addr_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_wr_data_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_wr_en_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'riu_nibble_sel_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7071] port 'calib_status_l3' of module 'mipi_dphy_v4_2_0_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+WARNING: [Synth 8-7023] instance 'dphy_rx_fab_top' of module 'mipi_dphy_v4_2_0_rx_fab_top' has 312 connections declared, but only 295 given [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:684]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_hssio_rx' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/synth/bd_91b0_phy_0_hssio_rx.v:82]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_0.v:51]
+	Parameter C_REC_IN_FREQ bound to: 93.750 - type: string 
+	Parameter C_ENABLE_N_PINS bound to: 1 - type: integer 
+	Parameter C_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BANK bound to: 66 - type: integer 
+	Parameter C_TEMPLATE bound to: 2 - type: integer 
+	Parameter C_EXDES_BANK bound to: 64_(HP) - type: string 
+	Parameter C_DIV_MODE bound to: DIV4 - type: string 
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_CLKIN_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_PLL0_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL1_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL0_CLKOUTPHY_MODE bound to: VCO - type: string 
+	Parameter C_PLL1_CLKOUTPHY_MODE bound to: VCO - type: string 
+	Parameter C_PLL0_RX_EXTERNAL_CLK_TO_DATA bound to: 3 - type: integer 
+	Parameter C_ENABLE_PLL0_PLLOUTFB bound to: 0 - type: integer 
+	Parameter C_PLL0_CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter C_PLL0_DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter C_PLL1_CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter C_PLL1_DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter C_ENABLE_PLL0_PLLOUT1 bound to: 0 - type: integer 
+	Parameter C_PLL0_CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter C_PLL0_MMCM_CLKFBOUT_MULT_F bound to: 7.875000 - type: double 
+	Parameter C_PLL0_MMCM_DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter C_PLL0_MMCM_CLKOUT0_DIVIDE_F bound to: 7.875000 - type: double 
+	Parameter C_PLL0_FIFO_WRITE_CLK_EN bound to: 1 - type: integer 
+	Parameter C_PLL0_CLK_SOURCE bound to: BUFG_TO_PLL - type: string 
+	Parameter C_RX_DELAY_CASCADE bound to: 0 - type: integer 
+	Parameter C_RX_DELAY_TYPE bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE bound to: 0 - type: integer 
+	Parameter C_RX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT0 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT1 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT2 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT3 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT4 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT5 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT6 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT7 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT8 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT9 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT10 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT11 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT12 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT13 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT14 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT15 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT16 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT17 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT18 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT19 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT20 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT21 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT22 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT23 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT24 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT25 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT26 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT27 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT28 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT29 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT30 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT31 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT32 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT33 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT34 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT35 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT36 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT37 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT38 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT39 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT40 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT41 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT42 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT43 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT44 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT45 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT46 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT47 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT48 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT49 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT50 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT51 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_CLK_FWD_PHASE bound to: 0 - type: integer 
+	Parameter C_TX_DATA_PHASE bound to: 0 - type: integer 
+	Parameter C_DIFFERENTIAL_IO_STD bound to: MIPI_DPHY_DCI - type: string 
+	Parameter C_DIFFERENTIAL_IO_TERMINATION bound to: TERM_100 - type: string 
+	Parameter C_SINGLE_ENDED_IO_STD bound to: NONE - type: string 
+	Parameter C_SINGLE_ENDED_IO_TERMINATION bound to: NONE - type: string 
+	Parameter C_TX_DRIVE_S bound to: NONE - type: string 
+	Parameter C_TX_DRIVE_D bound to: NONE - type: string 
+	Parameter C_TX_SLEW_S bound to: NONE - type: string 
+	Parameter C_TX_SLEW_D bound to: NONE - type: string 
+	Parameter C_TX_PRE_EMPHASIS_S bound to: NONE - type: string 
+	Parameter C_TX_PRE_EMPHASIS_D bound to: NONE - type: string 
+	Parameter C_RX_EQUALIZATION_S bound to: NONE - type: string 
+	Parameter C_RX_EQUALIZATION_D bound to: EQ_NONE - type: string 
+	Parameter C_ENABLE_BITSLIP bound to: 0 - type: integer 
+	Parameter C_ENABLE_DATA_BITSLIP bound to: 0 - type: integer 
+	Parameter C_BITSLIP_MODE bound to: SLIP_PER_BIT - type: string 
+	Parameter C_BITSLIP_VAL bound to: 8'b00101100 
+	Parameter C_ENABLE_RIU_INTERFACE bound to: 0 - type: integer 
+	Parameter C_EN_MULTI_INTF_PORTS bound to: 0 - type: integer 
+	Parameter C_ENABLE_TX_TRI bound to: 0 - type: integer 
+	Parameter C_DATA_TRI bound to: 1 - type: integer 
+	Parameter C_CLOCK_TRI bound to: 1 - type: integer 
+	Parameter C_DEVICE_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DEVICE bound to: xczu3eg - type: string 
+	Parameter C_EN_BSC0 bound to: 1 - type: integer 
+	Parameter C_EN_BSC1 bound to: 0 - type: integer 
+	Parameter C_EN_BSC2 bound to: 0 - type: integer 
+	Parameter C_EN_BSC3 bound to: 0 - type: integer 
+	Parameter C_EN_BSC4 bound to: 0 - type: integer 
+	Parameter C_EN_BSC5 bound to: 0 - type: integer 
+	Parameter C_EN_BSC6 bound to: 0 - type: integer 
+	Parameter C_EN_BSC7 bound to: 0 - type: integer 
+	Parameter C_NIB0_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB1_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB2_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB3_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB4_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB5_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB6_BS0_EN bound to: 0 - type: integer 
+	Parameter C_NIB7_BS0_EN bound to: 0 - type: integer 
+	Parameter C_BS0_INFO bound to: 0 {name bg0_pin0_nc loc G1} 1 {name bg0_pin6_nc loc G3} 2 {name bg1_pin0_nc loc C1} 3 {name bg1_pin6_nc loc B4} 4 {name bg2_pin0_nc loc D7} 5 {name bg2_pin6_nc loc G8} 6 {name bg3_pin0_nc loc B5} 7 {name bg3_pin6_nc loc C8} - type: string 
+	Parameter C_EX_INST_GEN bound to: 0 - type: integer 
+	Parameter C_PIN_INFO bound to: 0 {nibble 0 dir RX sig_type DIFF data_strb Strobe data_strb_org Strobe sig_name clk_rxp loc G1} 1 {nibble 0 dir RX sig_type DIFF data_strb Strobe data_strb_org Strobe sig_name clk_rxn loc F1} 2 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxp0 loc E1} 3 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxn0 loc D1} 4 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxp1 loc F2} 5 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxn1 loc E2} - type: string 
+	Parameter C_STRB_INFO bound to: 5 99 5 5 5 5 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 99 - type: string 
+	Parameter C_ALL_EN_PIN_INFO bound to: 0 {nibble 0 dir RX sig_type DIFF data_strb Strobe data_strb_org Strobe sig_name clk_rxp loc G1} 1 {nibble 0 dir RX sig_type DIFF data_strb Strobe data_strb_org Strobe sig_name clk_rxn loc F1} 2 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxp0 loc E1} 3 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxn0 loc D1} 4 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxp1 loc F2} 5 {nibble 0 dir RX sig_type DIFF data_strb Data data_strb_org Data sig_name data_rxn1 loc E2} - type: string 
+	Parameter C_INCLK_LOC bound to: NONE - type: string 
+	Parameter C_INCLK_PIN bound to: 100 - type: integer 
+	Parameter C_GC_LOC bound to: 21 {name IO_L11P_T1U_N8_GC_66 loc D4} 23 {name IO_L12P_T1U_N10_GC_66 loc C3} 28 {name IO_L14P_T2L_N2_GC_66 loc E5} - type: string 
+	Parameter C_CLK_FWD bound to: 0 - type: integer 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_EN_TX bound to: 0 - type: integer 
+	Parameter C_EN_RX bound to: 1 - type: integer 
+	Parameter C_EN_BIDIR bound to: 0 - type: integer 
+	Parameter C_NIBBLE0_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE1_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE2_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE3_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE4_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE5_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE6_TRI bound to: 0 - type: integer 
+	Parameter C_NIBBLE7_TRI bound to: 0 - type: integer 
+	Parameter C_EN_VTC bound to: 0 - type: integer 
+	Parameter C_ENABLE_RIU_SPLIT bound to: 0 - type: integer 
+	Parameter C_EN_RIU_OR0 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR1 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR2 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR3 bound to: FALSE - type: string 
+	Parameter C_NIB0_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB0_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB0_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB0_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB1_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB1_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB1_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB1_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB2_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB2_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB3_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB3_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB4_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB4_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB5_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB5_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB6_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB6_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB6_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB6_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB7_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB7_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB7_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB7_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_CLK_SIG_TYPE bound to: SINGLE - type: string 
+	Parameter C_RX_BITSLICE0_EN bound to: 8'b00000000 
+	Parameter C_INV_RX_CLK bound to: 8'b00000000 
+	Parameter C_RX_STROBE_EN bound to: 16'b0000000000000011 
+	Parameter C_RX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_TX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_PLL_VCOMIN bound to: 750.000000 - type: double 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter TX_BITSLICE_TRI_EN bound to: 8'b00000000 
+	Parameter C_CLK_FWD_BITSLICE_NO bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_ENABLE bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_CLKIN_DIFF_EN bound to: 0 - type: integer 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_TX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BS_INIT_VAL bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BIDIR_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_ALL_RX_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_RX_PIN_EN bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_DATA_PIN_EN bound to: 3 - type: integer 
+	Parameter C_PLL_SHARING bound to: 0 - type: integer 
+	Parameter C_FIFO_SYNC_MODE bound to: 1 - type: integer 
+	Parameter C_EX_CLK_FREQ bound to: 200.000000 - type: double 
+	Parameter C_PLL0_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL0_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_RX_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_RX_IS_CLK_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_BIDIR_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_IS_RX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_INVERTED bound to: 1'b0 
+	Parameter C_BSC_CTRL_CLK bound to: EXTERNAL - type: string 
+	Parameter C_BSC_EN_DYN_ODLY_MODE bound to: FALSE - type: string 
+	Parameter C_BSC_IDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_ODLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_QDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_READ_IDLE_COUNT bound to: 6'b000000 
+	Parameter C_BSC_REFCLK_SRC bound to: PLLCLK - type: string 
+	Parameter C_BSC_ROUNDING_FACTOR bound to: 16 - type: integer 
+	Parameter C_BSC_RXGATE_EXTEND bound to: FALSE - type: string 
+	Parameter C_BSC_RX_GATING bound to: DISABLE - type: string 
+	Parameter C_BSC_SIM_SPEEDUP bound to: FAST - type: string 
+	Parameter C_BSC_SELF_CALIBRATE bound to: ENABLE - type: string 
+	Parameter C_TX_TRI_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_TRI_INIT bound to: 1'b1 
+	Parameter C_TX_TRI_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_OUTPUT_PHASE_90 bound to: FALSE - type: string 
+	Parameter C_TX_TRI_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_hssio_rx_hssio_wiz_top' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx_hssio_wiz_top.v:48]
+	Parameter C_DEVICE bound to: xczu3eg - type: string 
+	Parameter C_EN_MULTI_INTF bound to: 0 - type: integer 
+	Parameter C_ENABLE_N_PINS bound to: 1 - type: integer 
+	Parameter C_NUM_IO bound to: 52 - type: integer 
+	Parameter C_TEMPLATE bound to: 2 - type: integer 
+	Parameter C_PLL_SHARE bound to: 0 - type: integer 
+	Parameter C_USE_RIU_CLK_FROM_PLL bound to: 0 - type: integer 
+	Parameter C_NUM_BS_CTRL bound to: 8 - type: integer 
+	Parameter C_PLL0_CLK_SOURCE bound to: BUFG_TO_PLL - type: string 
+	Parameter C_PLL0_RX_EXTERNAL_CLK_TO_DATA bound to: 3 - type: integer 
+	Parameter C_CLKIN_DIFF_EN bound to: 0 - type: integer 
+	Parameter C_INCLK_PIN bound to: 100 - type: integer 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_TX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_BIDIR_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_PIN_EN bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_ALL_RX_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_BS_INIT_VAL bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_EN_TX bound to: 0 - type: integer 
+	Parameter C_EN_RX bound to: 1 - type: integer 
+	Parameter C_PLL0_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL1_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL0_CLKOUTPHY_MODE bound to: VCO - type: string 
+	Parameter C_PLL1_CLKOUTPHY_MODE bound to: VCO - type: string 
+	Parameter C_CLKIN_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_PLL0_CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter C_PLL0_DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter C_PLL0_CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter C_PLL1_CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter C_PLL1_DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_EN_BSC0 bound to: 1 - type: integer 
+	Parameter C_EN_BSC1 bound to: 0 - type: integer 
+	Parameter C_EN_BSC2 bound to: 0 - type: integer 
+	Parameter C_EN_BSC3 bound to: 0 - type: integer 
+	Parameter C_EN_BSC4 bound to: 0 - type: integer 
+	Parameter C_EN_BSC5 bound to: 0 - type: integer 
+	Parameter C_EN_BSC6 bound to: 0 - type: integer 
+	Parameter C_EN_BSC7 bound to: 0 - type: integer 
+	Parameter C_BSC_CTRL_CLK bound to: EXTERNAL - type: string 
+	Parameter C_BSC_EN_DYN_ODLY_MODE bound to: FALSE - type: string 
+	Parameter C_BSC_IDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_ODLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_QDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_READ_IDLE_COUNT bound to: 6'b000000 
+	Parameter C_BSC_REFCLK_SRC bound to: PLLCLK - type: string 
+	Parameter C_BSC_ROUNDING_FACTOR bound to: 16 - type: integer 
+	Parameter C_BSC_RXGATE_EXTEND bound to: FALSE - type: string 
+	Parameter C_BSC_RX_GATING bound to: DISABLE - type: string 
+	Parameter C_BSC_SIM_SPEEDUP bound to: FAST - type: string 
+	Parameter C_BSC_SELF_CALIBRATE bound to: ENABLE - type: string 
+	Parameter C_DIV_MODE bound to: DIV4 - type: string 
+	Parameter C_NIB0_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB0_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB0_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB0_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB1_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB1_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB1_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB1_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB2_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB2_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB3_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB3_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB4_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB4_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB5_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB5_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB6_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB6_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB6_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB6_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB7_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB7_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB7_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB7_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_ENABLE_RIU_SPLIT bound to: 0 - type: integer 
+	Parameter C_EN_RIU_OR0 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR1 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR2 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR3 bound to: FALSE - type: string 
+	Parameter C_CLK_FWD_BITSLICE_NO bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_PHASE bound to: 0 - type: integer 
+	Parameter C_TX_DATA_PHASE bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_ENABLE bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_TX_PREEMPHASIS_S bound to: NONE - type: string 
+	Parameter C_TX_PREEMPHASIS_D bound to: NONE - type: string 
+	Parameter C_TX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_TX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_TX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_RX_BITSLICE0_EN bound to: 8'b00000000 
+	Parameter C_RX_STROBE_EN bound to: 16'b0000000000000011 
+	Parameter C_RX_DELAY_CASCADE bound to: 0 - type: integer 
+	Parameter C_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_RX_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_RX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_CLK_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_RX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT51 bound to: 12'b000000000000 
+	Parameter C_RX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_FIFO_SYNC_MODE bound to: 1 - type: integer 
+	Parameter C_BITSLIP_VAL bound to: 8'b00101100 
+	Parameter C_BITSLIP_MODE bound to: SLIP_PER_BIT - type: string 
+	Parameter C_ENABLE_BITSLIP bound to: 0 - type: integer 
+	Parameter C_ENABLE_DATA_BITSLIP bound to: 0 - type: integer 
+	Parameter C_PLL0_FIFO_WRITE_CLK_EN bound to: 1 - type: integer 
+	Parameter C_EN_TX_TRI bound to: 0 - type: integer 
+	Parameter C_DATA_TRI bound to: 1 - type: integer 
+	Parameter C_CLOCK_TRI bound to: 1 - type: integer 
+	Parameter C_BIDIR_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_BIDIR_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_IS_RX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_INVERTED bound to: 1'b0 
+	Parameter C_DATA_PIN_EN bound to: 3 - type: integer 
+	Parameter TX_BITSLICE_TRI_EN bound to: 8'b00000000 
+	Parameter C_TX_TRI_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_TRI_INIT bound to: 1'b1 
+	Parameter C_TX_TRI_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_OUTPUT_PHASE_90 bound to: FALSE - type: string 
+	Parameter C_TX_TRI_DELAY_TYPE0 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE1 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE2 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE3 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE4 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE5 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE6 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE7 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_INV_RX_CLK bound to: 8'b00000000 
+	Parameter C_PLL0_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL0_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_RX_IN_NIB0 bound to: 1'b1 
+	Parameter C_RX_IN_NIB1 bound to: 1'b0 
+	Parameter C_RX_IN_NIB2 bound to: 1'b0 
+	Parameter C_RX_IN_NIB3 bound to: 1'b0 
+	Parameter C_RX_IN_NIB4 bound to: 1'b0 
+	Parameter C_RX_IN_NIB5 bound to: 1'b0 
+	Parameter C_RX_IN_NIB6 bound to: 1'b0 
+	Parameter C_RX_IN_NIB7 bound to: 1'b0 
+	Parameter C_TX_IN_NIB0 bound to: 1'b0 
+	Parameter C_TX_IN_NIB1 bound to: 1'b0 
+	Parameter C_TX_IN_NIB2 bound to: 1'b0 
+	Parameter C_TX_IN_NIB3 bound to: 1'b0 
+	Parameter C_TX_IN_NIB4 bound to: 1'b0 
+	Parameter C_TX_IN_NIB5 bound to: 1'b0 
+	Parameter C_TX_IN_NIB6 bound to: 1'b0 
+	Parameter C_TX_IN_NIB7 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB0 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB1 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB2 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB3 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB4 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB5 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB6 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB7 bound to: 1'b0 
+	Parameter C_NIB0_PLL1 bound to: 1'b0 
+	Parameter C_NIB1_PLL1 bound to: 1'b0 
+	Parameter C_NIB2_PLL1 bound to: 1'b0 
+	Parameter C_NIB3_PLL1 bound to: 1'b0 
+	Parameter C_NIB4_PLL1 bound to: 1'b0 
+	Parameter C_NIB5_PLL1 bound to: 1'b0 
+	Parameter C_NIB6_PLL1 bound to: 1'b0 
+	Parameter C_NIB7_PLL1 bound to: 1'b0 
+	Parameter USE_PLL1 bound to: 1'b0 
+	Parameter RX_CLK_PHASE bound to: SHIFT_0 - type: string 
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_hssio_rx_mipi_iobuf_rx' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/hdl/bd_91b0_phy_0_hssio_rx_mipi_iobuf_rx.v:49]
+	Parameter C_NUM_IO bound to: 52 - type: integer 
+	Parameter C_TEMPLATE bound to: 2 - type: integer 
+	Parameter C_DATA_PIN_EN bound to: 3 - type: integer 
+	Parameter C_CLK_SOURCE bound to: BUFG_TO_PLL - type: string 
+	Parameter C_CLKIN_DIFF_EN bound to: 0 - type: integer 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_TX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_PIN_EN bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_BIDIR_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_PIN_EN_INT bound to: 52'b0000000000000000000000000000000000000000000000010101 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DPHY' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:33108]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: MIPI_DPHY_DCI - type: string 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DPHY' (10#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:33108]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_hssio_rx_mipi_iobuf_rx' (11#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/hdl/bd_91b0_phy_0_hssio_rx_mipi_iobuf_rx.v:49]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_bs_top' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:16955]
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_PLL0_RX_EXTERNAL_CLK_TO_DATA bound to: 3 - type: integer 
+	Parameter C_RX_PIN_EN bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_TEMPLATE bound to: 2 - type: integer 
+	Parameter C_ENABLE_N_PINS bound to: 1 - type: integer 
+	Parameter C_CLK_FWD_BITSLICE_NO bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_PHASE bound to: 0 - type: integer 
+	Parameter C_TX_DATA_PHASE bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_ENABLE bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BS_INIT_VAL bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_TX_PREEMPHASIS_S bound to: NONE - type: string 
+	Parameter C_TX_PREEMPHASIS_D bound to: NONE - type: string 
+	Parameter C_TX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_TX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_TX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_BIDIR_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_RX_BITSLICE0_EN bound to: 8'b00000000 
+	Parameter C_RX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_RX_STROBE_EN bound to: 16'b0000000000000011 
+	Parameter C_RX_DELAY_CASCADE bound to: 0 - type: integer 
+	Parameter C_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_RX_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_RX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_CLK_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_RX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT51 bound to: 12'b000000000000 
+	Parameter C_RX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_FIFO_SYNC_MODE bound to: 1 - type: integer 
+	Parameter C_BITSLIP_VAL bound to: 8'b00101100 
+	Parameter C_BITSLIP_MODE bound to: SLIP_PER_BIT - type: string 
+	Parameter C_ENABLE_BITSLIP bound to: 0 - type: integer 
+	Parameter C_ENABLE_DATA_BITSLIP bound to: 0 - type: integer 
+	Parameter C_FIFO_WR_CLK_EN bound to: 1 - type: integer 
+	Parameter C_EN_TX_TRI bound to: 0 - type: integer 
+	Parameter C_DATA_TRI bound to: 1 - type: integer 
+	Parameter C_CLOCK_TRI bound to: 1 - type: integer 
+	Parameter C_BIDIR_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_BIDIR_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_IS_RX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_INVERTED bound to: 1'b0 
+	Parameter TX_BITSLICE_TRI_EN bound to: 8'b00000000 
+	Parameter C_TX_TRI_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_TRI_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_TX_TRI_INIT bound to: 1'b1 
+	Parameter C_TX_TRI_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_OUTPUT_PHASE_90 bound to: FALSE - type: string 
+	Parameter C_TX_TRI_DELAY_TYPE0 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE1 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE2 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE3 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE4 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE5 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE6 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE7 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_NIB5_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_tx_bs' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14359]
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_TEMPLATE bound to: 2 - type: integer 
+	Parameter C_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_EN_TX_TRI bound to: 0 - type: integer 
+	Parameter C_DATA_TRI bound to: 1 - type: integer 
+	Parameter C_TX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_TX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_TX_PREEMPHASIS_S bound to: NONE - type: string 
+	Parameter C_TX_PREEMPHASIS_D bound to: NONE - type: string 
+	Parameter C_CLK_FWD_BITSLICE_NO bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_PHASE bound to: 0 - type: integer 
+	Parameter C_TX_DATA_PHASE bound to: 0 - type: integer 
+	Parameter C_CLK_FWD_ENABLE bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_BITSLICE_TRI_EN bound to: 8'b00000000 
+	Parameter C_TX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BS_INIT_VAL bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_TX_DELAY_TYPE bound to: 104'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_DELAY_VALUE bound to: 624'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_tx_bs' (12#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14359]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_tx_bs_tri' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:9941]
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE0 bound to: 0 - type: integer 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_TX_TRI_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_TX_TRI_INIT bound to: 1'b1 
+	Parameter C_TX_TRI_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_TX_TRI_NATIVE_ODELAY_BYPASS bound to: FALSE - type: string 
+	Parameter C_TX_TRI_OUTPUT_PHASE_90 bound to: FALSE - type: string 
+	Parameter C_TX_TRI_DELAY_TYPE1 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE2 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE3 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE4 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE5 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE6 bound to: 0 - type: integer 
+	Parameter C_TX_TRI_DELAY_TYPE7 bound to: 0 - type: integer 
+	Parameter TX_BITSLICE_TRI_EN bound to: 8'b00000000 
+	Parameter C_TX_TRI_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_TRI_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_TX_DELAY_TYPE bound to: 16'b0000000000000000 
+	Parameter C_TX_DELAY_VALUE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_tx_bs_tri' (13#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:9941]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_rx_bs' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10344]
+	Parameter C_ENABLE_N_PINS bound to: 1 - type: integer 
+	Parameter C_RX_PIN_EN bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_TEMPLATE bound to: 2 - type: integer 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_RX_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_RX_STROBE_EN bound to: 16'b0000000000000011 
+	Parameter C_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_RX_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_RX_IS_CLK_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_CLK_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_EXT_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_RX_IS_RST_INVERTED bound to: 1'b0 
+	Parameter C_RX_DELAY_CASCADE bound to: 0 - type: integer 
+	Parameter C_RX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT51 bound to: 12'b000000000000 
+	Parameter C_RX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_FIFO_SYNC_MODE bound to: 1 - type: integer 
+	Parameter C_FIFO_WR_CLK_EN bound to: 1 - type: integer 
+	Parameter C_ENABLE_BITSLIP bound to: 0 - type: integer 
+	Parameter C_ENABLE_DATA_BITSLIP bound to: 0 - type: integer 
+	Parameter C_BITSLIP_MODE bound to: SLIP_PER_BIT - type: string 
+	Parameter C_BITSLIP_VAL bound to: 8'b00101100 
+	Parameter C_RX_BITSLICE0_EN bound to: 8'b00000000 
+	Parameter C_NIB5_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_CASCADE bound to: FALSE - type: string 
+	Parameter EN_N_PINS_M bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_RX_BS_INST bound to: 52'b0000000000000000000000000000000000000000000000010101 
+	Parameter C_RX_DELAY_TYPE bound to: 104'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_DELAY_VALUE bound to: 624'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_DELAY_VALUE_EXT bound to: 624'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_FIFO_MODE bound to: TRUE - type: string 
+	Parameter C_BITSLIP_MODE_ACT bound to: Slip - type: string 
+	Parameter C_BITSLIP_VAL_ACT bound to: 3'b001 
+	Parameter C_BITSLIP_COMP_VAL_ACT bound to: 8'b00101100 
+	Parameter C_STROBE_EN_SET bound to: 52'b0000000000000000000000000000000000000000000000000001 
+	Parameter C_STROBE_BS bound to: 52'b0000000000000000000000000000000000000000000000000011 
+	Parameter C_RX_BITSLICE_INFER bound to: 52'b0000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'RX_BITSLICE' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:77905]
+	Parameter CASCADE bound to: FALSE - type: string 
+	Parameter DATA_TYPE bound to: DATA_AND_CLOCK - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter DELAY_VALUE_EXT bound to: 0 - type: integer 
+	Parameter FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter IS_CLK_EXT_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_DLY_EXT_INVERTED bound to: 1'b0 
+	Parameter IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 1500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+	Parameter UPDATE_MODE_EXT bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'RX_BITSLICE' (14#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:77905]
+INFO: [Synth 8-6157] synthesizing module 'RX_BITSLICE__parameterized0' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:77905]
+	Parameter CASCADE bound to: FALSE - type: string 
+	Parameter DATA_TYPE bound to: DATA - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DELAY_FORMAT bound to: TIME - type: string 
+	Parameter DELAY_TYPE bound to: FIXED - type: string 
+	Parameter DELAY_VALUE bound to: 0 - type: integer 
+	Parameter DELAY_VALUE_EXT bound to: 0 - type: integer 
+	Parameter FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter IS_CLK_EXT_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_RST_DLY_EXT_INVERTED bound to: 1'b0 
+	Parameter IS_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REFCLK_FREQUENCY bound to: 1500.000000 - type: double 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter UPDATE_MODE bound to: ASYNC - type: string 
+	Parameter UPDATE_MODE_EXT bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'RX_BITSLICE__parameterized0' (14#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:77905]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_rx_bs' (15#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10344]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_rxtx_bs' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5372]
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_DIFF_EN bound to: 52'b0000000000000000000000000000000000000000000000111111 
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_PLL0_RX_EXTERNAL_CLK_TO_DATA bound to: 3 - type: integer 
+	Parameter C_BIDIR_FIFO_SYNC_MODE bound to: FALSE - type: string 
+	Parameter C_BIDIR_RX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_TX_DELAY_FORMAT bound to: TIME - type: string 
+	Parameter C_BIDIR_IS_RX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_RX_RST_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_CLK_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_DLY_INVERTED bound to: 1'b0 
+	Parameter C_BIDIR_IS_TX_RST_INVERTED bound to: 1'b0 
+	Parameter C_RX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_RX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_RX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_RX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_CLOCK_TRI bound to: 1 - type: integer 
+	Parameter C_DATA_TRI bound to: 1 - type: integer 
+	Parameter C_FIFO_SYNC_MODE bound to: 1 - type: integer 
+	Parameter C_RX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_RX_STROBE_EN bound to: 16'b0000000000000011 
+	Parameter C_TX_DELAY_TYPE0 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE1 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE2 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE3 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE4 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE5 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE6 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE7 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE8 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE9 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE10 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE11 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE12 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE13 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE14 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE15 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE16 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE17 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE18 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE19 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE20 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE21 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE22 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE23 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE24 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE25 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE26 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE27 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE28 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE29 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE30 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE31 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE32 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE33 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE34 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE35 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE36 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE37 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE38 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE39 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE40 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE41 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE42 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE43 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE44 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE45 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE46 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE47 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE48 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE49 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE50 bound to: 2'b00 
+	Parameter C_TX_DELAY_TYPE51 bound to: 2'b00 
+	Parameter C_TX_DELAY_VALUE0 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE1 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE2 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE3 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE4 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE5 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE6 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE7 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE8 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE9 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE10 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE11 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE12 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE13 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE14 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE15 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE16 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE17 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE18 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE19 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE20 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE21 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE22 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE23 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE24 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE25 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE26 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE27 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE28 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE29 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE30 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE31 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE32 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE33 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE34 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE35 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE36 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE37 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE38 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE39 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE40 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE41 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE42 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE43 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE44 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE45 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE46 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE47 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE48 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE49 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE50 bound to: 12'b000000000000 
+	Parameter C_TX_DELAY_VALUE51 bound to: 12'b000000000000 
+	Parameter C_TX_REFCLK_FREQ bound to: 1500.000000 - type: double 
+	Parameter C_FIFO_WR_CLK_EN bound to: 1 - type: integer 
+	Parameter C_ENABLE_BITSLIP bound to: 0 - type: integer 
+	Parameter C_BITSLIP_MODE bound to: SLIP_PER_BIT - type: string 
+	Parameter C_BIDIR_BITSLICE_EN bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BS_INIT_VAL bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BITSLIP_VAL bound to: 8'b00101100 
+	Parameter C_NIB5_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_TX_PREEMPHASIS_S bound to: NONE - type: string 
+	Parameter C_TX_PREEMPHASIS_D bound to: NONE - type: string 
+	Parameter C_FIFO_MODE bound to: TRUE - type: string 
+	Parameter C_RX_DELAY_TYPE bound to: 104'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_DELAY_VALUE bound to: 624'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_DELAY_TYPE bound to: 104'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_TX_DELAY_VALUE bound to: 624'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_TBYTE_CTRL bound to: 52'b0000000000000000000000000000000000000000000000000000 
+	Parameter C_BITSLIP_MODE_ACT bound to: Slip - type: string 
+	Parameter C_BITSLIP_VAL_ACT bound to: 3'b001 
+	Parameter C_BITSLIP_COMP_VAL_ACT bound to: 8'b00101100 
+	Parameter C_STROBE_EN_SET bound to: 52'b0000000000000000000000000000000000000000000000000001 
+	Parameter C_STROBE_BS bound to: 52'b0000000000000000000000000000000000000000000000000011 
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_rxtx_bs' (16#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5372]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_bs_top' (17#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:16955]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_bs_ctrl_top' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1624]
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_EN_BSC0 bound to: 1 - type: integer 
+	Parameter C_EN_BSC1 bound to: 0 - type: integer 
+	Parameter C_EN_BSC2 bound to: 0 - type: integer 
+	Parameter C_EN_BSC3 bound to: 0 - type: integer 
+	Parameter C_EN_BSC4 bound to: 0 - type: integer 
+	Parameter C_EN_BSC5 bound to: 0 - type: integer 
+	Parameter C_EN_BSC6 bound to: 0 - type: integer 
+	Parameter C_EN_BSC7 bound to: 0 - type: integer 
+	Parameter C_INV_RX_CLK bound to: 8'b00000000 
+	Parameter C_BSC_CTRL_CLK bound to: EXTERNAL - type: string 
+	Parameter C_BSC_EN_DYN_ODLY_MODE bound to: FALSE - type: string 
+	Parameter C_BSC_IDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_ODLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_QDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter C_BSC_READ_IDLE_COUNT bound to: 6'b000000 
+	Parameter C_BSC_REFCLK_SRC bound to: PLLCLK - type: string 
+	Parameter C_BSC_ROUNDING_FACTOR bound to: 16 - type: integer 
+	Parameter C_BSC_RXGATE_EXTEND bound to: FALSE - type: string 
+	Parameter C_BSC_RX_GATING bound to: DISABLE - type: string 
+	Parameter C_BSC_SIM_SPEEDUP bound to: FAST - type: string 
+	Parameter C_BSC_SELF_CALIBRATE bound to: ENABLE - type: string 
+	Parameter C_DIV_MODE bound to: DIV4 - type: string 
+	Parameter C_NIB0_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB0_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB0_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB0_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB1_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB1_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB1_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB1_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB2_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB2_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB2_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB3_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB3_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB3_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB4_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB4_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB4_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB5_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB5_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB5_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB6_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB6_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB6_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB6_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_NIB7_EN_CLK_TO_EXT_NORTH bound to: 1'b0 
+	Parameter C_NIB7_EN_CLK_TO_EXT_SOUTH bound to: 1'b0 
+	Parameter C_NIB7_EN_OTHER_PCLK bound to: 1'b0 
+	Parameter C_NIB7_EN_OTHER_NCLK bound to: 1'b0 
+	Parameter C_ENABLE_RIU_SPLIT bound to: 0 - type: integer 
+	Parameter C_EN_RIU_OR0 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR1 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR2 bound to: FALSE - type: string 
+	Parameter C_EN_RIU_OR3 bound to: FALSE - type: string 
+	Parameter C_RX_CLK_PHASE bound to: SHIFT_0 - type: string 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_NUM_BS_CTRL bound to: 8 - type: integer 
+	Parameter C_TX_IN_NIB0 bound to: 1'b0 
+	Parameter C_TX_IN_NIB1 bound to: 1'b0 
+	Parameter C_TX_IN_NIB2 bound to: 1'b0 
+	Parameter C_TX_IN_NIB3 bound to: 1'b0 
+	Parameter C_TX_IN_NIB4 bound to: 1'b0 
+	Parameter C_TX_IN_NIB5 bound to: 1'b0 
+	Parameter C_TX_IN_NIB6 bound to: 1'b0 
+	Parameter C_TX_IN_NIB7 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB0 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB1 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB2 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB3 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB4 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB5 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB6 bound to: 1'b0 
+	Parameter C_BIDIR_IN_NIB7 bound to: 1'b0 
+	Parameter C_RX_IN_NIB0 bound to: 1'b1 
+	Parameter C_RX_IN_NIB1 bound to: 1'b0 
+	Parameter C_RX_IN_NIB2 bound to: 1'b0 
+	Parameter C_RX_IN_NIB3 bound to: 1'b0 
+	Parameter C_RX_IN_NIB4 bound to: 1'b0 
+	Parameter C_RX_IN_NIB5 bound to: 1'b0 
+	Parameter C_RX_IN_NIB6 bound to: 1'b0 
+	Parameter C_RX_IN_NIB7 bound to: 1'b0 
+	Parameter C_RX_IN_NIB bound to: 8'b00000001 
+	Parameter C_TX_IN_NIB bound to: 8'b00000000 
+	Parameter C_BIDIR_IN_NIB bound to: 8'b00000000 
+	Parameter C_NIB_EN_CLK_TO_EXT_NORTH bound to: 8'b00000000 
+	Parameter C_NIB_EN_CLK_TO_EXT_SOUTH bound to: 8'b00000000 
+	Parameter C_NIB_EN_OTHER_PCLK bound to: 8'b00000000 
+	Parameter C_NIB_EN_OTHER_NCLK bound to: 8'b00000000 
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:740]
+	Parameter CTRL_CLK bound to: EXTERNAL - type: string 
+	Parameter DIV_MODE bound to: DIV4 - type: string 
+	Parameter EN_CLK_TO_EXT_NORTH bound to: DISABLE - type: string 
+	Parameter EN_CLK_TO_EXT_SOUTH bound to: DISABLE - type: string 
+	Parameter EN_DYN_ODLY_MODE bound to: FALSE - type: string 
+	Parameter EN_OTHER_NCLK bound to: FALSE - type: string 
+	Parameter EN_OTHER_PCLK bound to: FALSE - type: string 
+	Parameter IDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter INV_RXCLK bound to: FALSE - type: string 
+	Parameter ODLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter QDLY_VT_TRACK bound to: TRUE - type: string 
+	Parameter READ_IDLE_COUNT bound to: 6'b000000 
+	Parameter REFCLK_SRC bound to: PLLCLK - type: string 
+	Parameter ROUNDING_FACTOR bound to: 16 - type: integer 
+	Parameter RXGATE_EXTEND bound to: FALSE - type: string 
+	Parameter RX_CLK_PHASE_N bound to: SHIFT_0 - type: string 
+	Parameter RX_CLK_PHASE_P bound to: SHIFT_0 - type: string 
+	Parameter RX_GATING bound to: DISABLE - type: string 
+	Parameter SELF_CALIBRATE bound to: ENABLE - type: string 
+	Parameter SERIAL_MODE bound to: FALSE - type: string 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter SIM_SPEEDUP bound to: FAST - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter TX_GATING bound to: DISABLE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL' (18#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:740]
+INFO: [Synth 8-6157] synthesizing module 'RIU_OR' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:77705]
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter SIM_VERSION bound to: 2.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'RIU_OR' (19#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:77705]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_bs_ctrl_top' (20#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1624]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_clk_rst_top' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1409]
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_DEVICE bound to: xczu3eg - type: string 
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_EN_MULTI_INTF bound to: 0 - type: integer 
+	Parameter C_PLL_SHARE bound to: 0 - type: integer 
+	Parameter C_PLL0_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL1_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL0_PHY_MODE bound to: VCO - type: string 
+	Parameter C_PLL1_PHY_MODE bound to: VCO - type: string 
+	Parameter C_CLKIN_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_PLL0_M bound to: 15 - type: integer 
+	Parameter C_PLL0_D bound to: 2 - type: integer 
+	Parameter C_PLL0_O1 bound to: 1 - type: integer 
+	Parameter C_PLL1_M bound to: 15 - type: integer 
+	Parameter C_PLL1_D bound to: 2 - type: integer 
+	Parameter C_EN_TX bound to: 0 - type: integer 
+	Parameter C_EN_RX bound to: 1 - type: integer 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_PLL0_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL0_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_USE_RIU_CLK_FROM_PLL bound to: 0 - type: integer 
+	Parameter C_PLL0_RX_EXTERNAL_CLK_TO_DATA bound to: 3 - type: integer 
+	Parameter USE_PLL1 bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_clk_scheme' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:975]
+	Parameter C_SIM_DEVICE bound to: ULTRASCALE_PLUS_ES1 - type: string 
+	Parameter C_SIM_VERSION bound to: 2.000000 - type: double 
+	Parameter C_DEVICE bound to: xczu3eg - type: string 
+	Parameter C_SERIALIZATION_FACTOR bound to: 8 - type: integer 
+	Parameter C_PLL_SHARE bound to: 0 - type: integer 
+	Parameter C_PLL0_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL1_DIV_FACTOR bound to: 1.000000 - type: double 
+	Parameter C_PLL0_PHY_MODE bound to: VCO - type: string 
+	Parameter C_PLL1_PHY_MODE bound to: VCO - type: string 
+	Parameter C_CLKIN_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_PLL0_M bound to: 15 - type: integer 
+	Parameter C_PLL0_D bound to: 2 - type: integer 
+	Parameter C_PLL0_O1 bound to: 1 - type: integer 
+	Parameter C_PLL1_M bound to: 15 - type: integer 
+	Parameter C_PLL1_D bound to: 2 - type: integer 
+	Parameter C_EN_TX bound to: 0 - type: integer 
+	Parameter C_EN_RX bound to: 1 - type: integer 
+	Parameter C_PLL0_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL0_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK0_PHASE bound to: 0.000000 - type: double 
+	Parameter C_PLL1_CLK1_PHASE bound to: 0.000000 - type: double 
+	Parameter C_SERIAL_MODE bound to: FALSE - type: string 
+	Parameter C_PLL0_O0 bound to: 8.000000 - type: double 
+	Parameter C_PLL1_O0 bound to: 8.000000 - type: double 
+INFO: [Synth 8-6157] synthesizing module 'PLLE4_ADV' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:61762]
+	Parameter CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN_PERIOD bound to: 5.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUTPHY_MODE bound to: VCO - type: string 
+	Parameter COMPENSATION bound to: INTERNAL - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter IS_CLKFBIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE4_ADV' (21#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:61762]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1093]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (22#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1093]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_clk_scheme' (23#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:975]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_rst_scheme' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:332]
+	Parameter C_USE_RIU_CLK_FROM_PLL bound to: 0 - type: integer 
+	Parameter C_EN_MULTI_INTF bound to: 0 - type: integer 
+	Parameter C_PLL0_RX_EXTERNAL_CLK_TO_DATA bound to: 3 - type: integer 
+	Parameter USE_PLL1 bound to: 1'b0 
+	Parameter TIMEOUT_1M bound to: 1000000 - type: integer 
+	Parameter WAIT_FAB_CLK_CNT bound to: 64 - type: integer 
+	Parameter CNTR_WIDTH bound to: 20 - type: integer 
+	Parameter SW bound to: 9 - type: integer 
+	Parameter ONE_HOT bound to: 9'b000000001 
+	Parameter ASSERT_ALL_RESETS bound to: 9'b000000001 
+	Parameter DEASSERT_PLL_RESET bound to: 9'b000000010 
+	Parameter WAIT_FOR_PLL_LOCK bound to: 9'b000000100 
+	Parameter DEASSERT_BS_RESETS bound to: 9'b000001000 
+	Parameter ASSERT_PLL_CLKOUTPHYEN bound to: 9'b000010000 
+	Parameter WAIT_FOR_BSC_DLY_RDY bound to: 9'b000100000 
+	Parameter ASSERT_BSC_EN_VTC bound to: 9'b001000000 
+	Parameter WAIT_FOR_BSC_VTC_RDY bound to: 9'b010000000 
+	Parameter RESET_SEQ_DONE bound to: 9'b100000000 
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_0_sync_cell' [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:50]
+	Parameter C_SYNC_STAGE bound to: 2 - type: integer 
+	Parameter C_DW bound to: 1 - type: integer 
+	Parameter pTCQ bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_sync_cell' (24#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_rst_scheme' (25#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:332]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_0_clk_rst_top' (26#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/bc56/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1409]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_hssio_rx_hssio_wiz_top' (27#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx_hssio_wiz_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_0' (28#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx_high_speed_selectio_wiz_v3_6_0.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_hssio_rx' (29#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/synth/bd_91b0_phy_0_hssio_rx.v:82]
+WARNING: [Synth 8-7071] port 'pll0_clkout0' of module 'bd_91b0_phy_0_hssio_rx' is unconnected for instance 'bd_91b0_phy_0_rx_hssio_i' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:1157]
+WARNING: [Synth 8-7023] instance 'bd_91b0_phy_0_rx_hssio_i' of module 'bd_91b0_phy_0_hssio_rx' has 46 connections declared, but only 45 given [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:1157]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (30#1) [D:/Programs/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0_clock_module' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_clock_module.v:88]
+	Parameter C_DPHY_LANES bound to: 2 - type: integer 
+	Parameter MTBF_SYNC_STAGES bound to: 3 - type: integer 
+	Parameter C_HS_LINE_RATE bound to: 280 - type: integer 
+	Parameter C_STABLE_CLK_PERIOD bound to: 5.000000 - type: double 
+	Parameter C_TXPLL_CLKIN_PERIOD bound to: 8.000000 - type: double 
+	Parameter EN_DPHY_IO bound to: 1 - type: integer 
+	Parameter C_TXPLL_CLKIN_PERIOD_T bound to: 5.000000 - type: double 
+	Parameter C_TXPLL_CLKOUTPHY_MODE bound to: VCO - type: string 
+	Parameter C_PLL_DIVCLK_DIVIDE bound to: 2 - type: integer 
+	Parameter C_TXPLL_CLKFBOUT_MULT bound to: 15 - type: integer 
+	Parameter C_TXPLL_CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter C_TXPLL_CLKOUT1_DIVIDE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_clock_module' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_clock_module.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_support' (32#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/support/bd_91b0_phy_0_support.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_c1' (33#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_c1.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0_core' (34#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_core.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0' (35#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0.v:91]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1720.414 ; gain = 246.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.336 ; gain = 264.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1738.336 ; gain = 264.551
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1738.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1821.820 ; gain = 5.234
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx.xdc] for cell 'inst/inst/bd_91b0_phy_0_rx_support_i/slave_rx.bd_91b0_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx.xdc] for cell 'inst/inst/bd_91b0_phy_0_rx_support_i/slave_rx.bd_91b0_phy_0_rx_hssio_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_91b0_phy_0_hssio_rx.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_91b0_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_91b0_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_91b0_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_91b0_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/base/base.runs/bd_91b0_phy_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/base/base.runs/bd_91b0_phy_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/base/base.runs/bd_91b0_phy_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_91b0_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_91b0_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_91b0_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_91b0_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1821.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.224 . Memory (MB): peak = 1822.902 ; gain = 1.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:15 ; elapsed = 00:01:48 . Memory (MB): peak = 1822.902 ; gain = 349.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:15 ; elapsed = 00:01:48 . Memory (MB): peak = 1822.902 ; gain = 349.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/inst/bd_91b0_phy_0_rx_support_i/\slave_rx.bd_91b0_phy_0_rx_hssio_i /inst. (constraint file  D:/base/base.runs/bd_91b0_phy_0_synth_1/dont_touch.xdc, line 8).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/base/base.runs/bd_91b0_phy_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property DONT_TOUCH = true for inst/inst/bd_91b0_phy_0_rx_support_i/\slave_rx.bd_91b0_phy_0_rx_hssio_i . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1822.902 ; gain = 349.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rst_blk_state_reg' in module 'mipi_dphy_v4_2_0_rx_rst_logic'
+INFO: [Synth 8-802] inferred FSM for state register 'rst_blk_state_reg' in module 'mipi_dphy_v4_2_0_rx_support_rst_logic'
+INFO: [Synth 8-802] inferred FSM for state register 'dl_rx_state_reg' in module 'mipi_dphy_v4_2_0_csi_rx_data_lane_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_hs_high_rates_spec_v1_1.dl_state_reg' in module 'mipi_dphy_v4_2_0_rx_data_lane'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_RIU_NOT_FROM_PLL.hssio_state_reg' in module 'high_speed_selectio_wiz_v3_6_0_rst_scheme'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RST_BEGIN |                              000 |                              000
+       ASSERT_ALL_RESETS |                              001 |                              001
+      RELEASE_MMCM_RESET |                              010 |                              010
+          RESET_FSM_DONE |                              011 |                              101
+         WAIT_FOR_ENABLE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_blk_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_2_0_rx_rst_logic'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RST_BEGIN |                              000 |                              000
+       ASSERT_ALL_RESETS |                              001 |                              001
+       RELEASE_PHY_RESET |                              010 |                              010
+          RESET_FSM_DONE |                              011 |                              100
+              CHECK_SRST |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_blk_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_2_0_rx_support_rst_logic'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             DL_RX_BEGIN |                             0000 |                             0000
+        DL_WO_INIT_LP_11 |                             0001 |                             0001
+                  iSTATE |                             0010 |                             1111
+*
+         DL_RX_INIT_DONE |                             0011 |                             0010
+              DL_RX_STOP |                             0100 |                             0011
+           DL_RX_HS_RQST |                             0101 |                             0100
+           DL_RX_HS_TERM |                             0110 |                             0101
+           DL_RX_HS_SYNC |                             0111 |                             0110
+            DL_RX_HS_RUN |                             1000 |                             0111
+          DL_RX_HS_ABORT |                             1001 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dl_rx_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_2_0_csi_rx_data_lane_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                DL_START |                               00 |                               00
+                 DL_STOP |                               01 |                               01
+               DL_ACTIVE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_hs_high_rates_spec_v1_1.dl_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_2_0_rx_data_lane'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+       ASSERT_ALL_RESETS |                        000000001 |                        000000001
+      DEASSERT_PLL_RESET |                        000000010 |                        000000010
+       WAIT_FOR_PLL_LOCK |                        000000100 |                        000000100
+      DEASSERT_BS_RESETS |                        000001000 |                        000001000
+  ASSERT_PLL_CLKOUTPHYEN |                        000010000 |                        000010000
+    WAIT_FOR_BSC_DLY_RDY |                        000100000 |                        000100000
+       ASSERT_BSC_EN_VTC |                        001000000 |                        001000000
+    WAIT_FOR_BSC_VTC_RDY |                        010000000 |                        010000000
+          RESET_SEQ_DONE |                        100000000 |                        100000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'GEN_RIU_NOT_FROM_PLL.hssio_state_reg' in module 'high_speed_selectio_wiz_v3_6_0_rst_scheme'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:25 ; elapsed = 00:02:00 . Memory (MB): peak = 1822.902 ; gain = 349.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               52 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 434   
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 9     
+	  18 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	  12 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	  10 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 145   
+	   5 Input    1 Bit        Muxes := 68    
+	   9 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 36    
+	   3 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:02:20 . Memory (MB): peak = 1822.902 ; gain = 349.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:11 ; elapsed = 00:02:53 . Memory (MB): peak = 2374.887 ; gain = 901.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:56 . Memory (MB): peak = 2411.996 ; gain = 938.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:59 . Memory (MB): peak = 2425.477 ; gain = 951.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:25 ; elapsed = 00:03:10 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:03:10 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:03:11 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:03:11 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:03:11 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:03:11 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |BITSLICE_CONTROL |     1|
+|2     |BUFG             |     1|
+|3     |BUFGCE           |     2|
+|4     |CARRY8           |    14|
+|5     |LUT1             |   400|
+|6     |LUT2             |    70|
+|7     |LUT3             |    60|
+|8     |LUT4             |    59|
+|9     |LUT5             |   121|
+|10    |LUT6             |   265|
+|11    |PLLE4_ADV        |     1|
+|12    |RX_BITSLICE      |     3|
+|14    |FDCE             |    39|
+|15    |FDPE             |    11|
+|16    |FDRE             |   688|
+|17    |FDSE             |    57|
+|18    |IBUFDS_DPHY      |     3|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:26 ; elapsed = 00:03:11 . Memory (MB): peak = 2427.898 ; gain = 954.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:24 ; elapsed = 00:02:39 . Memory (MB): peak = 2427.898 ; gain = 869.547
+Synthesis Optimization Complete : Time (s): cpu = 00:02:26 ; elapsed = 00:03:11 . Memory (MB): peak = 2427.898 ; gain = 954.113
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2427.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+WARNING: [Constraints 18-5254] DIFF_TERM is not supported in UltraScale devices.  Automatically translating DIFF_TERM of TRUE to DIFF_TERM_ADV=TERM_100.  Refer to UG571: UltraScale Architecture SelectIO User Guide for more detail.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance inst/inst/bd_91b0_phy_0_rx_support_i/slave_rx.bd_91b0_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2447.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:57 ; elapsed = 00:04:27 . Memory (MB): peak = 2447.172 ; gain = 1402.469
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/bd_91b0_phy_0_synth_1/bd_91b0_phy_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_91b0_phy_0, cache-ID = 330640cb542471ac
+INFO: [Coretcl 2-1174] Renamed 53 cell refs.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/bd_91b0_phy_0_synth_1/bd_91b0_phy_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_91b0_phy_0_utilization_synth.rpt -pb bd_91b0_phy_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 20 23:20:42 2021...

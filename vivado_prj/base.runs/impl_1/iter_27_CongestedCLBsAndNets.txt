@@ -1,0 +1,32 @@
+List of CLB Tiles
+CLEM_R_X29Y92
+CLEL_R_X29Y92
+CLEL_R_X21Y140
+CLEM_X20Y160
+CLEL_R_X20Y160
+CLEL_R_X31Y157
+CLEM_R_X30Y85
+CLEL_R_X30Y85
+CLEM_R_X30Y87
+CLEL_R_X30Y87
+CLEM_R_X30Y92
+CLEL_R_X30Y92
+CLEM_R_X30Y169
+CLEL_R_X30Y169
+CLEM_R_X29Y91
+CLEL_R_X29Y91
+CLEM_R_X27Y113
+CLEL_R_X27Y113
+
+List of Congested Nets
+cam_i/rst_ps8_0_250M/U0/peripheral_aresetn[0]_repN_20
+cam_i/hls_rect_0/inst/start_for_hls_recbkb_U/internal_full_n_i_2__63_n_1
+cam_i/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/ap_phi_reg_pp0_iter3_pixWindow_val_val_V_17_reg_605[9]_i_2_n_1
+cam_i/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/pixWindow_val_1_val_1_fu_312[9]_i_2_n_1
+cam_i/hls_rect_0/inst/output_img_data_stre_2_U/U_fifo_w8_d2_A_ram/SRL_SIG_reg[0]_0[6]
+cam_i/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/neg_0_i_reg_2616[9]
+cam_i/v_demosaic_0/inst/Debayer_U0/DebayerRatBorBatR_U0/select_ln792_reg_2686[5]_i_15_n_1
+cam_i/hls_rect_0/inst/output_img_data_stre_2_U/mOutPtr_reg_n_1_[1]
+cam_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_91b0_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/gen_csi_rx_data_lane_sm.csi_rx_data_lane_sm/settle_cnt_reg[4]
+cam_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_91b0_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/gen_csi_rx_data_lane_sm.csi_rx_data_lane_sm/settle_cnt_reg[2]
+

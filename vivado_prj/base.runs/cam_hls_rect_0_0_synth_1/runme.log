@@ -1,0 +1,821 @@
+
+*** Running vivado
+    with args -log cam_hls_rect_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_hls_rect_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cam_hls_rect_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FINAL/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/FINAL/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/FINAL/base/base.runs/cam_hls_rect_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+Command: synth_design -top cam_hls_rect_0_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2684
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1539.004 ; gain = 76.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cam_hls_rect_0_0' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_0_0/synth/cam_hls_rect_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'hls_rect' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect.v:12]
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_rect_AXILiteS_s_axi' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_XLEFT_S_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_XLEFT_S_CTRL bound to: 7'b0010100 
+	Parameter ADDR_XRIGHT_S_DATA_0 bound to: 7'b0011000 
+	Parameter ADDR_XRIGHT_S_CTRL bound to: 7'b0011100 
+	Parameter ADDR_YTOP_S_DATA_0 bound to: 7'b0100000 
+	Parameter ADDR_YTOP_S_CTRL bound to: 7'b0100100 
+	Parameter ADDR_YDOWN_S_DATA_0 bound to: 7'b0101000 
+	Parameter ADDR_YDOWN_S_CTRL bound to: 7'b0101100 
+	Parameter ADDR_COLOR1_DATA_0 bound to: 7'b0110000 
+	Parameter ADDR_COLOR1_CTRL bound to: 7'b0110100 
+	Parameter ADDR_COLOR2_DATA_0 bound to: 7'b0111000 
+	Parameter ADDR_COLOR2_CTRL bound to: 7'b0111100 
+	Parameter ADDR_COLOR3_DATA_0 bound to: 7'b1000000 
+	Parameter ADDR_COLOR3_CTRL bound to: 7'b1000100 
+	Parameter ADDR_CHAR1_DATA_0 bound to: 7'b1001000 
+	Parameter ADDR_CHAR1_CTRL bound to: 7'b1001100 
+	Parameter ADDR_CHAR2_DATA_0 bound to: 7'b1010000 
+	Parameter ADDR_CHAR2_CTRL bound to: 7'b1010100 
+	Parameter ADDR_CHAR3_DATA_0 bound to: 7'b1011000 
+	Parameter ADDR_CHAR3_CTRL bound to: 7'b1011100 
+	Parameter ADDR_CHAR4_DATA_0 bound to: 7'b1100000 
+	Parameter ADDR_CHAR4_CTRL bound to: 7'b1100100 
+	Parameter ADDR_CHAR5_DATA_0 bound to: 7'b1101000 
+	Parameter ADDR_CHAR5_CTRL bound to: 7'b1101100 
+	Parameter ADDR_CHAR6_DATA_0 bound to: 7'b1110000 
+	Parameter ADDR_CHAR6_CTRL bound to: 7'b1110100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_AXILiteS_s_axi.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'hls_rect_AXILiteS_s_axi' (1#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hls_rect_entry3' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_entry3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'hls_rect_entry3' (2#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_entry3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'hls_rect_entry304' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_entry304.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'hls_rect_entry304' (3#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect_entry304.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (4#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (5#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (6#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 4 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized1' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized1' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized1' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized1' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized1' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized1' (7#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (8#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Rectangle' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:928]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:930]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:932]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:934]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:936]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:938]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Rectangle' (9#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Rectangle.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Char1' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'Add_Char1_letter' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1_letter.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 864 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Add_Char1_letter_rom' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1_letter.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 864 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Add_Char1_letter_rom.dat' is read successfully [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1_letter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char1_letter_rom' (10#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1_letter.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char1_letter' (11#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1_letter.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:890]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:892]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:894]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:902]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:904]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:906]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:908]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char1' (12#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Char2' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:890]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:892]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:894]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:902]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:904]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:906]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:908]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char2' (13#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Char3' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:890]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:892]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:894]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:902]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:904]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:906]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:908]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char3' (14#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Char4' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:890]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:892]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:894]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:902]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:904]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:906]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:908]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char4' (15#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char4.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Char5' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:890]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:892]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:894]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:902]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:904]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:906]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:908]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char5' (16#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Add_Char6' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:828]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:830]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:832]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:842]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:844]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:846]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:848]
+INFO: [Synth 8-6155] done synthesizing module 'Add_Char6' (17#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Add_Char6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (18#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A_shiftReg' (19#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A' (20#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (21#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (22#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d3_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d3_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d3_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d3_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d3_A_shiftReg' (23#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d3_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d3_A' (24#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d3_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d3_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d3_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d3_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d3_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d3_A_shiftReg' (25#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d3_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d3_A' (26#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d3_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d4_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d4_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d4_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d4_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d4_A_shiftReg' (27#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d4_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d4_A' (28#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d4_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d5_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d5_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d5_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d5_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d5_A_shiftReg' (29#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d5_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d5_A' (30#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d5_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d6_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d6_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d6_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d6_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d6_A_shiftReg' (31#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d6_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d6_A' (32#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d6_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d7_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d7_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d7_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d7_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d7_A_shiftReg' (33#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d7_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d7_A' (34#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d7_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d8_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d8_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d8_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d8_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d8_A_shiftReg' (35#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d8_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d8_A' (36#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d8_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d9_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d9_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 5'b01001 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d9_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d9_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 5'b01001 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d9_A_shiftReg' (37#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d9_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d9_A' (38#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w8_d9_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d4_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d4_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d4_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d4_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d4_A_shiftReg' (39#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d4_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d4_A' (40#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d4_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d5_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d5_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d5_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d5_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d5_A_shiftReg' (41#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d5_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d5_A' (42#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d5_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d6_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d6_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d6_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d6_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d6_A_shiftReg' (43#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d6_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d6_A' (44#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d6_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d7_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d7_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d7_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d7_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d7_A_shiftReg' (45#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d7_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d7_A' (46#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d7_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d8_A' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d8_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d8_A_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d8_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d8_A_shiftReg' (47#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d8_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d8_A' (48#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/fifo_w16_d8_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_hls_recbkb' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_hls_recbkb.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_hls_recbkb_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_hls_recbkb.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_hls_recbkb_shiftReg' (49#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_hls_recbkb.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_hls_recbkb' (50#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_hls_recbkb.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Block_pcud' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Block_pcud.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Block_pcud_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Block_pcud.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Block_pcud_shiftReg' (51#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Block_pcud.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Block_pcud' (52#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Block_pcud.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_ChadEe' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChadEe.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_ChadEe_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChadEe.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_ChadEe_shiftReg' (53#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChadEe.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_ChadEe' (54#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChadEe.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_ChaeOg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChaeOg.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_ChaeOg_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChaeOg.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_ChaeOg_shiftReg' (55#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChaeOg.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_ChaeOg' (56#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChaeOg.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_ChafYi' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChafYi.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_ChafYi_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChafYi.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_ChafYi_shiftReg' (57#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChafYi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_ChafYi' (58#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_ChafYi.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_Chag8j' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chag8j.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_Chag8j_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chag8j.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_Chag8j_shiftReg' (59#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chag8j.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_Chag8j' (60#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chag8j.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_Chahbi' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chahbi.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_Chahbi_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chahbi.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_Chahbi_shiftReg' (61#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chahbi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_Chahbi' (62#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chahbi.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_Chaibs' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chaibs.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_Chaibs_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chaibs.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_Chaibs_shiftReg' (63#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chaibs.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_Chaibs' (64#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_Chaibs.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_RecjbC' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_RecjbC.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Add_RecjbC_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_RecjbC.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_RecjbC_shiftReg' (65#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_RecjbC.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Add_RecjbC' (66#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Add_RecjbC.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIkbM' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Mat2AXIkbM.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIkbM_shiftReg' [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Mat2AXIkbM.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIkbM_shiftReg' (67#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Mat2AXIkbM.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIkbM' (68#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/start_for_Mat2AXIkbM.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'hls_rect' (69#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ipshared/6296/hdl/verilog/hls_rect.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'cam_hls_rect_0_0' (70#1) [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_0_0/synth/cam_hls_rect_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1688.680 ; gain = 225.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1706.590 ; gain = 243.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1706.590 ; gain = 243.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1706.590 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_0_0/constraints/hls_rect_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/FINAL/base/base.srcs/sources_1/bd/cam/ip/cam_hls_rect_0_0/constraints/hls_rect_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/FINAL/base/base.runs/cam_hls_rect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FINAL/base/base.runs/cam_hls_rect_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1832.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.275 . Memory (MB): peak = 1832.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1832.172 ; gain = 369.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1832.172 ; gain = 369.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/FINAL/base/base.runs/cam_hls_rect_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1832.172 ; gain = 369.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'hls_rect_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'hls_rect_AXILiteS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'hls_rect_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'hls_rect_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1832.172 ; gain = 369.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/Mat2AXIvideo_U0/regslice_both_AXI_video_strm_V_id_V_U' (regslice_both__parameterized1) to 'inst/Mat2AXIvideo_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 16    
+	   2 Input   16 Bit       Adders := 5     
+	   3 Input   16 Bit       Adders := 6     
+	   3 Input   12 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 9     
+	   2 Input   10 Bit       Adders := 15    
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 12    
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 74    
++---XORs : 
+	   2 Input      1 Bit         XORs := 24    
++---Registers : 
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 6     
+	               17 Bit    Registers := 16    
+	               16 Bit    Registers := 57    
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 18    
+	                8 Bit    Registers := 181   
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 27    
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 103   
+	                1 Bit    Registers := 314   
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 2     
+	  18 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	 865 Input   16 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 12    
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 83    
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 17    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 21    
+	   4 Input    2 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 42    
+	   2 Input    1 Bit        Muxes := 553   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:56 . Memory (MB): peak = 1832.172 ; gain = 369.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 2374.660 ; gain = 911.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:19 . Memory (MB): peak = 2410.137 ; gain = 947.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 2477.633 ; gain = 1014.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | SRL_SIG_reg[4] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | SRL_SIG_reg[5] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | SRL_SIG_reg[6] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__6     | SRL_SIG_reg[7] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__7     | SRL_SIG_reg[8] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | SRL_SIG_reg[3] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | SRL_SIG_reg[4] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__10    | SRL_SIG_reg[5] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | SRL_SIG_reg[6] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__12    | SRL_SIG_reg[7] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__13    | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__14    | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__15    | SRL_SIG_reg[4] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__16    | SRL_SIG_reg[5] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__17    | SRL_SIG_reg[6] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__18    | SRL_SIG_reg[7] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__19    | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |   111|
+|2     |LUT1   |   182|
+|3     |LUT2   |   632|
+|4     |LUT3   |   523|
+|5     |LUT4   |  1290|
+|6     |LUT5   |   286|
+|7     |LUT6   |  2118|
+|8     |MUXF7  |   352|
+|9     |MUXF8  |   175|
+|10    |SRL16E |   216|
+|11    |FDRE   |  3395|
+|12    |FDSE   |   391|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:21 . Memory (MB): peak = 2483.395 ; gain = 894.852
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 2483.395 ; gain = 1020.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 2495.445 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 638 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2500.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+188 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:50 . Memory (MB): peak = 2500.672 ; gain = 1272.762
+INFO: [Common 17-1381] The checkpoint 'D:/FINAL/base/base.runs/cam_hls_rect_0_0_synth_1/cam_hls_rect_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cam_hls_rect_0_0, cache-ID = ccb78882bd317ec4
+INFO: [Coretcl 2-1174] Renamed 235 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/FINAL/base/base.runs/cam_hls_rect_0_0_synth_1/cam_hls_rect_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_hls_rect_0_0_utilization_synth.rpt -pb cam_hls_rect_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 20 09:20:08 2021...

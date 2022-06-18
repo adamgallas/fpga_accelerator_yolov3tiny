@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hls_rect" xd:componentRef="hls_rect" xd:initiationInterval="925216" xd:clockPeriod="4.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="video_src.data" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="video_src.keep" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_src.strb" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_src.user" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_src.last" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_src.id" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_src.dest" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.data" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="video_dst.keep" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_dst.strb" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_dst.user" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.last" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.id" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.dest" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="xleft_" xd:originalName="xleft_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="xright_" xd:originalName="xright_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="ytop_" xd:originalName="ytop_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="ydown_" xd:originalName="ydown_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="color1" xd:originalName="color1" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="color2" xd:originalName="color2" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="color3" xd:originalName="color3" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="char1" xd:originalName="char1" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x48" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="char2" xd:originalName="char2" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x50" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="char3" xd:originalName="char3" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x58" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="char4" xd:originalName="char4" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x60" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="char5" xd:originalName="char5" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x68" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="char6" xd:originalName="char6" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x70" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="925215" xd:worst-case="925215" xd:average-case="925215"/>
+  <xd:resourceEstimates xd:LUT="7940" xd:FF="2489" xd:BRAM="6" xd:DSP="0"/>
+</xd:acceleratorMap>

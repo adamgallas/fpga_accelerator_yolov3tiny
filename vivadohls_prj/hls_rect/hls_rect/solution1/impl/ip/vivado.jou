@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Aug 20 09:09:03 2021
+# Process ID: 4100
+# Current directory: D:/fpga-yolo-v3_v2/day_08_08/hls_rect/hls_rect/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/fpga-yolo-v3_v2/day_08_08/hls_rect/hls_rect/solution1/impl/ip/vivado.log
+# Journal file: D:/fpga-yolo-v3_v2/day_08_08/hls_rect/hls_rect/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

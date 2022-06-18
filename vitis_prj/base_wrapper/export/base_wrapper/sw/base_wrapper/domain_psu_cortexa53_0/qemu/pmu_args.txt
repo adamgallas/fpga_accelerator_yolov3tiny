@@ -1,0 +1,8 @@
+-M
+microblaze-fdt
+-device
+loader,file=<base_wrapper/domain_psu_cortexa53_0/qemu/pmufw.elf>
+-machine-path
+.
+-display
+none

@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hls_resize'" level="0">
+<item name = "Date">Mon Jul 19 21:21:48 2021
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">hls_resize</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.500 ns, 0.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">925203, 925203, 3.701 ms, 3.701 ms, 925204, 925204, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_AXIvideo2Mat_fu_228">AXIvideo2Mat, 925203, 925203, 3.701 ms, 3.701 ms, 925203, 925203, none</column>
+<column name="grp_Downsample_fu_250">Downsample, 923761, 923761, 3.695 ms, 3.695 ms, 923761, 923761, none</column>
+<column name="grp_Mat2AXIvideo_fu_262">Mat2AXIvideo, 108877, 108877, 0.436 ms, 0.436 ms, 108877, 108877, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

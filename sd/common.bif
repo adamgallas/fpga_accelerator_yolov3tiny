@@ -1,0 +1,12 @@
+/* C:/Users/galla/AppData/Local/Temp/bootgen_common8639972025130896327/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen -arch zynqmp -image <bif_file> -w -o i BOOT.BIN */
+/*base_wrapper*/
+the_ROM_image:
+{
+ [bootloader, destination_cpu=a53-0] D:/FINAL/base_vitis/base_wrapper/export/base_wrapper/sw/base_wrapper/boot/fsbl.elf
+ [destination_device=pl] D:/FINAL/base_vitis/common/_ide/bitstream/base_wrapper.bit
+ [destination_cpu=a53-0, exception_level=el-3] D:/FINAL/base_vitis/common/Debug/common.elf
+}

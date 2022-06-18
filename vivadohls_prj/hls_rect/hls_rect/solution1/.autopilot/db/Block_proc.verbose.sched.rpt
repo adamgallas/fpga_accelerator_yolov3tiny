@@ -1,0 +1,131 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc'
+================================================================
+* Date:           Fri Aug 20 09:07:29 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        hls_rect
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 2.766 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1| 4.000 ns | 4.000 ns |    1|    1|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.75>
+ST_1 : Operation 3 [1/1] (1.75ns)   --->   "%xleft_read = call i16 @_ssdm_op_Read.ap_fifo.i16P(i16* %xleft_s)" [top.cpp:44]   --->   Operation 3 'read' 'xleft_read' <Predicate = true> <Delay = 1.75> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 2.76>
+ST_2 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %ch6x_out_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str504, i32 0, i32 0, [1 x i8]* @p_str505, [1 x i8]* @p_str506, [1 x i8]* @p_str507, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str508, [1 x i8]* @p_str509)"   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %ch5x_out_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str498, i32 0, i32 0, [1 x i8]* @p_str499, [1 x i8]* @p_str500, [1 x i8]* @p_str501, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str502, [1 x i8]* @p_str503)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %ch4x_out_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str492, i32 0, i32 0, [1 x i8]* @p_str493, [1 x i8]* @p_str494, [1 x i8]* @p_str495, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str496, [1 x i8]* @p_str497)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %ch3x_out_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str486, i32 0, i32 0, [1 x i8]* @p_str487, [1 x i8]* @p_str488, [1 x i8]* @p_str489, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str490, [1 x i8]* @p_str491)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %ch2x_out_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str480, i32 0, i32 0, [1 x i8]* @p_str481, [1 x i8]* @p_str482, [1 x i8]* @p_str483, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str484, [1 x i8]* @p_str485)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %xleft_s, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str475, i32 0, i32 0, [1 x i8]* @p_str476, [1 x i8]* @p_str477, [1 x i8]* @p_str478, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str479, [11 x i8]* @ScalarProp_str)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.01ns)   --->   "%ch2x = add i16 %xleft_read, 32" [top.cpp:40->top.cpp:10]   --->   Operation 10 'add' 'ch2x' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (1.01ns)   --->   "%ch3x = add i16 %xleft_read, 64" [top.cpp:41->top.cpp:10]   --->   Operation 11 'add' 'ch3x' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (1.01ns)   --->   "%ch4x = add i16 %xleft_read, 96" [top.cpp:42->top.cpp:10]   --->   Operation 12 'add' 'ch4x' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (1.01ns)   --->   "%ch5x = add i16 %xleft_read, 128" [top.cpp:43->top.cpp:10]   --->   Operation 13 'add' 'ch5x' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (1.01ns)   --->   "%ch6x = add i16 %xleft_read, 160" [top.cpp:44->top.cpp:10]   --->   Operation 14 'add' 'ch6x' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (1.75ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i16P(i16* %ch2x_out_out, i16 %ch2x)" [top.cpp:40->top.cpp:10]   --->   Operation 15 'write' <Predicate = true> <Delay = 1.75> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 16 [1/1] (1.75ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i16P(i16* %ch3x_out_out, i16 %ch3x)" [top.cpp:41->top.cpp:10]   --->   Operation 16 'write' <Predicate = true> <Delay = 1.75> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 17 [1/1] (1.75ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i16P(i16* %ch4x_out_out, i16 %ch4x)" [top.cpp:42->top.cpp:10]   --->   Operation 17 'write' <Predicate = true> <Delay = 1.75> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 18 [1/1] (1.75ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i16P(i16* %ch5x_out_out, i16 %ch5x)" [top.cpp:43->top.cpp:10]   --->   Operation 18 'write' <Predicate = true> <Delay = 1.75> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 19 [1/1] (1.75ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i16P(i16* %ch6x_out_out, i16 %ch6x)" [top.cpp:44->top.cpp:10]   --->   Operation 19 'write' <Predicate = true> <Delay = 1.75> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "ret void" [top.cpp:10]   --->   Operation 20 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.75ns
+The critical path consists of the following:
+	fifo read on port 'xleft_s' (top.cpp:44) [13]  (1.75 ns)
+
+ <State 2>: 2.77ns
+The critical path consists of the following:
+	'add' operation ('ch2x', top.cpp:40->top.cpp:10) [14]  (1.02 ns)
+	fifo write on port 'ch2x_out_out' (top.cpp:40->top.cpp:10) [19]  (1.75 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

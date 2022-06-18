@@ -1,0 +1,2662 @@
+2021-08-29T16:48:09.106717300255-16:48:09 **** Build of project base_wrapper ****
+000-buildplatform.bat 56973 base_wrapper  
+000-XSDB Server Channel: tcfchan#1
+000-Building the zynqmp_fsbl application.
+000-make -C zynqmp_fsbl_bsp
+000-
+000-make[1]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/avbuf_v2_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/avbuf_v2_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obje
+000-cts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/avbuf_v2_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/avbuf_v2_3/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/axidma_v9_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axidma_v9_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axidma_v9_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axidma_v9_11/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_8/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axipmon_v6_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axipmon_v6_8/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axipmon_v6_8/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/axivdma_v6_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axivdma_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axivdma_v6_7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axivdma_v6_7/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/clockps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/clockps_v1_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/clockps_v1_2/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarc
+000-h64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffa
+000-t-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/coresightps_dcc_v1_
+000-7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/coresightps_dcc_v1_7
+000-/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+000-4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-
+000-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/
+000-src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/s
+000-rc'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/csi_v1_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csi_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csi_v1_4/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csi_v1_4/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csudma_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csudma_v1_6/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csudma_v1_6/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/dpdma_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/dpdma_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obje
+000-cts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/dpdma_v1_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/dpdma_v1_2/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/emacps_v3_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/emacps_v3_11/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/gpiops_v3_7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/gpiops_v3_7/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch
+000-64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat
+000--lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_preprocess_v1_0
+000-/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_preprocess_v1_0/
+000-src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/hls_rect_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_rect_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+000-e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-o
+000-bjects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_rect_v1_0/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_rect_v1_0/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/iicps_v3_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/iicps_v3_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/iicps_v3_11/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ipipsu_v2_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ipipsu_v2_6/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ipipsu_v2_6/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/mipicsiss_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/mipicsiss_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-
+000-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/pciepsu_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/pciepsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/pciepsu_v1_1/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/pciepsu_v1_1/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/qspipsu_v1_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+000-e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-o
+000-bjects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/qspipsu_v1_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/qspipsu_v1_11/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/resetps_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/resetps_v1_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/resetps_v1_3/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/rtcpsu_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/scugic_v4_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/scugic_v4_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/scugic_v4_2/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sdps_v3_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sdps_v3_9/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/spips_v3_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/spips_v3_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obje
+000-cts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/spips_v3_4/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/spips_v3_4/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/standalone_v7_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+000-one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto
+000--objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/standalone_v7_2/src
+000-'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/standalone_v7_2/src'
+000-
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-
+000-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ttcps_v3_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ttcps_v3_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ttcps_v3_11/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/uartps_v3_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/uartps_v3_9/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/usbpsu_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/usbpsu_v1_7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/usbpsu_v1_7/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/video_common_v4_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/video_common_v4_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+000--none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-l
+000-to-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/video_common_v4_9/s
+000-rc'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/video_common_v4_9/sr
+000-c'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/vtc_v8_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/vtc_v8_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/vtc_v8_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/vtc_v8_2/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/v_demosaic_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_demosaic_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+000-one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto
+000--objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_demosaic_v1_1/src
+000-'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+000-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lt
+000-o-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/sr
+000-c'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src
+000-'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/xilffs_v4_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilffs_v4_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilffs_v4_3/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/xilpm_v3_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilpm_v3_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obje
+000-cts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src'
+000-
+000-"Include files for this library have already been copied."
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/xilsecure_v4_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilsecure_v4_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-
+000-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilsecure_v4_2/src'
+000-
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilsecure_v4_2/src'
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/zdma_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/zdma_v1_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/zdma_v1_9/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/avbuf_v2_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/avbuf_v2_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects
+000-"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/avbuf_v2_3/src'
+000-
+000-"Compiling avbuf"
+000-
+000-aarch64-none-elf-ar: creating ../../../lib/libxil.a
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/avbuf_v2_3/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/axidma_v9_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axidma_v9_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axidma_v9_11/src'
+000-
+000-"Compiling axidma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axidma_v9_11/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_8/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axipmon_v6_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axipmon_v6_8/src'
+000-
+000-"Compiling axipmon"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axipmon_v6_8/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/axivdma_v6_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axivdma_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axivdma_v6_7/src'
+000-
+000-"Compiling axivdma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/axivdma_v6_7/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/clockps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/clockps_v1_2/src'
+000-
+000-"Compiling clockps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/clockps_v1_2/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+000--none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-l
+000-to-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/coresightps_dcc_v1_
+000-7/src'
+000-
+000-"Compiling coresightps_dcc"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/coresightps_dcc_v1_7
+000-/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+000-one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto
+000--objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/
+000-src'
+000-
+000-"Compiling cpu_cortexa53"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/s
+000-rc'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/csi_v1_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csi_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-as
+000-" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csi_v1_4/src'
+000-
+000-"Compiling csi"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csi_v1_4/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csi_v1_4/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csi_v1_4/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csudma_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csudma_v1_6/src'
+000-
+000-"Compiling csudma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/csudma_v1_6/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-"Compiling ddrcpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/dpdma_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/dpdma_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects
+000-"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/dpdma_v1_2/src'
+000-
+000-"Compiling dpdma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/dpdma_v1_2/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/emacps_v3_11/src'
+000-
+000-"Compiling emacps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/emacps_v3_11/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/gpiops_v3_7/src'
+000-
+000-"Compiling gpiops"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/gpiops_v3_7/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+000-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lt
+000-o-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_preprocess_v1_0
+000-/src'
+000-
+000-"Compiling hls_preprocess"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_preprocess_v1_0
+000-/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_preprocess_v1_0/
+000-src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_preprocess_v1_0/
+000-src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/hls_rect_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_rect_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obje
+000-cts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_rect_v1_0/src'
+000-
+000-"Compiling hls_rect"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_rect_v1_0/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_rect_v1_0/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/hls_rect_v1_0/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/iicps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/iicps_v3_11/src'
+000-
+000-"Compiling iicps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/iicps_v3_11/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ipipsu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ipipsu_v2_6/src'
+000-
+000-"Compiling ipipsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ipipsu_v2_6/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/mipicsiss_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/mipicsiss_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-
+000-"Compiling mipicsiss"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/pciepsu_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/pciepsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/pciepsu_v1_1/src'
+000-
+000-"Compiling pciepsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/pciepsu_v1_1/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/qspipsu_v1_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obje
+000-cts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/qspipsu_v1_11/src'
+000-
+000-"Compiling qspipsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/qspipsu_v1_11/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/resetps_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objec
+000-ts"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/resetps_v1_3/src'
+000-
+000-"Compiling resetps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/resetps_v1_3/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/rtcpsu_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-"Compiling rtcpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/scugic_v4_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/scugic_v4_2/src'
+000-
+000-"Compiling scugic"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/scugic_v4_2/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-a
+000-s" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sdps_v3_9/src'
+000-
+000-"Compiling sdps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sdps_v3_9/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/spips_v3_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/spips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects
+000-"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/spips_v3_4/src'
+000-
+000-"Compiling spips"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/spips_v3_4/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/standalone_v7_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/standalone_v7_2/src
+000-'
+000-
+000-"Compiling standalone ARMv8 64 bit"
+000-
+000-In file included from xil_sleeptimer.c:32:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-In file included from xtime_l.c:30:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-In file included from sleep.c:37:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/standalone_v7_2/src'
+000-
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-
+000-"Compiling sysmonpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ttcps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ttcps_v3_11/src'
+000-
+000-"Compiling ttcps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/ttcps_v3_11/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/uartps_v3_9/src'
+000-
+000-"Compiling uartps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/uartps_v3_9/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/usbpsu_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/usbpsu_v1_7/src'
+000-
+000-"Compiling usbpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/usbpsu_v1_7/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/video_common_v4_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/video_common_v4_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-
+000-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/video_common_v4_9/s
+000-rc'
+000-
+000-"Compiling video_common"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/video_common_v4_9/sr
+000-c'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/vtc_v8_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/vtc_v8_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-as
+000-" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/vtc_v8_2/src'
+000-
+000-"Compiling video timing controller"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/vtc_v8_2/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/vtc_v8_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/vtc_v8_2/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/v_demosaic_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_demosaic_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-ob
+000-jects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_demosaic_v1_1/src
+000-'
+000-
+000-"Compiling v_demosaic"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_demosaic_v1_1/src
+000-'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+000-e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-o
+000-bjects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/sr
+000-c'
+000-
+000-"Compiling v_gamma_lut"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/sr
+000-c'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src
+000-'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src
+000-'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/xilffs_v4_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-object
+000-s"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilffs_v4_3/src'
+000-
+000-"Compiling XilFFs Library"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilffs_v4_3/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/xilpm_v3_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilpm_v3_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects
+000-"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src'
+000-
+000-"Compiling xilpm library"
+000-
+000-pm_api_sys.c: In function 'XPm_ClockSetRate':
+000/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src/pm_api_sys.c1751-1-1unused parameter 'clock' [-Wunused-parameter]1-pm_api_sys.c:1751:46: warning: unused parameter 'clock' [-Wunused-parameter]
+000- 1751 | XStatus XPm_ClockSetRate(const enum XPmClock clock, const u32 rate)
+000-      |                          ~~~~~~~~~~~~~~~~~~~~^~~~~
+000/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src/pm_api_sys.c1751-1-1unused parameter 'rate' [-Wunused-parameter]1-pm_api_sys.c:1751:63: warning: unused parameter 'rate' [-Wunused-parameter]
+000- 1751 | XStatus XPm_ClockSetRate(const enum XPmClock clock, const u32 rate)
+000-      |                                                     ~~~~~~~~~~^~~~
+000-pm_api_sys.c: In function 'XPm_ClockGetRate':
+000/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src/pm_api_sys.c1768-1-1unused parameter 'clock' [-Wunused-parameter]1-pm_api_sys.c:1768:46: warning: unused parameter 'clock' [-Wunused-parameter]
+000- 1768 | XStatus XPm_ClockGetRate(const enum XPmClock clock, u32 *const rate)
+000-      |                          ~~~~~~~~~~~~~~~~~~~~^~~~~
+000/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src/pm_api_sys.c1768-1-1unused parameter 'rate' [-Wunused-parameter]1-pm_api_sys.c:1768:64: warning: unused parameter 'rate' [-Wunused-parameter]
+000- 1768 | XStatus XPm_ClockGetRate(const enum XPmClock clock, u32 *const rate)
+000-      |                                                     ~~~~~~~~~~~^~~~
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilpm_v3_1/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/xilsecure_v4_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilsecure_v4_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-obj
+000-ects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilsecure_v4_2/src'
+000-
+000-
+000-"Compiling XilSecure Library"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/xilsecure_v4_2/src'
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/zdma_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-a
+000-s" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/zdma_v1_9/src'
+000-
+000-"Compiling zdma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/zdma_v1_9/src'
+000-
+000-'Finished building libraries'
+000-
+000-make[1]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp'
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_qspi.c -
+000-o xfsbl_qspi.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_csu_dma.
+000-c -o xfsbl_csu_dma.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_nand.c -
+000-o xfsbl_nand.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_sd.c -o 
+000-xfsbl_sd.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_sd.c:29:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_usb.c -o
+000- xfsbl_usb.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_hooks.c 
+000--o xfsbl_hooks.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_main.c -
+000-o xfsbl_main.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_main.c:32:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_dfu_util
+000-.c -o xfsbl_dfu_util.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_partitio
+000-n_load.c -o xfsbl_partition_load.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_partition_load.c:50:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_initiali
+000-zation.c -o xfsbl_initialization.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_initialization.c:49:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_ddr_init
+000-.c -o xfsbl_ddr_init.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_handoff.
+000-c -o xfsbl_handoff.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_handoff.c:37:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c psu_init.c -o 
+000-psu_init.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_board.c 
+000--o xfsbl_board.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_misc_dri
+000-vers.c -o xfsbl_misc_drivers.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_bs.c -o 
+000-xfsbl_bs.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_bs.h:38,
+000-                 from xfsbl_bs.c:32:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_rsa_sha.
+000-c -o xfsbl_rsa_sha.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_authentication.h:41,
+000-                 from xfsbl_rsa_sha.c:32:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_plpartit
+000-ion_valid.c -o xfsbl_plpartition_valid.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_authentication.h:41,
+000-                 from xfsbl_plpartition_valid.h:38,
+000-                 from xfsbl_plpartition_valid.c:55:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_image_he
+000-ader.c -o xfsbl_image_header.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_misc.c -
+000-o xfsbl_misc.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_misc.c:31:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_authenti
+000-cation.c -o xfsbl_authentication.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-In file included from xfsbl_main.h:41,
+000-                 from xfsbl_bs.h:38,
+000-                 from xfsbl_authentication.c:44:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-zynqmp_fsbl_bsp/psu_cortexa53_0/include/xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_translat
+000-ion_table.S -o xfsbl_translation_table.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects    -O2 -c -c xfsbl_exit.S -
+000-o xfsbl_exit.o -Izynqmp_fsbl_bsp/psu_cortexa53_0/include -I.
+000-
+000-aarch64-none-elf-gcc -o executable.elf  xfsbl_qspi.o  xfsbl_csu_dma.o  xfsbl_nand.o  xfsbl_sd.o  xfsbl_usb.o  xfsbl_hooks.o  xf
+000-sbl_main.o  xfsbl_dfu_util.o  xfsbl_partition_load.o  xfsbl_initialization.o  xfsbl_ddr_init.o  xfsbl_handoff.o  psu_init.o  xf
+000-sbl_board.o  xfsbl_misc_drivers.o  xfsbl_bs.o  xfsbl_rsa_sha.o  xfsbl_plpartition_valid.o  xfsbl_image_header.o  xfsbl_misc.o  
+000-xfsbl_authentication.o  xfsbl_translation_table.o  xfsbl_exit.o -MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -f
+000-fat-lto-objects    -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--s
+000-tart-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group                       
+000-                                                                                                -n  -Wl,--gc-sections -Lzynqmp_
+000-fsbl_bsp/psu_cortexa53_0/lib -Tlscript.ld
+000-
+000-Building the zynqmp_pmufw application.
+000-make -C zynqmp_pmufw_bsp
+000-
+000-make[1]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/avbuf_v2_3/src"
+000-
+000-make -C psu_pmu_0/libsrc/avbuf_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+000-tion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/avbuf_v2_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/avbuf_v2_3/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/axidma_v9_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/axidma_v9_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axidma_v9_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axidma_v9_11/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/axipmon_v6_8/src"
+000-
+000-make -C psu_pmu_0/libsrc/axipmon_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axipmon_v6_8/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axipmon_v6_8/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/axivdma_v6_7/src"
+000-
+000-make -C psu_pmu_0/libsrc/axivdma_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axivdma_v6_7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axivdma_v6_7/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/clockps_v1_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/clockps_v1_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/clockps_v1_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/clockps_v1_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/cpu_v2_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/cpu_v2_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/cpu_v2_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/cpu_v2_11/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/csi_v1_4/src"
+000-
+000-make -C psu_pmu_0/libsrc/csi_v1_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csi_v1_4/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csi_v1_4/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/csudma_v1_6/src"
+000-
+000-make -C psu_pmu_0/libsrc/csudma_v1_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csudma_v1_6/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csudma_v1_6/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/ddrcpsu_v1_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/ddrcpsu_v1_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/dpdma_v1_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/dpdma_v1_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+000-tion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/dpdma_v1_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/dpdma_v1_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/emacps_v3_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/emacps_v3_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/emacps_v3_11/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/gpiops_v3_7/src"
+000-
+000-make -C psu_pmu_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/gpiops_v3_7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/gpiops_v3_7/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/hls_preprocess_v1_0/src"
+000-
+000-make -C psu_pmu_0/libsrc/hls_preprocess_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+000-COMPILER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=
+000--g -ffunction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_preprocess_v1_0/src
+000-'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_preprocess_v1_0/src'
+000-
+000-
+000-"Running Make include in psu_pmu_0/libsrc/hls_rect_v1_0/src"
+000-
+000-make -C psu_pmu_0/libsrc/hls_rect_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ff
+000-unction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_rect_v1_0/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_rect_v1_0/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/iicps_v3_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/iicps_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/iicps_v3_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/iicps_v3_11/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/ipipsu_v2_6/src"
+000-
+000-make -C psu_pmu_0/libsrc/ipipsu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ipipsu_v2_6/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ipipsu_v2_6/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/mipicsiss_v1_3/src"
+000-
+000-make -C psu_pmu_0/libsrc/mipicsiss_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -f
+000-function-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/pciepsu_v1_1/src"
+000-
+000-make -C psu_pmu_0/libsrc/pciepsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/pciepsu_v1_1/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/pciepsu_v1_1/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/qspipsu_v1_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/qspipsu_v1_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ff
+000-unction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/qspipsu_v1_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/qspipsu_v1_11/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/resetps_v1_3/src"
+000-
+000-make -C psu_pmu_0/libsrc/resetps_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/resetps_v1_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/resetps_v1_3/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/rtcpsu_v1_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/rtcpsu_v1_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/sdps_v3_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sdps_v3_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sdps_v3_9/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/spips_v3_4/src"
+000-
+000-make -C psu_pmu_0/libsrc/spips_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+000-tion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/spips_v3_4/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/spips_v3_4/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/standalone_v7_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -
+000-ffunction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src'
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src/pro
+000-file'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src/prof
+000-ile'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/sysmonpsu_v2_6/src"
+000-
+000-make -C psu_pmu_0/libsrc/sysmonpsu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -f
+000-function-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/ttcps_v3_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/ttcps_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ttcps_v3_11/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ttcps_v3_11/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/uartps_v3_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/uartps_v3_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/uartps_v3_9/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/usbpsu_v1_7/src"
+000-
+000-make -C psu_pmu_0/libsrc/usbpsu_v1_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/usbpsu_v1_7/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/usbpsu_v1_7/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/video_common_v4_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/video_common_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+000-MPILER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g
+000- -ffunction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/video_common_v4_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/video_common_v4_9/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/vtc_v8_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/vtc_v8_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/vtc_v8_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/vtc_v8_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/v_demosaic_v1_1/src"
+000-
+000-make -C psu_pmu_0/libsrc/v_demosaic_v1_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -
+000-ffunction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/v_gamma_lut_v1_1/src"
+000-
+000-make -C psu_pmu_0/libsrc/v_gamma_lut_v1_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+000-PILER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g 
+000--ffunction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_gamma_lut_v1_1/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_gamma_lut_v1_1/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/xilfpga_v5_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/xilfpga_v5_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilfpga_v5_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilfpga_v5_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/xilsecure_v4_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/xilsecure_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -f
+000-function-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilsecure_v4_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilsecure_v4_2/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/xilskey_v6_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/xilskey_v6_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilskey_v6_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilskey_v6_9/src'
+000-
+000-"Running Make include in psu_pmu_0/libsrc/zdma_v1_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/zdma_v1_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/zdma_v1_9/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/zdma_v1_9/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/avbuf_v2_3/src"
+000-
+000-make -C psu_pmu_0/libsrc/avbuf_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLA
+000-GS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+000-n-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/avbuf_v2_3/src'
+000-
+000-"Compiling avbuf"
+000-
+000-mb-ar: creating ../../../lib/libxil.a
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/avbuf_v2_3/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/axidma_v9_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/axidma_v9_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axidma_v9_11/src'
+000-
+000-"Compiling axidma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axidma_v9_11/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/axipmon_v6_8/src"
+000-
+000-make -C psu_pmu_0/libsrc/axipmon_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axipmon_v6_8/src'
+000-
+000-"Compiling axipmon"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axipmon_v6_8/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/axivdma_v6_7/src"
+000-
+000-make -C psu_pmu_0/libsrc/axivdma_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axivdma_v6_7/src'
+000-
+000-"Compiling axivdma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/axivdma_v6_7/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/clockps_v1_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/clockps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/clockps_v1_2/src'
+000-
+000-"Compiling clockps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/clockps_v1_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/cpu_v2_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/cpu_v2_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLAG
+000-S=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction
+000--sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/cpu_v2_11/src'
+000-
+000-"Compiling cpu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/cpu_v2_11/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/csi_v1_4/src"
+000-
+000-make -C psu_pmu_0/libsrc/csi_v1_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLAGS
+000-=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-
+000-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csi_v1_4/src'
+000-
+000-"Compiling csi"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csi_v1_4/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csi_v1_4/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csi_v1_4/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/csudma_v1_6/src"
+000-
+000-make -C psu_pmu_0/libsrc/csudma_v1_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csudma_v1_6/src'
+000-
+000-"Compiling csudma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/csudma_v1_6/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/ddrcpsu_v1_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/ddrcpsu_v1_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-"Compiling ddrcpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ddrcpsu_v1_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/dpdma_v1_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/dpdma_v1_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLA
+000-GS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+000-n-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/dpdma_v1_2/src'
+000-
+000-"Compiling dpdma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/dpdma_v1_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/emacps_v3_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/emacps_v3_11/src'
+000-
+000-"Compiling emacps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/emacps_v3_11/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/gpiops_v3_7/src"
+000-
+000-make -C psu_pmu_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/gpiops_v3_7/src'
+000-
+000-"Compiling gpiops"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/gpiops_v3_7/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/hls_preprocess_v1_0/src"
+000-
+000-make -C psu_pmu_0/libsrc/hls_preprocess_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+000-PILER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g 
+000--ffunction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_preprocess_v1_0/src
+000-'
+000-
+000-"Compiling hls_preprocess"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_preprocess_v1_0/src
+000-'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_preprocess_v1_0/src'
+000-
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_preprocess_v1_0/src'
+000-
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/hls_rect_v1_0/src"
+000-
+000-make -C psu_pmu_0/libsrc/hls_rect_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+000-tion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_rect_v1_0/src'
+000-
+000-"Compiling hls_rect"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_rect_v1_0/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_rect_v1_0/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/hls_rect_v1_0/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/iicps_v3_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/iicps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/iicps_v3_11/src'
+000-
+000-"Compiling iicps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/iicps_v3_11/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/ipipsu_v2_6/src"
+000-
+000-make -C psu_pmu_0/libsrc/ipipsu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ipipsu_v2_6/src'
+000-
+000-"Compiling ipipsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ipipsu_v2_6/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/mipicsiss_v1_3/src"
+000-
+000-make -C psu_pmu_0/libsrc/mipicsiss_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-"Compiling mipicsiss"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/mipicsiss_v1_3/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/pciepsu_v1_1/src"
+000-
+000-make -C psu_pmu_0/libsrc/pciepsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/pciepsu_v1_1/src'
+000-
+000-"Compiling pciepsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/pciepsu_v1_1/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/qspipsu_v1_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/qspipsu_v1_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunc
+000-tion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/qspipsu_v1_11/src'
+000-
+000-"Compiling qspipsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/qspipsu_v1_11/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/resetps_v1_3/src"
+000-
+000-make -C psu_pmu_0/libsrc/resetps_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/resetps_v1_3/src'
+000-
+000-"Compiling resetps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/resetps_v1_3/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/rtcpsu_v1_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/rtcpsu_v1_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-"Compiling rtcpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/rtcpsu_v1_9/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/sdps_v3_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLAG
+000-S=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction
+000--sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sdps_v3_9/src'
+000-
+000-"Compiling sdps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sdps_v3_9/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/spips_v3_4/src"
+000-
+000-make -C psu_pmu_0/libsrc/spips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLA
+000-GS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunctio
+000-n-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/spips_v3_4/src'
+000-
+000-"Compiling spips"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/spips_v3_4/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/standalone_v7_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src'
+000-
+000-"Compiling standalone";
+000-
+000/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src/microblaze_sleep.c55-1-1#pragma message: For the sleep routines, assembly instructions are used0-microblaze_sleep.c:55:9: note: #pragma message: For the sleep routines, assembly instructions are used
+000-   55 | #pragma message ("For the sleep routines, assembly instructions are used")
+000-      |         ^~~~~~~
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src/pro
+000-file'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src/prof
+000-ile'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/standalone_v7_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/sysmonpsu_v2_6/src"
+000-
+000-make -C psu_pmu_0/libsrc/sysmonpsu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-"Compiling sysmonpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/sysmonpsu_v2_6/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/ttcps_v3_11/src"
+000-
+000-make -C psu_pmu_0/libsrc/ttcps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ttcps_v3_11/src'
+000-
+000-"Compiling ttcps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/ttcps_v3_11/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/uartps_v3_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/uartps_v3_9/src'
+000-
+000-"Compiling uartps"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/uartps_v3_9/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/usbpsu_v1_7/src"
+000-
+000-make -C psu_pmu_0/libsrc/usbpsu_v1_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffuncti
+000-on-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/usbpsu_v1_7/src'
+000-
+000-"Compiling usbpsu"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/usbpsu_v1_7/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/video_common_v4_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/video_common_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -f
+000-function-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/video_common_v4_9/src'
+000-
+000-"Compiling video_common"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/video_common_v4_9/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/vtc_v8_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/vtc_v8_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLAGS
+000-=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-
+000-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/vtc_v8_2/src'
+000-
+000-"Compiling video timing controller"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/vtc_v8_2/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/vtc_v8_2/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/vtc_v8_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/v_demosaic_v1_1/src"
+000-
+000-make -C psu_pmu_0/libsrc/v_demosaic_v1_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffu
+000-nction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-"Compiling v_demosaic"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_demosaic_v1_1/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/v_gamma_lut_v1_1/src"
+000-
+000-make -C psu_pmu_0/libsrc/v_gamma_lut_v1_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ff
+000-unction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_gamma_lut_v1_1/src'
+000-
+000-"Compiling v_gamma_lut"
+000-
+000-make[3]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_gamma_lut_v1_1/src'
+000-
+000-make[3]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_gamma_lut_v1_1/src'
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/v_gamma_lut_v1_1/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/xilfpga_v5_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/xilfpga_v5_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilfpga_v5_2/src'
+000-
+000-"Compiling xilfpga Library"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilfpga_v5_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/xilsecure_v4_2/src"
+000-
+000-make -C psu_pmu_0/libsrc/xilsecure_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffun
+000-ction-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilsecure_v4_2/src'
+000-
+000-"Compiling XilSecure Library"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilsecure_v4_2/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/xilskey_v6_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/xilskey_v6_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunct
+000-ion-sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilskey_v6_9/src'
+000-
+000-"Compiling Xilskey Library"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/xilskey_v6_9/src'
+000-
+000-"Running Make libs in psu_pmu_0/libsrc/zdma_v1_9/src"
+000-
+000-make -C psu_pmu_0/libsrc/zdma_v1_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FLAG
+000-S=  -O2 -c -mcpu=v9.2 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction
+000--sections -fdata-sections -Wall -Wextra -Os -flto -ffat-lto-objects"
+000-
+000-make[2]: Entering directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/zdma_v1_9/src'
+000-
+000-"Compiling zdma"
+000-
+000-make[2]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/psu_pmu_0/libsrc/zdma_v1_9/src'
+000-
+000-'Finished building libraries'
+000-
+000-make[1]: Leaving directory 'D:/FINAL/vitis/base_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp'
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_clock.c -o pm_clock.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_proc.c -o pm_proc.o -Izynqmp_pmufw_b
+000-sp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_csudma.c -o pm_csudma.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_em.c -o xpfw_mod_em.o -Izynqmp
+000-_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_main.c -o xpfw_main.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_power.c -o pm_power.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_rpu.c -o xpfw_mod_rpu.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_gpp.c -o pm_gpp.o -Izynqmp_pmufw_bsp
+000-/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_hooks.c -o pm_hooks.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_util.c -o xpfw_util.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_pll.c -o pm_pll.o -Izynqmp_pmufw_bsp
+000-/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_common.c -o xpfw_mod_common.o 
+000--Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_periph.c -o pm_periph.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c idle_hooks.c -o idle_hooks.o -Izynqmp_p
+000-mufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_resets.c -o xpfw_resets.o -Izynqmp
+000-_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_core.c -o xpfw_core.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_node.c -o pm_node.o -Izynqmp_pmufw_b
+000-sp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_extern.c -o pm_extern.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_usb.c -o pm_usb.o -Izynqmp_pmufw_bsp
+000-/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_ultra96.c -o xpfw_mod_ultra96.
+000-o -Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_dap.c -o xpfw_mod_dap.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_interrupts.c -o xpfw_interrupts.o 
+000--Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_ipi_manager.c -o xpfw_ipi_manager.
+000-o -Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_crc.c -o xpfw_crc.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_user_startup.c -o xpfw_user_startu
+000-p.o -Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_stl.c -o xpfw_mod_stl.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_callbacks.c -o pm_callbacks.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_reset.c -o pm_reset.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_wdt.c -o xpfw_mod_wdt.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_rom_interface.c -o xpfw_rom_interf
+000-ace.o -Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_rtc.c -o xpfw_mod_rtc.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_sched.c -o xpfw_mod_sched.o -I
+000-zynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_sram.c -o pm_sram.o -Izynqmp_pmufw_b
+000-sp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_qspi.c -o pm_qspi.o -Izynqmp_pmufw_b
+000-sp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_ddr.c -o pm_ddr.o -Izynqmp_pmufw_bsp
+000-/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_pm.c -o xpfw_mod_pm.o -Izynqmp
+000-_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_platform.c -o xpfw_platform.o -Izy
+000-nqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_pinctrl.c -o pm_pinctrl.o -Izynqmp_p
+000-mufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_slave.c -o pm_slave.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_scheduler.c -o xpfw_scheduler.o -I
+000-zynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_binding.c -o pm_binding.o -Izynqmp_p
+000-mufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_events.c -o xpfw_events.o -Izynqmp
+000-_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_aib.c -o xpfw_aib.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_notifier.c -o pm_notifier.o -Izynqmp
+000-_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_gic_proxy.c -o pm_gic_proxy.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_xpu.c -o xpfw_xpu.o -Izynqmp_pmufw
+000-_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_core.c -o pm_core.o -Izynqmp_pmufw_b
+000-sp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_config.c -o pm_config.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_system.c -o pm_system.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_mmio_access.c -o pm_mmio_access.o -I
+000-zynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_node_reset.c -o pm_node_reset.o -Izy
+000-nqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_requirement.c -o pm_requirement.o -I
+000-zynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_module.c -o xpfw_module.o -Izynqmp
+000-_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_restart.c -o xpfw_restart.o -Izynq
+000-mp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_error_manager.c -o xpfw_error_mana
+000-ger.o -Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_mod_legacy.c -o xpfw_mod_legacy.o 
+000--Izynqmp_pmufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c pm_master.c -o pm_master.o -Izynqmp_pmu
+000-fw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-object
+000-s    -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mxl-soft-mul -mcpu=v9.2 -c xpfw_start.S -o xpfw_start.o -Izynqmp_p
+000-mufw_bsp/psu_pmu_0/include -I.
+000-
+000-mb-gcc -o executable.elf  pm_clock.o  pm_proc.o  pm_csudma.o  xpfw_mod_em.o  xpfw_main.o  pm_power.o  xpfw_mod_rpu.o  pm_gpp.o 
+000- pm_hooks.o  xpfw_util.o  pm_pll.o  xpfw_mod_common.o  pm_periph.o  idle_hooks.o  xpfw_resets.o  xpfw_core.o  pm_node.o  pm_ext
+000-ern.o  pm_usb.o  xpfw_mod_ultra96.o  xpfw_mod_dap.o  xpfw_interrupts.o  xpfw_ipi_manager.o  xpfw_crc.o  xpfw_user_startup.o  xp
+000-fw_mod_stl.o  pm_callbacks.o  pm_reset.o  xpfw_mod_wdt.o  xpfw_rom_interface.o  xpfw_mod_rtc.o  xpfw_mod_sched.o  pm_sram.o  pm
+000-_qspi.o  pm_ddr.o  xpfw_mod_pm.o  xpfw_platform.o  pm_pinctrl.o  pm_slave.o  xpfw_scheduler.o  pm_binding.o  xpfw_events.o  xpf
+000-w_aib.o  pm_notifier.o  pm_gic_proxy.o  xpfw_xpu.o  pm_core.o  pm_config.o  pm_system.o  pm_mmio_access.o  pm_node_reset.o  pm_
+000-requirement.o  xpfw_module.o  xpfw_restart.o  xpfw_error_manager.o  xpfw_mod_legacy.o  pm_master.o  xpfw_start.o -MMD -MP      
+000--mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects    -Wl,--start-grou
+000-p,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilfpga,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc
+000-,-lc,--end-group -Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group                                                       
+000-                                                                  -nostartfiles -Wl,--no-relax -Wl,--gc-sections -Lzynqmp_pmufw
+000-_bsp/psu_pmu_0/lib -Tlscript.ld
+000-
+000-Building the BSP Library for domain  - domain_psu_cortexa53_0 on processor psu_cortexa53_0
+000-"Running Make include in psu_cortexa53_0/libsrc/avbuf_v2_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/avbuf_v2_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/axidma_v9_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axidma_v9_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_8/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axipmon_v6_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/axivdma_v6_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axivdma_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/clockps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarc
+000-h64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+000-4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/csi_v1_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csi_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csudma_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/dpdma_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/dpdma_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/dppsu_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/dppsu_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch
+000-64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/hls_rect_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_rect_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+000-e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/iicps_v3_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ipipsu_v2_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/mipicsiss_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/mipicsiss_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/pciepsu_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/pciepsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/qspipsu_v1_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+000-e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/resetps_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/rtcpsu_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/scugic_v4_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/spips_v3_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/spips_v3_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/standalone_v7_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+000-one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ttcps_v3_11/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/usbpsu_v1_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/video_common_v4_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/video_common_v4_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+000--none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/vtc_v8_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/vtc_v8_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/v_demosaic_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_demosaic_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+000-one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+000-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/xilffs_v4_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/zdma_v1_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/avbuf_v2_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/avbuf_v2_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling avbuf"
+000-
+000-aarch64-none-elf-ar: creating ../../../lib/libxil.a
+000-"Running Make libs in psu_cortexa53_0/libsrc/axidma_v9_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axidma_v9_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling axidma"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_8/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axipmon_v6_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling axipmon"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/axivdma_v6_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/axivdma_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling axivdma"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/clockps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling clockps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+000--none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling coresightps_dcc"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+000-one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling cpu_cortexa53"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/csi_v1_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csi_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-as
+000-" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling csi"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/csudma_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling csudma"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling ddrcpsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/dpdma_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/dpdma_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling dpdma"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/dppsu_v1_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/dppsu_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling dppsu"
+000-
+000-xdppsu.c: In function 'XDpPsu_CheckClockRecovery':
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c467-1-1this statement may fall through [-Wimplicit-fallthrough=]1-xdppsu.c:467:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+000-  467 |   if (!(LaneStatus[0] &
+000-      |      ^
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c472-1-1here0-xdppsu.c:472:2: note: here
+000-  472 |  case XDPPSU_LANE_COUNT_SET_1:
+000-      |  ^~~~
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c473-1-1this statement may fall through [-Wimplicit-fallthrough=]1-xdppsu.c:473:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+000-  473 |   if (!(LaneStatus[0] &
+000-      |      ^
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c477-1-1here0-xdppsu.c:477:2: note: here
+000-  477 |  default:
+000-      |  ^~~~~~~
+000-xdppsu.c: In function 'XDpPsu_CheckChannelEqualization':
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c511-1-1this statement may fall through [-Wimplicit-fallthrough=]1-xdppsu.c:511:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+000-  511 |   if (!(LaneStatus[0] &
+000-      |      ^
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c516-1-1here0-xdppsu.c:516:2: note: here
+000-  516 |  case XDPPSU_LANE_COUNT_SET_1:
+000-      |  ^~~~
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c529-1-1this statement may fall through [-Wimplicit-fallthrough=]1-xdppsu.c:529:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+000-  529 |   if (!(LaneStatus[0] &
+000-      |      ^
+000/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/psu_cortexa53_0/libsrc/dppsu_v1_2/src/xdppsu.c534-1-1here0-xdppsu.c:534:2: note: here
+000-  534 |  case XDPPSU_LANE_COUNT_SET_1:
+000-      |  ^~~~
+000-"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling emacps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling gpiops"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_preprocess_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+000-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling hls_preprocess"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/hls_rect_v1_0/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/hls_rect_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling hls_rect"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/iicps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling iicps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ipipsu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling ipipsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/mipicsiss_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/mipicsiss_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling mipicsiss"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/pciepsu_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/pciepsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling pciepsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/qspipsu_v1_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+000-lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling qspipsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/resetps_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-el
+000-f-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling resetps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/rtcpsu_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling rtcpsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/scugic_v4_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling scugic"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-a
+000-s" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling sdps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/spips_v3_4/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/spips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-
+000-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling spips"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/standalone_v7_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling standalone ARMv8 64 bit"
+000-
+000-In file included from xil_sleeptimer.c:32:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-In file included from xtime_l.c:30:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-In file included from sleep.c:37:
+000/base_wrapper65-1-1#pragma message: For the sleep routines, Global timer is being used0-xtime_l.h:65:9: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |         ^~~~~~~
+000-"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+000-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling sysmonpsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_11/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/ttcps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling ttcps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling uartps"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_7/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/usbpsu_v1_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling usbpsu"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/video_common_v4_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/video_common_v4_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+000-ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling video_common"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/vtc_v8_2/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/vtc_v8_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-as
+000-" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling video timing controller"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/v_demosaic_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_demosaic_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+000--elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling v_demosaic"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/v_gamma_lut_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+000-e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling v_gamma_lut"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/xilffs_v4_3/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf
+000--as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling XilFFs Library"
+000-
+000-"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_9/src"
+000-
+000-make -C psu_cortexa53_0/libsrc/zdma_v1_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-elf-a
+000-s" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+000-
+000-"Compiling zdma"
+000-
+000-'Finished building libraries'
+000-
+00255-
+16:51:07 Build Finished (took 2m:58s.859ms)
+

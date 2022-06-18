@@ -1,0 +1,296 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_rect'
+================================================================
+* Date:           Fri Aug 20 09:07:43 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        hls_rect
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 3.500 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline |
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type   |
+    +---------+---------+----------+----------+--------+--------+----------+
+    |   925215|   925215| 3.701 ms | 3.701 ms |  925204|  925204| dataflow |
+    +---------+---------+----------+----------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------+-------------------+---------+---------+----------+----------+--------+--------+---------+
+        |                      |                   |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+        |       Instance       |       Module      |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+        +----------------------+-------------------+---------+---------+----------+----------+--------+--------+---------+
+        |Add_Char1_U0          |Add_Char1          |   925201|   925201| 3.701 ms | 3.701 ms |  925201|  925201|   none  |
+        |Add_Char2_U0          |Add_Char2          |   925201|   925201| 3.701 ms | 3.701 ms |  925201|  925201|   none  |
+        |Add_Char3_U0          |Add_Char3          |   925201|   925201| 3.701 ms | 3.701 ms |  925201|  925201|   none  |
+        |Add_Char4_U0          |Add_Char4          |   925201|   925201| 3.701 ms | 3.701 ms |  925201|  925201|   none  |
+        |Add_Char5_U0          |Add_Char5          |   925201|   925201| 3.701 ms | 3.701 ms |  925201|  925201|   none  |
+        |Add_Rectangle_U0      |Add_Rectangle      |   924481|   924481| 3.698 ms | 3.698 ms |  924481|  924481|   none  |
+        |Add_Char6_U0          |Add_Char6          |   925201|   925201| 3.701 ms | 3.701 ms |  925201|  925201|   none  |
+        |AXIvideo2Mat_U0       |AXIvideo2Mat       |   925203|   925203| 3.701 ms | 3.701 ms |  925203|  925203|   none  |
+        |Mat2AXIvideo_U0       |Mat2AXIvideo       |   924481|   924481| 3.698 ms | 3.698 ms |  924481|  924481|   none  |
+        |Block_proc_U0         |Block_proc         |        1|        1| 4.000 ns | 4.000 ns |       1|       1|   none  |
+        |hls_rect_entry304_U0  |hls_rect_entry304  |        0|        0|   0 ns   |   0 ns   |       0|       0|   none  |
+        |hls_rect_entry3_U0    |hls_rect_entry3    |        0|        0|   0 ns   |   0 ns   |       0|       0|   none  |
+        +----------------------+-------------------+---------+---------+----------+----------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     32|    -|
+|FIFO             |        0|      -|     450|   1956|    -|
+|Instance         |        6|      -|    2033|   5916|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     36|    -|
+|Register         |        -|      -|       6|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        6|      0|    2489|   7940|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      432|    360|  141120|  70560|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        1|      0|       1|     11|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-------------------------+---------+-------+-----+-----+-----+
+    |          Instance         |          Module         | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +---------------------------+-------------------------+---------+-------+-----+-----+-----+
+    |AXIvideo2Mat_U0            |AXIvideo2Mat             |        0|      0|  244|  365|    0|
+    |Add_Char1_U0               |Add_Char1                |        1|      0|  206|  637|    0|
+    |Add_Char2_U0               |Add_Char2                |        1|      0|  206|  637|    0|
+    |Add_Char3_U0               |Add_Char3                |        1|      0|  206|  637|    0|
+    |Add_Char4_U0               |Add_Char4                |        1|      0|  206|  637|    0|
+    |Add_Char5_U0               |Add_Char5                |        1|      0|  206|  637|    0|
+    |Add_Char6_U0               |Add_Char6                |        1|      0|  207|  610|    0|
+    |Add_Rectangle_U0           |Add_Rectangle            |        0|      0|  234|  640|    0|
+    |Block_proc_U0              |Block_proc               |        0|      0|   19|  197|    0|
+    |Mat2AXIvideo_U0            |Mat2AXIvideo             |        0|      0|   43|  207|    0|
+    |hls_rect_AXILiteS_s_axi_U  |hls_rect_AXILiteS_s_axi  |        0|      0|  250|  312|    0|
+    |hls_rect_entry3_U0         |hls_rect_entry3          |        0|      0|    3|  137|    0|
+    |hls_rect_entry304_U0       |hls_rect_entry304        |        0|      0|    3|  263|    0|
+    +---------------------------+-------------------------+---------+-------+-----+-----+-----+
+    |Total                      |                         |        6|      0| 2033| 5916|    0|
+    +---------------------------+-------------------------+---------+-------+-----+-----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+    |           Name           | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+    |ch2x_loc_c_U              |        0|  5|   0|    -|     4|   16|       64|
+    |ch3x_loc_c_U              |        0|  5|   0|    -|     5|   16|       80|
+    |ch4x_loc_c_U              |        0|  5|   0|    -|     6|   16|       96|
+    |ch5x_loc_c_U              |        0|  6|   0|    -|     7|   16|      112|
+    |ch6x_loc_c_U              |        0|  6|   0|    -|     8|   16|      128|
+    |char1_c8_U                |        0|  5|   0|    -|     2|    8|       16|
+    |char1_c_U                 |        0|  5|   0|    -|     4|    8|       32|
+    |char2_c9_U                |        0|  5|   0|    -|     2|    8|       16|
+    |char2_c_U                 |        0|  5|   0|    -|     5|    8|       40|
+    |char3_c10_U               |        0|  5|   0|    -|     2|    8|       16|
+    |char3_c_U                 |        0|  5|   0|    -|     6|    8|       48|
+    |char4_c11_U               |        0|  5|   0|    -|     2|    8|       16|
+    |char4_c_U                 |        0|  6|   0|    -|     7|    8|       56|
+    |char5_c12_U               |        0|  5|   0|    -|     2|    8|       16|
+    |char5_c_U                 |        0|  6|   0|    -|     8|    8|       64|
+    |char6_c13_U               |        0|  5|   0|    -|     2|    8|       16|
+    |char6_c_U                 |        0|  6|   0|    -|     9|    8|       72|
+    |color1_c20_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c24_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c28_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c32_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c36_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c40_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c5_U               |        0|  5|   0|    -|     2|    8|       16|
+    |color1_c_U                |        0|  5|   0|    -|     3|    8|       24|
+    |color2_c21_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c25_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c29_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c33_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c37_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c41_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c6_U               |        0|  5|   0|    -|     2|    8|       16|
+    |color2_c_U                |        0|  5|   0|    -|     3|    8|       24|
+    |color3_c22_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c26_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c30_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c34_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c38_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c42_U              |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c7_U               |        0|  5|   0|    -|     2|    8|       16|
+    |color3_c_U                |        0|  5|   0|    -|     3|    8|       24|
+    |letter_img_1_data_st_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_1_data_st_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_1_data_st_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_1_data_st_U    |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_2_data_st_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_2_data_st_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_2_data_st_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_2_data_st_U    |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_3_data_st_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_3_data_st_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_3_data_st_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_3_data_st_U    |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_4_data_st_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_4_data_st_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_4_data_st_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_4_data_st_U    |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_5_data_st_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_5_data_st_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_5_data_st_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_5_data_st_U    |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_6_data_st_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_6_data_st_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_6_data_st_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |letter_img_6_data_st_U    |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_3_U  |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_U    |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_data_stream_1_U   |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_data_stream_2_U   |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_data_stream_3_U   |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_data_stream_s_U   |        0|  5|   0|    -|     2|    8|       16|
+    |xleft_c17_U               |        0|  5|   0|    -|     3|   16|       48|
+    |xleft_c18_U               |        0|  5|   0|    -|     2|   16|       32|
+    |xleft_c1_U                |        0|  5|   0|    -|     2|   16|       32|
+    |xleft_c_U                 |        0|  5|   0|    -|     2|   16|       32|
+    |xright_c2_U               |        0|  5|   0|    -|     2|   16|       32|
+    |xright_c_U                |        0|  5|   0|    -|     3|   16|       48|
+    |ydown_c4_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ydown_c_U                 |        0|  5|   0|    -|     3|   16|       48|
+    |ytop_c19_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c23_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c27_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c31_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c35_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c39_U                |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c3_U                 |        0|  5|   0|    -|     2|   16|       32|
+    |ytop_c_U                  |        0|  5|   0|    -|     3|   16|       48|
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+    |Total                     |        0|450|   0|    0|   232|  880|     2384|
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |            Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |AXIvideo2Mat_U0_ap_ready_count       |     +    |      0|  0|   9|           2|           1|
+    |hls_rect_entry3_U0_ap_ready_count    |     +    |      0|  0|   9|           2|           1|
+    |AXIvideo2Mat_U0_ap_start             |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                              |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                        |    and   |      0|  0|   2|           1|           1|
+    |hls_rect_entry304_U0_start_full_n    |    and   |      0|  0|   2|           1|           1|
+    |hls_rect_entry3_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_AXIvideo2Mat_U0_ap_ready     |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_hls_rect_entry3_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                |          |      0|  0|  32|          11|           9|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |                   Name                  | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |AXIvideo2Mat_U0_ap_ready_count           |   9|          2|    2|          4|
+    |ap_sync_reg_AXIvideo2Mat_U0_ap_ready     |   9|          2|    1|          2|
+    |ap_sync_reg_hls_rect_entry3_U0_ap_ready  |   9|          2|    1|          2|
+    |hls_rect_entry3_U0_ap_ready_count        |   9|          2|    2|          4|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |Total                                    |  36|          8|    6|         12|
+    +-----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------+---+----+-----+-----------+
+    |                   Name                  | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------+---+----+-----+-----------+
+    |AXIvideo2Mat_U0_ap_ready_count           |  2|   0|    2|          0|
+    |ap_sync_reg_AXIvideo2Mat_U0_ap_ready     |  1|   0|    1|          0|
+    |ap_sync_reg_hls_rect_entry3_U0_ap_ready  |  1|   0|    1|          0|
+    |hls_rect_entry3_U0_ap_ready_count        |  2|   0|    2|          0|
+    +-----------------------------------------+---+----+-----+-----------+
+    |Total                                    |  6|   0|    6|          0|
+    +-----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++------------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    7|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    7|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |      hls_rect      | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |      hls_rect      | return value |
+|interrupt               | out |    1| ap_ctrl_hs |      hls_rect      | return value |
+|video_src_TDATA         |  in |   32|    axis    | video_src_V_data_V |    pointer   |
+|video_src_TKEEP         |  in |    4|    axis    | video_src_V_keep_V |    pointer   |
+|video_src_TSTRB         |  in |    4|    axis    | video_src_V_strb_V |    pointer   |
+|video_src_TUSER         |  in |    1|    axis    | video_src_V_user_V |    pointer   |
+|video_src_TLAST         |  in |    1|    axis    | video_src_V_last_V |    pointer   |
+|video_src_TID           |  in |    1|    axis    |  video_src_V_id_V  |    pointer   |
+|video_src_TDEST         |  in |    1|    axis    | video_src_V_dest_V |    pointer   |
+|video_src_TVALID        |  in |    1|    axis    | video_src_V_dest_V |    pointer   |
+|video_src_TREADY        | out |    1|    axis    | video_src_V_dest_V |    pointer   |
+|video_dst_TDATA         | out |   32|    axis    | video_dst_V_data_V |    pointer   |
+|video_dst_TKEEP         | out |    4|    axis    | video_dst_V_keep_V |    pointer   |
+|video_dst_TSTRB         | out |    4|    axis    | video_dst_V_strb_V |    pointer   |
+|video_dst_TUSER         | out |    1|    axis    | video_dst_V_user_V |    pointer   |
+|video_dst_TLAST         | out |    1|    axis    | video_dst_V_last_V |    pointer   |
+|video_dst_TID           | out |    1|    axis    |  video_dst_V_id_V  |    pointer   |
+|video_dst_TDEST         | out |    1|    axis    | video_dst_V_dest_V |    pointer   |
+|video_dst_TVALID        | out |    1|    axis    | video_dst_V_dest_V |    pointer   |
+|video_dst_TREADY        |  in |    1|    axis    | video_dst_V_dest_V |    pointer   |
++------------------------+-----+-----+------------+--------------------+--------------+
+

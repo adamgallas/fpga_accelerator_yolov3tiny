@@ -1,0 +1,230 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Programs/Xilinx/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Programs/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'galla' on host 'adam-gallas' (Windows NT_amd64 version 6.2) on Wed Jul 21 00:05:48 +0800 2021
+INFO: [HLS 200-10] In directory 'D:/base/base.runs/cam_v_gamma_lut_0_0_synth_1'
+Sourcing Tcl script 'D:/base/base.runs/cam_v_gamma_lut_0_0_synth_1/runhls.tcl'
+INFO: [HLS 200-10] Creating and opening project 'D:/base/base.runs/cam_v_gamma_lut_0_0_synth_1/cam_v_gamma_lut_0_0'.
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/v_gamma_lut_config.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/v_gamma_lut.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/v_gamma_lut.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls_video.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls_opencv.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_axi_io.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_arithm.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_core.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_fast.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_haar.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_harris.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_histogram.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_hough.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_imgbase.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_imgproc.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_io.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_mem.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_stereobm.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_types.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_video_undistort.h' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/base/base.runs/cam_v_gamma_lut_0_0_synth_1/cam_v_gamma_lut_0_0/prj'.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 4ns.
+INFO: [XFORM 203-102] Enabled automatic array partitioning for throughput optimization.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/v_gamma_lut.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:02:05 . Memory (MB): peak = 973.488 ; gain = 877.305
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:02:05 . Memory (MB): peak = 973.488 ; gain = 877.305
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<30, ap_uint<10> >.1' into 'hls::AXIGetBitFields<30, ap_uint<10> >' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<30, ap_uint<10> >' into 'AXIvideo2MultiPixStream' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/v_gamma_lut.cpp:139).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:02:13 . Memory (MB): peak = 973.488 ; gain = 877.305
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_gamma_lut_0_0/src/v_gamma_lut.cpp:212: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:11 ; elapsed = 00:02:15 . Memory (MB): peak = 973.488 ; gain = 877.305
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'MultiPixStream2AXIvideo' for pipelining.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1' in function 'Gamma' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' in function 'Gamma' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' in function 'AXIvideo2MultiPixStream' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'MultiPixStream2AXIvideo' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' in function 'Gamma' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' in function 'Gamma' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' in function 'AXIvideo2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1' in function 'AXIvideo2MultiPixStream' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 'lut_0.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'lut_1.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'lut_2.V' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgRgb.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgGamma.V.val.V' .
+INFO: [XFORM 203-712] Applying dataflow to function 'v_gamma_lut' , detected/extracted 3 process function(s): 
+	 'AXIvideo2MultiPixStream'
+	 'Gamma'
+	 'MultiPixStream2AXIvideo'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:16 ; elapsed = 00:02:20 . Memory (MB): peak = 973.488 ; gain = 877.305
+WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' 
+WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiPixStream' to 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-472] Inferring partial write operation for 'lut_0[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'lut_1[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'lut_2[0].V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:02:25 . Memory (MB): peak = 973.488 ; gain = 877.305
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_gamma_lut' ...
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 145.627 seconds; current allocated memory: 298.236 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.167 seconds; current allocated memory: 298.282 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.814 seconds; current allocated memory: 298.658 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.632 seconds; current allocated memory: 298.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamma' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.517 seconds; current allocated memory: 299.167 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.183 seconds; current allocated memory: 299.446 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.562 seconds; current allocated memory: 299.561 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.909 seconds; current allocated memory: 299.740 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_gamma_lut' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.065 seconds; current allocated memory: 299.858 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.576 seconds; current allocated memory: 300.206 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111]  Elapsed time: 1.663 seconds; current allocated memory: 300.342 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStr'.
+INFO: [HLS 200-111]  Elapsed time: 0.428 seconds; current allocated memory: 301.211 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamma' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamma'.
+INFO: [HLS 200-111]  Elapsed time: 1.552 seconds; current allocated memory: 301.626 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
+INFO: [HLS 200-111]  Elapsed time: 1.314 seconds; current allocated memory: 302.083 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_gamma_lut' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/HwReg_width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/HwReg_height' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/HwReg_video_format' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/HwReg_gamma_lut_0' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/HwReg_gamma_lut_1' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/HwReg_gamma_lut_2' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_gamma_lut/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_gamma_lut' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'HwReg_width', 'HwReg_height', 'HwReg_video_format', 'HwReg_gamma_lut_0', 'HwReg_gamma_lut_1', 'HwReg_gamma_lut_2' to AXI-Lite port CTRL.
+INFO: [SYN 201-210] Renamed object name 'start_for_MultiPixStream2AXIvi_U0' to 'start_for_MultiPibkb' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_gamma_lut'.
+INFO: [HLS 200-111]  Elapsed time: 1.527 seconds; current allocated memory: 302.751 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [RTMG 210-278] Implementing memory 'cam_v_gamma_lut_0_0_Gamma_lut_0_0_V_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_V_val_0_V_U(cam_v_gamma_lut_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_V_val_1_V_U(cam_v_gamma_lut_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_V_val_2_V_U(cam_v_gamma_lut_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgGamma_V_val_0_V_U(cam_v_gamma_lut_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgGamma_V_val_1_V_U(cam_v_gamma_lut_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgGamma_V_val_2_V_U(cam_v_gamma_lut_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPibkb_U(cam_v_gamma_lut_0_0_start_for_MultiPibkb)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:37 ; elapsed = 00:02:50 . Memory (MB): peak = 973.488 ; gain = 877.305
+INFO: [VHDL 208-304] Generating VHDL RTL for v_gamma_lut with prefix cam_v_gamma_lut_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_gamma_lut with prefix cam_v_gamma_lut_0_0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1080.449 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:09:04 2021...
+INFO: [HLS 200-112] Total elapsed time: 196.917 seconds; peak allocated memory: 302.751 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Wed Jul 21 00:09:04 2021...

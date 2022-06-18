@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue May 10 18:28:34 2022
+# Process ID: 155488
+# Current directory: E:/fpga_accelerator_yolov3tiny/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent158556 E:\fpga_accelerator_yolov3tiny\vivado_prj\base.xpr
+# Log file: E:/fpga_accelerator_yolov3tiny/vivado_prj/vivado.log
+# Journal file: E:/fpga_accelerator_yolov3tiny/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/fpga_accelerator_yolov3tiny/vivado_prj/base.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,22 @@
+16:36:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\FINAL\vitis\temp_xsdb_launch_script.tcl
+16:36:57 INFO  : Registering command handlers for Vitis TCF services
+16:37:00 INFO  : XSCT server has started successfully.
+16:37:01 INFO  : plnx-install-location is set to ''
+16:37:01 INFO  : Successfully done setting XSCT server connection channel  
+16:37:01 INFO  : Successfully done query RDI_DATADIR 
+16:37:01 INFO  : Successfully done setting workspace for the tool. 
+16:37:01 INFO  : Platform repository initialization has completed.
+16:43:12 INFO  : Result from executing command 'getProjects': base_wrapper
+16:43:12 INFO  : Result from executing command 'getPlatforms': 
+16:43:13 INFO  : Platform 'base_wrapper' is added to custom repositories.
+16:43:29 INFO  : Platform 'base_wrapper' is added to custom repositories.
+16:43:59 INFO  : Successfully done sdx_reload_mss "D:/FINAL/vitis/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/system.mss"
+16:47:14 INFO  : (SwPlatform)  Successfully done add_library 
+16:47:28 INFO  : (SwPlatform) Successfully done setDriver 
+16:47:29 INFO  : (SwPlatform) Successfully done update_mss 
+16:47:30 INFO  : Successfully done sdx_reload_mss "D:/FINAL/vitis/base_wrapper/psu_cortexa53_0/domain_psu_cortexa53_0/bsp/system.mss"
+16:51:07 INFO  : Result from executing command 'getProjects': base_wrapper
+16:51:07 INFO  : Result from executing command 'getPlatforms': base_wrapper|D:/FINAL/vitis/base_wrapper/export/base_wrapper/base_wrapper.xpfm
+16:51:08 INFO  : Checking for BSP changes to sync application flags for project 'base'...
+16:51:08 INFO  : Updating application flags with new BSP settings...
+16:51:08 INFO  : Successfully updated application flags for project base.

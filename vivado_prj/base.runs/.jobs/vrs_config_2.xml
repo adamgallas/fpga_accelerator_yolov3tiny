@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cam_mipi_csi2_rx_subsyst_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_91b0_vfb_0_0_synth_1"/>
+	</Run>
+	<Run Id="cam_clk_wiz_1_0_synth_1" LaunchDir="D:/base/base.runs/cam_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_v_axi4s_vid_out_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axis_data_fifo_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axi_vdma_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axi_vdma_1_0_synth_1" LaunchDir="D:/base/base.runs/cam_axi_vdma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_clk_wiz_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_Accel_Conv_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_Accel_Conv_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axi_smc_0_synth_1" LaunchDir="D:/base/base.runs/cam_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_91b0_vfb_0_0_synth_1" LaunchDir="D:/base/base.runs/bd_91b0_vfb_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_smartconnect_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_rst_ps8_0_250M_0_synth_1" LaunchDir="D:/base/base.runs/cam_rst_ps8_0_250M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_hls_rect_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_hls_rect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_hls_preprocess_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_hls_preprocess_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axis_subset_converter_2_0_synth_1" LaunchDir="D:/base/base.runs/cam_axis_subset_converter_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axis_subset_converter_1_0_synth_1" LaunchDir="D:/base/base.runs/cam_axis_subset_converter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axi_dma_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_v_demosaic_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_v_demosaic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_v_gamma_lut_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_v_gamma_lut_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_v_tc_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_v_tc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="D:/base/base.runs/cam_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_axi_smc_1_0_synth_1" LaunchDir="D:/base/base.runs/cam_axi_smc_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/base/base.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cam_mipi_csi2_rx_subsyst_0_0_synth_1"/>
+		<Parent Id="cam_clk_wiz_1_0_synth_1"/>
+		<Parent Id="cam_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="cam_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="cam_axi_vdma_0_0_synth_1"/>
+		<Parent Id="cam_axi_vdma_1_0_synth_1"/>
+		<Parent Id="cam_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cam_Accel_Conv_0_0_synth_1"/>
+		<Parent Id="cam_axi_smc_0_synth_1"/>
+		<Parent Id="cam_smartconnect_0_0_synth_1"/>
+		<Parent Id="cam_rst_ps8_0_250M_0_synth_1"/>
+		<Parent Id="cam_hls_rect_0_0_synth_1"/>
+		<Parent Id="cam_hls_preprocess_0_0_synth_1"/>
+		<Parent Id="cam_axis_subset_converter_2_0_synth_1"/>
+		<Parent Id="cam_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="cam_axi_dma_0_0_synth_1"/>
+		<Parent Id="cam_v_demosaic_0_0_synth_1"/>
+		<Parent Id="cam_v_gamma_lut_0_0_synth_1"/>
+		<Parent Id="cam_v_tc_0_0_synth_1"/>
+		<Parent Id="cam_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="cam_axi_smc_1_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/base/base.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="cam_mipi_csi2_rx_subsyst_0_0_synth_1"/>
+		<Parent Id="cam_clk_wiz_1_0_synth_1"/>
+		<Parent Id="cam_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="cam_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="cam_axi_vdma_0_0_synth_1"/>
+		<Parent Id="cam_axi_vdma_1_0_synth_1"/>
+		<Parent Id="cam_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cam_Accel_Conv_0_0_synth_1"/>
+		<Parent Id="cam_axi_smc_0_synth_1"/>
+		<Parent Id="bd_91b0_vfb_0_0_synth_1"/>
+		<Parent Id="cam_smartconnect_0_0_synth_1"/>
+		<Parent Id="cam_rst_ps8_0_250M_0_synth_1"/>
+		<Parent Id="cam_hls_rect_0_0_synth_1"/>
+		<Parent Id="cam_hls_preprocess_0_0_synth_1"/>
+		<Parent Id="cam_axis_subset_converter_2_0_synth_1"/>
+		<Parent Id="cam_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="cam_axi_dma_0_0_synth_1"/>
+		<Parent Id="cam_v_demosaic_0_0_synth_1"/>
+		<Parent Id="cam_v_gamma_lut_0_0_synth_1"/>
+		<Parent Id="cam_v_tc_0_0_synth_1"/>
+		<Parent Id="cam_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="cam_axi_smc_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

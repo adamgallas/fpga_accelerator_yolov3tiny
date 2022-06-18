@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="cam_hls_rect_0_0_synth_1" LaunchPart="xczu3eg-sfvc784-1-e" LaunchTime="1651639196">
+  <File Type="PA-TCL" Name="cam_hls_rect_0_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="cam_hls_rect_0_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cam_hls_rect_0_0.vds"/>
+  <File Type="RDS-UTIL" Name="cam_hls_rect_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cam_hls_rect_0_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cam_hls_rect_0_0.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cam_hls_rect_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/cam/ip/cam_hls_rect_0_0/cam_hls_rect_0_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="cam_hls_rect_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cam_hls_rect_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/cam/ip/cam_hls_rect_0_0/cam_hls_rect_0_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="cam_hls_rect_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

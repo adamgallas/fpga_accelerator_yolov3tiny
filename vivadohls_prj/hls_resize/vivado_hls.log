@@ -1,0 +1,20 @@
+INFO: [HLS 200-10] Running 'D:/Programs/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'galla' on host 'adam-gallas' (Windows NT_amd64 version 6.2) on Mon Jul 19 21:23:04 +0800 2021
+INFO: [HLS 200-10] In directory 'D:/fpga-yolo-v3_v2/day_07_15/hls_resize'
+Sourcing Tcl script 'D:/fpga-yolo-v3_v2/day_07_15/hls_resize/hls_resize/solution1/export.tcl'
+INFO: [HLS 200-10] Opening project 'D:/fpga-yolo-v3_v2/day_07_15/hls_resize/hls_resize'.
+INFO: [HLS 200-10] Opening solution 'D:/fpga-yolo-v3_v2/day_07_15/hls_resize/hls_resize/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 19 21:24:28 2021...

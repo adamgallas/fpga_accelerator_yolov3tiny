@@ -1,0 +1,438 @@
+
+*** Running vivado
+    with args -log cam_hls_preprocess_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_hls_preprocess_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cam_hls_preprocess_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1059.848 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/base/base.runs/cam_hls_preprocess_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1059.848 ; gain = 0.000
+Command: synth_design -top cam_hls_preprocess_0_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9396
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1534.469 ; gain = 74.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cam_hls_preprocess_0_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_hls_preprocess_0_0/synth/cam_hls_preprocess_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'hls_preprocess' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/hls_preprocess.v:12]
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_preprocess_AXILiteS_s_axi' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/hls_preprocess_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/hls_preprocess_AXILiteS_s_axi.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'hls_preprocess_AXILiteS_s_axi' (1#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/hls_preprocess_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (2#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (3#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 4 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized1' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized1' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized1' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Downsample' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Downsample.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'Downsample' (6#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Downsample.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Convert' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'Convert_quant_table' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert_quant_table.v:67]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Convert_quant_table_rom' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert_quant_table.v:6]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Convert_quant_table_rom.dat' is read successfully [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert_quant_table.v:28]
+INFO: [Synth 8-3876] $readmem data file './Convert_quant_table_rom.dat' is read successfully [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert_quant_table.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Convert_quant_table_rom' (7#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert_quant_table.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Convert_quant_table' (8#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert_quant_table.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Convert' (9#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Convert.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (10#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/fifo_w8_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/fifo_w8_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (11#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (12#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Downsambkb' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Downsambkb.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Downsambkb_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Downsambkb.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Downsambkb_shiftReg' (13#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Downsambkb.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Downsambkb' (14#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Downsambkb.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Convertcud' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Convertcud.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Convertcud_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Convertcud.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Convertcud_shiftReg' (15#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Convertcud.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Convertcud' (16#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Convertcud.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIdEe' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Mat2AXIdEe.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIdEe_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Mat2AXIdEe.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIdEe_shiftReg' (17#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Mat2AXIdEe.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIdEe' (18#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/start_for_Mat2AXIdEe.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'hls_preprocess' (19#1) [d:/base/base.srcs/sources_1/bd/cam/ipshared/f218/hdl/verilog/hls_preprocess.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'cam_hls_preprocess_0_0' (20#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_hls_preprocess_0_0/synth/cam_hls_preprocess_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 1609.613 ; gain = 150.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1627.551 ; gain = 167.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1627.551 ; gain = 167.961
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1627.551 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_hls_preprocess_0_0/constraints/hls_preprocess_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1752.129 ; gain = 5.016
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_hls_preprocess_0_0/constraints/hls_preprocess_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/base/base.runs/cam_hls_preprocess_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/base/base.runs/cam_hls_preprocess_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1752.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.217 . Memory (MB): peak = 1752.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1752.129 ; gain = 292.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1752.129 ; gain = 292.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/base/base.runs/cam_hls_preprocess_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1752.129 ; gain = 292.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'hls_preprocess_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'hls_preprocess_AXILiteS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'hls_preprocess_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'hls_preprocess_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:05 . Memory (MB): peak = 1752.129 ; gain = 292.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/Mat2AXIvideo_U0/regslice_both_AXI_video_strm_V_id_V_U' (regslice_both__parameterized1) to 'inst/Mat2AXIvideo_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 15    
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 29    
+	                7 Bit    Registers := 3     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 43    
+	                1 Bit    Registers := 80    
++---ROMs : 
+	                    ROMs := 3     
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 12    
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 24    
+	   4 Input    2 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 159   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:18 . Memory (MB): peak = 1752.129 ; gain = 292.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|hls_preprocess | q0_reg     | 256x7         | Block RAM      | 
+|hls_preprocess | q1_reg     | 256x7         | Block RAM      | 
+|hls_preprocess | q2_reg     | 256x7         | Block RAM      | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 2334.543 ; gain = 874.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:01:58 . Memory (MB): peak = 2406.922 ; gain = 947.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:01:59 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:44 ; elapsed = 00:02:08 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:44 ; elapsed = 00:02:08 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:44 ; elapsed = 00:02:08 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:44 ; elapsed = 00:02:08 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    26|
+|2     |LUT2     |    51|
+|3     |LUT3     |   158|
+|4     |LUT4     |   142|
+|5     |LUT5     |   114|
+|6     |LUT6     |   115|
+|7     |RAMB18E2 |     2|
+|9     |FDRE     |   597|
+|10    |FDSE     |    46|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 2417.004 ; gain = 957.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:49 . Memory (MB): peak = 2417.004 ; gain = 832.836
+Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:02:09 . Memory (MB): peak = 2417.004 ; gain = 957.414
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2423.781 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/q0_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2434.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+82 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:14 ; elapsed = 00:03:15 . Memory (MB): peak = 2434.000 ; gain = 1374.152
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_hls_preprocess_0_0_synth_1/cam_hls_preprocess_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cam_hls_preprocess_0_0, cache-ID = 20f8edac8d99452a
+INFO: [Coretcl 2-1174] Renamed 51 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_hls_preprocess_0_0_synth_1/cam_hls_preprocess_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_hls_preprocess_0_0_utilization_synth.rpt -pb cam_hls_preprocess_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:04:59 2021...

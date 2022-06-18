@@ -1,0 +1,1254 @@
+INFO-FLOW: Workspace D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1 opened at Tue Jul 20 21:52:23 +0800 2021
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.141 sec.
+Command     ap_source done; 0.141 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data single -quiet 
+Command       ap_part_info done; 1.094 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu3eg:-sfvc784:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xczu3eg-sfvc784-1-e 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data resources 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.333 sec.
+Execute     ap_part_info -data single -name xczu3eg-sfvc784-1-e 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data resources 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.592 sec.
+Execute   set_part xczu3eg-sfvc784-1-e 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data single -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu3eg:-sfvc784:-1-e 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xczu3eg-sfvc784-1-e 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data resources 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.222 sec.
+Execute   create_clock -period 4 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'top.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling top.cpp as C++
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       is_encrypted top.cpp 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Programs/Xilinx/Vivado/2019.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "top.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp" 
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Programs/Xilinx/Vivado/2019.2/msys -hls -fno-exceptions -D__llvm__ -E top.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp
+Command       clang done; 1.842 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.251 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Programs/Xilinx/Vivado/2019.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp"  -o "D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Programs/Xilinx/Vivado/2019.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/useless.bc
+Command       clang done; 4.331 sec.
+INFO-FLOW: Done: GCC PP time: 7.4 seconds per iteration
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 -directive=D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.134 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 -directive=D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/all.directive.json -quiet -fix-errors D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.122 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.diag.yml D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.out.log 2> D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.err.log 
+Command       ap_eval done; 1.208 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.out.log 2> D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.err.log 
+Command         ap_eval done; 1.374 sec.
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/xilinx-legacy-rewriter.top.pp.0.cpp.out.log 2> D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/xilinx-legacy-rewriter.top.pp.0.cpp.err.log 
+Command         ap_eval done; 0.811 sec.
+Command       tidy_31 done; 2.216 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.6 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.428 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Programs/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.bc" 
+INFO-FLOW: exec D:/Programs/Xilinx/Vivado/2019.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Programs/Xilinx/Vivado/2019.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot -I D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.bc
+Command       clang done; 4.509 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/top.g.bc -hls-opt -except-internalize hls_preprocess -LD:/Programs/Xilinx/Vivado/2019.2/win64/lib -lhlsm -lhlsmc++ -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.219 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 197.551 ; gain = 107.324
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 197.551 ; gain = 107.324
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.pp.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.139 sec.
+Execute         llvm-ld D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Programs/Xilinx/Vivado/2019.2/win64/lib -lfloatconversion -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.895 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top hls_preprocess -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.0.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::init' into 'hls::Mat<720, 1280, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::init' into 'hls::Mat<258, 418, 6144>::Mat.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>.1' into 'hls::AXIGetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<32, unsigned char>' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::write' into 'hls::Mat<720, 1280, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator<<' into 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::read' into 'hls::Mat<720, 1280, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<720, 1280, 6144>::operator>>' into 'Downsample' (top.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::write' into 'hls::Mat<258, 418, 6144>::operator<<' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Convert' (top.cpp:36).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator<<' into 'Downsample' (top.cpp:52).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::read' into 'hls::Mat<258, 418, 6144>::operator>>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<258, 418, 6144>::operator>>' into 'Convert' (top.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>.1' into 'hls::AXISetBitFields<32, unsigned char>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<32, unsigned char>' into 'hls::Mat2AXIvideo<32, 258, 418, 6144>' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 0.403 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 197.551 ; gain = 107.324
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.1.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.378 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.2.prechk.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.167 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 223.359 ; gain = 133.133
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.g.1.bc to D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.1.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'src_img.data_stream.V' (top.cpp:11).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'dst_img.data_stream.V' (top.cpp:12).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'ifm_img.data_stream.V' (top.cpp:13).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:46) in function 'Downsample' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLS' (top.cpp:29) in function 'Convert' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Downsample' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:677) in function 'Convert' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:701) in function 'Convert' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.1' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.2' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src_img.data_stream.V' (top.cpp:11) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst_img.data_stream.V' (top.cpp:12) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'ifm_img.data_stream.V' (top.cpp:13) .
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (top.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_in.val' (top.cpp:23) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix_out.val' (top.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_img.data_stream.V' (top.cpp:11) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst_img.data_stream.V' (top.cpp:12) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ifm_img.data_stream.V' (top.cpp:13) in dimension 1 completely.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 418 for loop 'loop_width' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 258 for loop 'loop_height' in function 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'hls_preprocess', detected/extracted 4 process function(s): 
+	 'hls::AXIvideo2Mat<32, 720, 1280, 6144>'
+	 'Downsample'
+	 'Convert'
+	 'hls::Mat2AXIvideo<32, 258, 418, 6144>'.
+Command         transform done; 1.213 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.1.tmp.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'Downsample' (top.cpp:41)...3 expression(s) balanced.
+Command         transform done; 0.586 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 275.426 ; gain = 185.199
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.2.bc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<32, 258, 418, 6144>' to 'Mat2AXIvideo' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<32, 720, 1280, 6144>' to 'AXIvideo2Mat' (D:/Programs/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:49:9)
+Command         transform done; 1.046 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 316.863 ; gain = 226.637
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 4.853 sec.
+Command     elaborate done; 25.692 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'hls_preprocess' ...
+Execute       ap_set_top_model hls_preprocess 
+Execute       get_model_list hls_preprocess -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model hls_preprocess 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model Convert 
+Execute       preproc_iomode -model Downsample 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       get_model_list hls_preprocess -filter all-wo-channel 
+INFO-FLOW: Model list for configure: AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : Downsample ...
+Execute       set_default_model Downsample 
+Execute       apply_spec_resource_limit Downsample 
+INFO-FLOW: Configuring Module : Convert ...
+Execute       set_default_model Convert 
+Execute       apply_spec_resource_limit Convert 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : hls_preprocess ...
+Execute       set_default_model hls_preprocess 
+Execute       apply_spec_resource_limit hls_preprocess 
+INFO-FLOW: Model list for preprocess: AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: Downsample ...
+Execute       set_default_model Downsample 
+Execute       cdfg_preprocess -model Downsample 
+Execute       rtl_gen_preprocess Downsample 
+INFO-FLOW: Preprocessing Module: Convert ...
+Execute       set_default_model Convert 
+Execute       cdfg_preprocess -model Convert 
+Execute       rtl_gen_preprocess Convert 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: hls_preprocess ...
+Execute       set_default_model hls_preprocess 
+Execute       cdfg_preprocess -model hls_preprocess 
+Execute       rtl_gen_preprocess hls_preprocess 
+INFO-FLOW: Model list for synthesis: AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.205 sec.
+INFO: [HLS 200-111]  Elapsed time: 28.224 seconds; current allocated memory: 258.583 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: model=AXIvideo2Mat
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 258.883 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Downsample 
+Execute       schedule -model Downsample 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.29 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.398 seconds; current allocated memory: 259.050 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.verbose.sched.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.sched.adb -f 
+INFO-FLOW: Finish scheduling Downsample.
+Execute       set_default_model Downsample 
+Execute       bind -model Downsample 
+BIND OPTION: model=Downsample
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.117 seconds; current allocated memory: 259.285 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.verbose.bind.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.bind.adb -f 
+INFO-FLOW: Finish binding Downsample.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Convert 
+Execute       schedule -model Convert 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLS'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.296 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.405 seconds; current allocated memory: 259.497 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.verbose.sched.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.sched.adb -f 
+INFO-FLOW: Finish scheduling Convert.
+Execute       set_default_model Convert 
+Execute       bind -model Convert 
+BIND OPTION: model=Convert
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.121 seconds; current allocated memory: 259.725 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.verbose.bind.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.bind.adb -f 
+INFO-FLOW: Finish binding Convert.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.166 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.268 seconds; current allocated memory: 259.837 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt 
+Command       syn_report done; 0.323 sec.
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: model=Mat2AXIvideo
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.417 seconds; current allocated memory: 260.030 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model hls_preprocess 
+Execute       schedule -model hls_preprocess 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 260.148 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.verbose.sched.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.sched.adb -f 
+INFO-FLOW: Finish scheduling hls_preprocess.
+Execute       set_default_model hls_preprocess 
+Execute       bind -model hls_preprocess 
+BIND OPTION: model=hls_preprocess
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.156 seconds; current allocated memory: 260.537 MB.
+Execute       syn_report -verbosereport -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.verbose.bind.rpt 
+Execute       db_write -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.bind.adb -f 
+INFO-FLOW: Finish binding hls_preprocess.
+Execute       get_model_list hls_preprocess -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess Downsample 
+Execute       rtl_gen_preprocess Convert 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess hls_preprocess 
+INFO-FLOW: Model list for RTL generation: AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 261.088 MB.
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/systemc/AXIvideo2Mat -synmodules AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/verilog/AXIvideo2Mat 
+Execute       syn_report -csynth -model AXIvideo2Mat -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/AXIvideo2Mat_csynth.rpt 
+Execute       syn_report -rtlxml -model AXIvideo2Mat -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/AXIvideo2Mat_csynth.xml 
+Execute       syn_report -verbosereport -model AXIvideo2Mat -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.verbose.rpt 
+Execute       db_write -model AXIvideo2Mat -f -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.adb 
+Execute       gen_tb_info AXIvideo2Mat -p D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Downsample' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Downsample -vendor xilinx -mg_file D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Downsample'.
+INFO: [HLS 200-111]  Elapsed time: 0.231 seconds; current allocated memory: 261.579 MB.
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Downsample -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/systemc/Downsample -synmodules AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess 
+Execute       gen_rtl Downsample -style xilinx -f -lang vhdl -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/vhdl/Downsample 
+Execute       gen_rtl Downsample -style xilinx -f -lang vlog -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/verilog/Downsample 
+Execute       syn_report -csynth -model Downsample -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/Downsample_csynth.rpt 
+Execute       syn_report -rtlxml -model Downsample -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/Downsample_csynth.xml 
+Execute       syn_report -verbosereport -model Downsample -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.verbose.rpt 
+Execute       db_write -model Downsample -f -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.adb 
+Execute       gen_tb_info Downsample -p D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Convert -vendor xilinx -mg_file D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Convert'.
+INFO: [HLS 200-111]  Elapsed time: 0.214 seconds; current allocated memory: 262.041 MB.
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Convert -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/systemc/Convert -synmodules AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess 
+Execute       gen_rtl Convert -style xilinx -f -lang vhdl -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/vhdl/Convert 
+Execute       gen_rtl Convert -style xilinx -f -lang vlog -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/verilog/Convert 
+Execute       syn_report -csynth -model Convert -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/Convert_csynth.rpt 
+Execute       syn_report -rtlxml -model Convert -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/Convert_csynth.xml 
+Execute       syn_report -verbosereport -model Convert -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.verbose.rpt 
+Execute       db_write -model Convert -f -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.adb 
+Execute       gen_tb_info Convert -p D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.198 seconds; current allocated memory: 262.491 MB.
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/systemc/Mat2AXIvideo -synmodules AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/verilog/Mat2AXIvideo 
+Execute       syn_report -csynth -model Mat2AXIvideo -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/Mat2AXIvideo_csynth.rpt 
+Execute       syn_report -rtlxml -model Mat2AXIvideo -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/Mat2AXIvideo_csynth.xml 
+Execute       syn_report -verbosereport -model Mat2AXIvideo -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.verbose.rpt 
+Execute       db_write -model Mat2AXIvideo -f -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.adb 
+Execute       gen_tb_info Mat2AXIvideo -p D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_preprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model hls_preprocess -vendor xilinx -mg_file D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_src_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_preprocess/video_dst_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hls_preprocess' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_Downsample_U0' to 'start_for_Downsambkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Convert_U0' to 'start_for_Convertcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIdEe' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_preprocess'.
+Command       create_rtl_model done; 0.165 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 263.345 MB.
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       gen_rtl hls_preprocess -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/systemc/hls_preprocess -synmodules AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess 
+Execute       gen_rtl hls_preprocess -istop -style xilinx -f -lang vhdl -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/vhdl/hls_preprocess 
+Execute       gen_rtl hls_preprocess -istop -style xilinx -f -lang vlog -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/verilog/hls_preprocess 
+Execute       syn_report -csynth -model hls_preprocess -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/hls_preprocess_csynth.rpt 
+Execute       syn_report -rtlxml -model hls_preprocess -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/syn/report/hls_preprocess_csynth.xml 
+Execute       syn_report -verbosereport -model hls_preprocess -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.verbose.rpt 
+Execute       db_write -model hls_preprocess -f -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.adb 
+Execute       gen_tb_info hls_preprocess -p D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess 
+Execute       export_constraint_db -f -tool general -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.constraint.tcl 
+Execute       syn_report -designview -model hls_preprocess -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model hls_preprocess -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model hls_preprocess -o D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks hls_preprocess 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain hls_preprocess 
+INFO-FLOW: Model list for RTL component generation: AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [Downsample] ... 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+INFO-FLOW: Handling components in module [Convert] ... 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+INFO-FLOW: Found component Convert_quant_table.
+INFO-FLOW: Append model Convert_quant_table
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [hls_preprocess] ... 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_Downsambkb.
+INFO-FLOW: Append model start_for_Downsambkb
+INFO-FLOW: Found component start_for_Convertcud.
+INFO-FLOW: Append model start_for_Convertcud
+INFO-FLOW: Found component start_for_Mat2AXIdEe.
+INFO-FLOW: Append model start_for_Mat2AXIdEe
+INFO-FLOW: Found component hls_preprocess_AXILiteS_s_axi.
+INFO-FLOW: Append model hls_preprocess_AXILiteS_s_axi
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model Downsample
+INFO-FLOW: Append model Convert
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model hls_preprocess
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: regslice_core Convert_quant_table regslice_core fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A start_for_Downsambkb start_for_Convertcud start_for_Mat2AXIdEe hls_preprocess_AXILiteS_s_axi regslice_core AXIvideo2Mat Downsample Convert Mat2AXIvideo hls_preprocess
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model Convert_quant_table
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_Downsambkb
+INFO-FLOW: To file: write model start_for_Convertcud
+INFO-FLOW: To file: write model start_for_Mat2AXIdEe
+INFO-FLOW: To file: write model hls_preprocess_AXILiteS_s_axi
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model Downsample
+INFO-FLOW: To file: write model Convert
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model hls_preprocess
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model hls_preprocess -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 285.71 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.138 sec.
+Command       ap_source done; 0.139 sec.
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'Convert_quant_table_rom' using block ROMs.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Command       ap_source done; 0.145 sec.
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'src_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'dst_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'ifm_img_data_stream_3_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Downsambkb_U(start_for_Downsambkb)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Convertcud_U(start_for_Convertcud)' using Shift Registers.
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIdEe_U(start_for_Mat2AXIdEe)' using Shift Registers.
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.579 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.135 sec.
+Command       ap_source done; 0.135 sec.
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=hls_preprocess xml_exists=0
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Command       ap_source done; 0.153 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.constraint.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=14
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=25 #gSsdmPorts=28
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.dataonly.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.dataonly.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.dataonly.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.constraint.tcl 
+Execute       sc_get_clocks hls_preprocess 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.tbgen.tcl 
+Execute       source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 335.871 ; gain = 245.645
+INFO: [VHDL 208-304] Generating VHDL RTL for hls_preprocess.
+INFO: [VLOG 209-307] Generating Verilog RTL for hls_preprocess.
+Command     autosyn done; 6.7 sec.
+Command   csynth_design done; 32.404 sec.
+Command ap_source done; 34.241 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1 opened at Tue Jul 20 21:53:42 +0800 2021
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.142 sec.
+Command     ap_source done; 0.143 sec.
+Execute     set_part xczu3eg-sfvc784-1-e 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data single -quiet 
+Command       ap_part_info done; 1.205 sec.
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu3eg:-sfvc784:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xczu3eg-sfvc784-1-e 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data resources 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute         ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.45 sec.
+Execute     ap_part_info -data single -name xczu3eg-sfvc784-1-e 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data resources 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.733 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.142 sec.
+Command     ap_source done; 0.143 sec.
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.000 (was NA)
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.103 sec.
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.147 sec.
+Command     ap_source done; 0.147 sec.
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=hls_preprocess xml_exists=1
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Command     ap_source done; 0.195 sec.
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Downsample.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Convert.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.constraint.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD:       copying IP vlog from D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=28
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.dataonly.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.compgen.dataonly.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=hls_preprocess
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=hls_preprocess
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.rtl_wrap.cfg.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.constraint.tcl 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/hls_preprocess.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.125 sec.
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.174 sec.
+Command     ap_source done; 0.175 sec.
+Execute     source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source D:/Programs/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu3eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec D:/fpga-yolo-v3_v2/day_07_15/hls_preprocess/hls_preprocess/solution1/impl/ip/pack.bat
+Command   export_design done; 58.494 sec.
+Command ap_source done; 60.245 sec.
+Execute cleanup_all 

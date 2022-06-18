@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jul 21 00:00:41 2021
+# Process ID: 9416
+# Current directory: D:/base/base.runs/cam_rst_ps8_0_250M_0_synth_1
+# Command line: vivado.exe -log cam_rst_ps8_0_250M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_rst_ps8_0_250M_0.tcl
+# Log file: D:/base/base.runs/cam_rst_ps8_0_250M_0_synth_1/cam_rst_ps8_0_250M_0.vds
+# Journal file: D:/base/base.runs/cam_rst_ps8_0_250M_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cam_rst_ps8_0_250M_0.tcl -notrace

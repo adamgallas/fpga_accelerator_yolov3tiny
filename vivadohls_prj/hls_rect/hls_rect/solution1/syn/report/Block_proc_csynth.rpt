@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc'
+================================================================
+* Date:           Fri Aug 20 09:07:39 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        hls_rect
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 2.766 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1| 4.000 ns | 4.000 ns |    1|    1|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|    119|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     78|    -|
+|Register         |        -|      -|      19|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      19|    197|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      432|    360|  141120|  70560|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+-------+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+-------+---+----+------------+------------+
+    |ch2x_out_out_din  |     +    |      0|  0|  23|          16|           6|
+    |ch3x_out_out_din  |     +    |      0|  0|  23|          16|           7|
+    |ch4x_out_out_din  |     +    |      0|  0|  23|          16|           7|
+    |ch5x_out_out_din  |     +    |      0|  0|  23|          16|           8|
+    |ch6x_out_out_din  |     +    |      0|  0|  23|          16|           8|
+    |ap_block_state1   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state2   |    or    |      0|  0|   2|           1|           1|
+    +------------------+----------+-------+---+----+------------+------------+
+    |Total             |          |      0|  0| 119|          82|          38|
+    +------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm           |  15|          3|    1|          3|
+    |ap_done             |   9|          2|    1|          2|
+    |ch2x_out_out_blk_n  |   9|          2|    1|          2|
+    |ch3x_out_out_blk_n  |   9|          2|    1|          2|
+    |ch4x_out_out_blk_n  |   9|          2|    1|          2|
+    |ch5x_out_out_blk_n  |   9|          2|    1|          2|
+    |ch6x_out_out_blk_n  |   9|          2|    1|          2|
+    |xleft_s_blk_n       |   9|          2|    1|          2|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               |  78|         17|    8|         17|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+----+----+-----+-----------+
+    |        Name        | FF | LUT| Bits| Const Bits|
+    +--------------------+----+----+-----+-----------+
+    |ap_CS_fsm           |   2|   0|    2|          0|
+    |ap_done_reg         |   1|   0|    1|          0|
+    |xleft_read_reg_179  |  16|   0|   16|          0|
+    +--------------------+----+----+-----+-----------+
+    |Total               |  19|   0|   19|          0|
+    +--------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+--------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
++---------------------+-----+-----+------------+--------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs |  Block__proc | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs |  Block__proc | return value |
+|ap_start             |  in |    1| ap_ctrl_hs |  Block__proc | return value |
+|ap_done              | out |    1| ap_ctrl_hs |  Block__proc | return value |
+|ap_continue          |  in |    1| ap_ctrl_hs |  Block__proc | return value |
+|ap_idle              | out |    1| ap_ctrl_hs |  Block__proc | return value |
+|ap_ready             | out |    1| ap_ctrl_hs |  Block__proc | return value |
+|xleft_s_dout         |  in |   16|   ap_fifo  |    xleft_s   |    pointer   |
+|xleft_s_empty_n      |  in |    1|   ap_fifo  |    xleft_s   |    pointer   |
+|xleft_s_read         | out |    1|   ap_fifo  |    xleft_s   |    pointer   |
+|ch2x_out_out_din     | out |   16|   ap_fifo  | ch2x_out_out |    pointer   |
+|ch2x_out_out_full_n  |  in |    1|   ap_fifo  | ch2x_out_out |    pointer   |
+|ch2x_out_out_write   | out |    1|   ap_fifo  | ch2x_out_out |    pointer   |
+|ch3x_out_out_din     | out |   16|   ap_fifo  | ch3x_out_out |    pointer   |
+|ch3x_out_out_full_n  |  in |    1|   ap_fifo  | ch3x_out_out |    pointer   |
+|ch3x_out_out_write   | out |    1|   ap_fifo  | ch3x_out_out |    pointer   |
+|ch4x_out_out_din     | out |   16|   ap_fifo  | ch4x_out_out |    pointer   |
+|ch4x_out_out_full_n  |  in |    1|   ap_fifo  | ch4x_out_out |    pointer   |
+|ch4x_out_out_write   | out |    1|   ap_fifo  | ch4x_out_out |    pointer   |
+|ch5x_out_out_din     | out |   16|   ap_fifo  | ch5x_out_out |    pointer   |
+|ch5x_out_out_full_n  |  in |    1|   ap_fifo  | ch5x_out_out |    pointer   |
+|ch5x_out_out_write   | out |    1|   ap_fifo  | ch5x_out_out |    pointer   |
+|ch6x_out_out_din     | out |   16|   ap_fifo  | ch6x_out_out |    pointer   |
+|ch6x_out_out_full_n  |  in |    1|   ap_fifo  | ch6x_out_out |    pointer   |
+|ch6x_out_out_write   | out |    1|   ap_fifo  | ch6x_out_out |    pointer   |
++---------------------+-----+-----+------------+--------------+--------------+
+

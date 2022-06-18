@@ -1,0 +1,972 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jul 21 00:05:05 2021
+# Process ID: 5232
+# Current directory: D:/base/base.runs/cam_v_demosaic_0_0_synth_1
+# Command line: vivado.exe -log cam_v_demosaic_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_v_demosaic_0_0.tcl
+# Log file: D:/base/base.runs/cam_v_demosaic_0_0_synth_1/cam_v_demosaic_0_0.vds
+# Journal file: D:/base/base.runs/cam_v_demosaic_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cam_v_demosaic_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1071.809 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/base/base.runs/cam_v_demosaic_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1071.809 ; gain = 0.000
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Programs/Xilinx/Vivado/2020.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Programs/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'galla' on host 'adam-gallas' (Windows NT_amd64 version 6.2) on Wed Jul 21 00:05:48 +0800 2021
+INFO: [HLS 200-10] In directory 'D:/base/base.runs/cam_v_demosaic_0_0_synth_1'
+Sourcing Tcl script 'D:/base/base.runs/cam_v_demosaic_0_0_synth_1/runhls.tcl'
+INFO: [HLS 200-10] Creating and opening project 'D:/base/base.runs/cam_v_demosaic_0_0_synth_1/cam_v_demosaic_0_0'.
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic_config.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls_video.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls_opencv.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_axi_io.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_arithm.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_core.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_fast.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_haar.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_harris.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_histogram.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_hough.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_imgbase.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_imgproc.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_io.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_stereobm.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_types.h' to the project
+INFO: [HLS 200-10] Adding design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_undistort.h' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/base/base.runs/cam_v_demosaic_0_0_synth_1/cam_v_demosaic_0_0/prj'.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sfvc784-1-e'
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 4ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'd:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:08 ; elapsed = 00:02:06 . Memory (MB): peak = 974.082 ; gain = 883.762
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:08 ; elapsed = 00:02:06 . Memory (MB): peak = 974.082 ; gain = 883.762
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<10, ap_uint<10> >.1' into 'hls::AXIGetBitFields<10, ap_uint<10> >' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<10, ap_uint<10> >' into 'AXIvideo2MultiBayer' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:165).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<5, 2049, ap_uint<10>, 0>::getval' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:332).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<5, 2049, ap_uint<10>, 0>::insert_top_row' into 'hls::LineBuffer<5, 2049, ap_uint<10>, 0>::insert_bottom' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h:873).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<5, 2049, ap_uint<10>, 0>::insert_bottom' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:353).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::insert_pixel' into 'hls::Window<5, 5, ap_uint<10> >::insert' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::insert' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:419).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::insert' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:392).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::insert' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:382).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::getval' into 'hls::Window<5, 5, ap_uint<10> >::operator()' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::getval' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:517).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:572).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:571).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:570).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:553).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:553).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:553).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:553).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:552).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:552).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:552).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:552).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:533).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:533).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:533).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:530).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:530).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:530).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:527).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:527).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:527).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:524).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:524).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<5, 5, ap_uint<10> >::operator()' into 'DebayerG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:524).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 2049, ap_uint<30>, 0>::getval' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:888).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 2049, ap_uint<30>, 0>::getval' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:644).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 2049, ap_uint<30>, 0>::insert_top_row' into 'hls::LineBuffer<3, 2049, ap_uint<30>, 0>::insert_bottom' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h:873).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 2049, ap_uint<30>, 0>::insert_bottom' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:914).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 2049, ap_uint<30>, 0>::insert_bottom' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:671).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert_pixel' into 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:989).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:957).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:945).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:746).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:714).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::insert' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:702).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::getval' into 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:1009).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:1008).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:1007).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:1006).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:1005).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRandBatG' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:997).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:771).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:770).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:769).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:768).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:767).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::operator()' into 'DebayerRatBorBatR' (d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:754).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:14 ; elapsed = 00:02:21 . Memory (MB): peak = 974.082 ; gain = 883.762
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:236: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:02:25 . Memory (MB): peak = 974.082 ; gain = 883.762
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'ZipperRemoval' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'MultiPixStream2AXIvideo' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' in function 'DebayerRatBorBatR' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' in function 'DebayerRandBatG' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' in function 'DebayerG' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' in function 'AXIvideo2MultiBayer' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'ZipperRemoval' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'ZipperRemoval' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' in function 'ZipperRemoval' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' in function 'ZipperRemoval' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'MultiPixStream2AXIvideo' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.1' in function 'DebayerRatBorBatR' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.1.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2' in function 'DebayerRatBorBatR' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.3' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.4' in function 'DebayerRatBorBatR' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.4.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.5' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6.1' in function 'DebayerRatBorBatR' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6.1.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.1' in function 'DebayerRatBorBatR' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.1.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.2' in function 'DebayerRatBorBatR' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.2.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.8' in function 'DebayerRatBorBatR' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.8.1' in function 'DebayerRatBorBatR' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.8.1.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.9' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.9.1' in function 'DebayerRatBorBatR' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.9.1.1' in function 'DebayerRatBorBatR' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.10' in function 'DebayerRatBorBatR' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.1' in function 'DebayerRandBatG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.1.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2' in function 'DebayerRandBatG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.3' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.4' in function 'DebayerRandBatG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.4.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.5' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6.1' in function 'DebayerRandBatG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6.1.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.1' in function 'DebayerRandBatG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.1.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.2' in function 'DebayerRandBatG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.7.2.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.8' in function 'DebayerRandBatG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.8.1' in function 'DebayerRandBatG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.8.1.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.9' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.9.1' in function 'DebayerRandBatG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.9.1.1' in function 'DebayerRandBatG' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.10' in function 'DebayerRandBatG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' in function 'DebayerG' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' in function 'DebayerG' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.1' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.3' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.4' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.5' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.6' in function 'DebayerG' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.6.1' in function 'DebayerG' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.7' in function 'DebayerG' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.7.1' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.7.2' in function 'DebayerG' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.8' in function 'DebayerG' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.8.1' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.9' in function 'DebayerG' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.9.1' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.10' in function 'DebayerG' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.10.1' in function 'DebayerG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.10.2' in function 'DebayerG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.10.3' in function 'DebayerG' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' in function 'AXIvideo2MultiBayer' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'PixBufVal.val.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'SD.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'mean.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'var.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'ave.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'w' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign.2' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'PixBufVal.val.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'en_rgd.V' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'value.val.V.assign.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'PixBufVal.val.V' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgBayer.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgRgb.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgUnzip.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgG.V.val.V' .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imgRB.V.val.V' .
+INFO: [XFORM 203-712] Applying dataflow to function 'Debayer' , detected/extracted 3 process function(s): 
+	 'DebayerG'
+	 'DebayerRatBorBatR'
+	 'DebayerRandBatG'.
+INFO: [XFORM 203-712] Applying dataflow to function 'v_demosaic' , detected/extracted 4 process function(s): 
+	 'AXIvideo2MultiBayer283'
+	 'Debayer'
+	 'ZipperRemoval'
+	 'MultiPixStream2AXIvideo'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'ZipperRemoval'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'DebayerRatBorBatR'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'DebayerRatBorBatR'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'DebayerRandBatG'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'DebayerRandBatG'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'DebayerG'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'DebayerG'... converting 9 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:02:41 . Memory (MB): peak = 974.082 ; gain = 883.762
+WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' 
+WARNING: [XFORM 203-631] Renaming function 'AXIvideo2MultiBayer283' to 'AXIvideo2MultiBayer2' 
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer.val[0].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer.val[1].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer.val[0].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer.val[1].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer.val[1].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer.val[0].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer.val[1].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer.val[0].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.val[3].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.val[2].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.val[0].V'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.val[1].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.val[3].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.val[2].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.val[0].V'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.val[1].V'.
+INFO: [HLS 200-472] Inferring partial write operation for 'lineBuffer.val[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'lineBuffer.val[1].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'lineBuffer.val[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'lineBuffer.val[1].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_yuv.val[0].V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_yuv.val[3].V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:38 ; elapsed = 00:02:48 . Memory (MB): peak = 974.082 ; gain = 883.762
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_demosaic' ...
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 168.854 seconds; current allocated memory: 365.238 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.435 seconds; current allocated memory: 365.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiBayer2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.753 seconds; current allocated memory: 365.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.617 seconds; current allocated memory: 366.388 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 16.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.097 seconds; current allocated memory: 367.518 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.14 seconds; current allocated memory: 368.811 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerRatBorBatR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+WARNING: [SCHED 204-21] Estimated clock period (3.6585ns) exceeds the target (target clock period: 4ns, clock uncertainty: 0.5ns, effective delay budget: 3.5ns).
+WARNING: [SCHED 204-21] The critical path in module 'DebayerRatBorBatR' consists of the following:
+	'select' operation ('empty_109', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:782->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [230]  (0.47 ns)
+	'icmp' operation ('icmp_ln887_1', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:788->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [251]  (0.859 ns)
+	'select' operation ('select_ln788', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:788->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [253]  (0.264 ns)
+	'select' operation ('select_ln789', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:789->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [257]  (0.275 ns)
+	'select' operation ('select_ln790', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:790->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [261]  (0.45 ns)
+	'select' operation ('select_ln791', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:791->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [265]  (0.48 ns)
+	'select' operation ('select_ln792', d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:792->d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/src/v_demosaic.cpp:252) [269]  (0.44 ns)
+	blocking operation 0.421 ns on control path)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.7 seconds; current allocated memory: 369.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.748 seconds; current allocated memory: 371.313 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerRandBatG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.298 seconds; current allocated memory: 372.191 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.538 seconds; current allocated memory: 373.330 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Debayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.826 seconds; current allocated memory: 373.424 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.995 seconds; current allocated memory: 374.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ZipperRemoval' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.315 seconds; current allocated memory: 374.402 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.637 seconds; current allocated memory: 374.819 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.548 seconds; current allocated memory: 374.919 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.514 seconds; current allocated memory: 375.097 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_demosaic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 375.236 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.93 seconds; current allocated memory: 376.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111]  Elapsed time: 2.159 seconds; current allocated memory: 376.416 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiBayer2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiBayer2'.
+INFO: [HLS 200-111]  Elapsed time: 0.862 seconds; current allocated memory: 377.260 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DebayerG_linebuf_yuv_val_0_V' to 'DebayerG_linebuf_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DebayerG_linebuf_yuv_val_1_V' to 'DebayerG_linebuf_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DebayerG_linebuf_yuv_val_2_V' to 'DebayerG_linebuf_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DebayerG_linebuf_yuv_val_3_V' to 'DebayerG_linebuf_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_demosaic_mux_53_10_1_1' to 'v_demosaic_mux_53fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_demosaic_mul_mul_10ns_18ns_28_1_1' to 'v_demosaic_mul_mug8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_demosaic_mul_mul_10ns_13s_23_1_1' to 'v_demosaic_mul_muhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_demosaic_mac_muladd_10ns_13s_23s_24_1_1' to 'v_demosaic_mac_muibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'v_demosaic_mac_muibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_demosaic_mul_mug8j': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_demosaic_mul_muhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_demosaic_mux_53fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerG'.
+INFO: [HLS 200-111]  Elapsed time: 4.205 seconds; current allocated memory: 379.263 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerRatBorBatR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DebayerRatBorBatR_lineBuffer_val_0_V' to 'DebayerRatBorBatRjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DebayerRatBorBatR_lineBuffer_val_1_V' to 'DebayerRatBorBatRkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'v_demosaic_mux_32_10_1_1' to 'v_demosaic_mux_32lbW' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'v_demosaic_mux_32lbW': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerRatBorBatR'.
+INFO: [HLS 200-111]  Elapsed time: 7.916 seconds; current allocated memory: 381.614 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerRandBatG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DebayerRandBatG_lineBuffer_val_0_V' to 'DebayerRandBatG_lmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DebayerRandBatG_lineBuffer_val_1_V' to 'DebayerRandBatG_lncg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'v_demosaic_mux_32lbW': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerRandBatG'.
+INFO: [HLS 200-111]  Elapsed time: 6.483 seconds; current allocated memory: 383.659 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Debayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Debayer'.
+INFO: [HLS 200-111]  Elapsed time: 6.636 seconds; current allocated memory: 384.283 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ZipperRemoval' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ZipperRemoval'.
+INFO: [HLS 200-111]  Elapsed time: 1.222 seconds; current allocated memory: 385.084 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
+INFO: [HLS 200-111]  Elapsed time: 2.687 seconds; current allocated memory: 385.540 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_demosaic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/HwReg_width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/HwReg_height' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/HwReg_bayer_phase' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_demosaic' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'HwReg_width', 'HwReg_height', 'HwReg_bayer_phase' and 'return' to AXI-Lite port CTRL.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w10_d2_A' is changed to 'fifo_w10_d2_A_x' due to conflict.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w16_d2_A' is changed to 'fifo_w16_d2_A_x' due to conflict.
+INFO: [SYN 201-210] Renamed object name 'start_for_Debayer_U0' to 'start_for_Debayerocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_ZipperRemoval_U0' to 'start_for_ZipperRpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_MultiPixStream2AXIvi_U0' to 'start_for_MultiPiqcK' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_demosaic'.
+INFO: [HLS 200-111]  Elapsed time: 1.946 seconds; current allocated memory: 386.310 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [RTMG 210-279] Implementing memory 'cam_v_demosaic_0_0_DebayerG_DIV1_TABLE_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cam_v_demosaic_0_0_DebayerG_DIV2_TABLE_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'imgG_V_val_0_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgG_V_val_1_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgG_V_val_2_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bayerPhase_c_i_U(cam_v_demosaic_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRB_V_val_0_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRB_V_val_1_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRB_V_val_2_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bayerPhase_c3_i_U(cam_v_demosaic_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgBayer_V_val_0_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_bayer_phase_c_U(cam_v_demosaic_0_0_fifo_w16_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_V_val_0_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_V_val_1_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_V_val_2_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgUnzip_V_val_0_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgUnzip_V_val_1_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgUnzip_V_val_2_V_U(cam_v_demosaic_0_0_fifo_w10_d2_A_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Debayerocq_U(cam_v_demosaic_0_0_start_for_Debayerocq)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_ZipperRpcA_U(cam_v_demosaic_0_0_start_for_ZipperRpcA)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPiqcK_U(cam_v_demosaic_0_0_start_for_MultiPiqcK)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:08 ; elapsed = 00:04:30 . Memory (MB): peak = 974.082 ; gain = 883.762
+INFO: [VHDL 208-304] Generating VHDL RTL for v_demosaic with prefix cam_v_demosaic_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_demosaic with prefix cam_v_demosaic_0_0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:10:42 2021...
+INFO: [HLS 200-112] Total elapsed time: 296.576 seconds; peak allocated memory: 386.310 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Wed Jul 21 00:10:43 2021...
+compile_c: Time (s): cpu = 00:00:00 ; elapsed = 00:05:02 . Memory (MB): peak = 1071.809 ; gain = 0.000
+Command: synth_design -top cam_v_demosaic_0_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1744
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1539.715 ; gain = 74.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/synth/cam_v_demosaic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi.v:208]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi' (1#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_reg_unsigned_short_s' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_reg_unsigned_short_s' (2#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_reg_unsigned_short_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (3#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (4#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized1' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized1' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized1' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized1' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV1_TABLE' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV1_TABLE.v:70]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV1_TABLE_rom' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV1_TABLE.v:6]
+INFO: [Synth 8-3876] $readmem data file './cam_v_demosaic_0_0_DebayerG_DIV1_TABLE_rom.dat' is read successfully [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV1_TABLE.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV1_TABLE_rom' (7#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV1_TABLE.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV1_TABLE' (8#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV1_TABLE.v:70]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV2_TABLE' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE.v:50]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV2_TABLE_rom' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE.v:6]
+INFO: [Synth 8-3876] $readmem data file './cam_v_demosaic_0_0_DebayerG_DIV2_TABLE_rom.dat' is read successfully [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV2_TABLE_rom' (9#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerG_DIV2_TABLE' (10#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE.v:50]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerG_linebuf_bkb' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_linebuf_bkb.v:46]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_linebuf_bkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram' (11#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_linebuf_bkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerG_linebuf_bkb' (12#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerG_linebuf_bkb.v:46]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mux_53fYi' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mux_53fYi.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mux_53fYi' (13#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mux_53fYi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_mug8j' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_mug8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_mug8j_DSP48_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_mug8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_mug8j_DSP48_0' (14#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_mug8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_mug8j' (15#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_mug8j.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_muhbi' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_muhbi.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_muhbi_DSP48_1' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_muhbi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_muhbi_DSP48_1' (16#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_muhbi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mul_muhbi' (17#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mul_muhbi.v:13]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mac_muibs' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mac_muibs.v:30]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mac_muibs_DSP48_2' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mac_muibs.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mac_muibs_DSP48_2' (18#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mac_muibs.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mac_muibs' (19#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mac_muibs.v:30]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerRatBorBatRjbC' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerRatBorBatRjbC.v:46]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerRatBorBatRjbC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram' (21#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerRatBorBatRjbC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_DebayerRatBorBatRjbC' (22#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_DebayerRatBorBatRjbC.v:46]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mux_32lbW' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mux_32lbW.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_v_demosaic_mux_32lbW' (23#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_v_demosaic_mux_32lbW.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A_shiftReg' (26#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A' (27#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A_shiftReg' (28#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A' (29#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized2' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized2' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized2' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized2' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized3' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized3' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized3' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized3' (31#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A_x' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A_x_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A_x_shiftReg' (33#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w10_d2_A_x' (34#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w10_d2_A_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A_x' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A_x_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A_x_shiftReg' (35#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_fifo_w16_d2_A_x' (36#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_fifo_w16_d2_A_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_start_for_Debayerocq' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_Debayerocq.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_start_for_Debayerocq_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_Debayerocq.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_start_for_Debayerocq_shiftReg' (37#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_Debayerocq.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_start_for_Debayerocq' (38#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_Debayerocq.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_start_for_ZipperRpcA' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_ZipperRpcA.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_start_for_ZipperRpcA_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_ZipperRpcA.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_start_for_ZipperRpcA_shiftReg' (39#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_ZipperRpcA.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_start_for_ZipperRpcA' (40#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_ZipperRpcA.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_start_for_MultiPiqcK' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_MultiPiqcK.v:42]
+INFO: [Synth 8-6157] synthesizing module 'cam_v_demosaic_0_0_start_for_MultiPiqcK_shiftReg' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_MultiPiqcK.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_start_for_MultiPiqcK_shiftReg' (41#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_MultiPiqcK.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0_start_for_MultiPiqcK' (42#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/hdl/verilog/cam_v_demosaic_0_0_start_for_MultiPiqcK.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'cam_v_demosaic_0_0' (44#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/synth/cam_v_demosaic_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1653.012 ; gain = 188.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1670.926 ; gain = 205.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1670.926 ; gain = 205.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.249 . Memory (MB): peak = 1670.926 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/cam_v_demosaic_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/cam_v_demosaic_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/base/base.runs/cam_v_demosaic_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/base/base.runs/cam_v_demosaic_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/cam_v_demosaic_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_v_demosaic_0_0/cam_v_demosaic_0_0.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1787.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.250 . Memory (MB): peak = 1787.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1787.570 ; gain = 322.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1787.570 ; gain = 322.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/base/base.runs/cam_v_demosaic_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1787.570 ; gain = 322.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'cam_v_demosaic_0_0_v_demosaic_CTRL_s_axi'
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram:/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram:/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram:/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram:/ram_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1787.570 ; gain = 322.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/MultiPixStream2AXIvi_U0/regslice_both_AXI_video_strm_V_id_V_U' (regslice_both__parameterized1) to 'inst/MultiPixStream2AXIvi_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 1787.570 ; gain = 322.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 2400.012 ; gain = 935.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-5556] The block RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg" may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 18 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 3 for RAM "inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg"
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:44 . Memory (MB): peak = 2488.027 ; gain = 1023.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_0_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_1_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_2_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/linebuf_yuv_val_3_V_U/cam_v_demosaic_0_0_DebayerG_linebuf_bkb_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/DIV2_TABLE_U/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE_rom_U/q0_t0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerG_U0/DIV2_TABLE_U/cam_v_demosaic_0_0_DebayerG_DIV2_TABLE_rom_U/q0_t0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRatBorBatR_U0/lineBuffer_val_1_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/Debayer_U0/DebayerRandBatG_U0/lineBuffer_val_0_V_U/cam_v_demosaic_0_0_DebayerRatBorBatRjbC_ram_U/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:50 . Memory (MB): peak = 2513.031 ; gain = 1048.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:01:57 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   215|
+|2     |DSP_ALU         |     4|
+|3     |DSP_A_B_DATA    |     4|
+|5     |DSP_C_DATA      |     4|
+|7     |DSP_MULTIPLIER  |     4|
+|8     |DSP_M_DATA      |     4|
+|9     |DSP_OUTPUT      |     4|
+|11    |DSP_PREADD      |     4|
+|12    |DSP_PREADD_DATA |     4|
+|13    |LUT1            |   126|
+|14    |LUT2            |   465|
+|15    |LUT3            |   556|
+|16    |LUT4            |   715|
+|17    |LUT5            |   444|
+|18    |LUT6            |  1281|
+|19    |MUXF7           |     2|
+|20    |RAMB18E2        |     9|
+|23    |RAMB36E2        |    18|
+|30    |SRL16E          |    40|
+|31    |FDRE            |  3680|
+|32    |FDSE            |    70|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:46 . Memory (MB): peak = 2517.832 ; gain = 936.211
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 2517.832 ; gain = 1052.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 2529.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 221 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/Debayer_U0/DebayerG_U0/DIV1_TABLE_U/cam_v_demosaic_0_0_DebayerG_DIV1_TABLE_rom_U/q0_t0_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2534.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+212 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 2534.996 ; gain = 1463.188
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_v_demosaic_0_0_synth_1/cam_v_demosaic_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cam_v_demosaic_0_0, cache-ID = 6be72bcf1104fe1f
+INFO: [Coretcl 2-1174] Renamed 89 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_v_demosaic_0_0_synth_1/cam_v_demosaic_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_v_demosaic_0_0_utilization_synth.rpt -pb cam_v_demosaic_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:13:19 2021...

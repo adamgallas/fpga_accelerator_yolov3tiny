@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jul 21 00:05:04 2021
+# Process ID: 1520
+# Current directory: D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1
+# Command line: vivado.exe -log cam_mipi_csi2_rx_subsyst_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cam_mipi_csi2_rx_subsyst_0_0.tcl
+# Log file: D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/cam_mipi_csi2_rx_subsyst_0_0.vds
+# Journal file: D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cam_mipi_csi2_rx_subsyst_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1071.578 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/base'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/base' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2020.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1071.578 ; gain = 0.000
+Command: synth_design -top cam_mipi_csi2_rx_subsyst_0_0 -part xczu3eg-sfvc784-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9952
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1560.250 ; gain = 74.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cam_mipi_csi2_rx_subsyst_0_0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/synth/cam_mipi_csi2_rx_subsyst_0_0.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_phy_0' [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_phy_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_phy_0' (1#1) [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_phy_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'init_done' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'cl_rxclkactivehs' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'cl_ulpsactivenot' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_ulpsactivenot' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_rxclkesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_rxlpdtesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_rxtriggeresc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_rxdataesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_rxvalidesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl0_errsyncesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_ulpsactivenot' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_rxclkesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_rxlpdtesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_rxtriggeresc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_rxdataesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_rxvalidesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7071] port 'dl1_errsyncesc' of module 'bd_91b0_phy_0' is unconnected for instance 'phy' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+WARNING: [Synth 8-7023] instance 'phy' of module 'bd_91b0_phy_0' has 54 connections declared, but only 37 given [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:201]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_r_sync_0' [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_r_sync_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_r_sync_0' (2#1) [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_r_sync_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_91b0_r_sync_0' is unconnected for instance 'r_sync' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:239]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_91b0_r_sync_0' is unconnected for instance 'r_sync' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:239]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bd_91b0_r_sync_0' is unconnected for instance 'r_sync' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:239]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_91b0_r_sync_0' is unconnected for instance 'r_sync' [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:239]
+WARNING: [Synth 8-7023] instance 'r_sync' of module 'bd_91b0_r_sync_0' has 10 connections declared, but only 6 given [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:239]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_rx_0' [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_rx_0' (3#1) [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_rx_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_91b0_vfb_0_0' [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_vfb_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0_vfb_0_0' (4#1) [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/.Xil/Vivado-1520-ADAM-GALLAS/realtime/bd_91b0_vfb_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_91b0' (5#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/synth/bd_91b0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cam_mipi_csi2_rx_subsyst_0_0' (6#1) [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/synth/cam_mipi_csi2_rx_subsyst_0_0.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1614.699 ; gain = 128.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1632.605 ; gain = 146.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1632.605 ; gain = 146.688
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1632.605 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_91b0_r_sync_0/bd_91b0_r_sync_0_in_context.xdc] for cell 'inst/r_sync'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_91b0_r_sync_0/bd_91b0_r_sync_0_in_context.xdc] for cell 'inst/r_sync'
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_91b0_rx_0/bd_91b0_rx_0_in_context.xdc] for cell 'inst/rx'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_91b0_rx_0/bd_91b0_rx_0_in_context.xdc] for cell 'inst/rx'
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc] for cell 'inst/phy'
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1678.531 ; gain = 4.988
+WARNING: [Vivado 12-584] No ports matched ''. [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc:5]
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc] for cell 'inst/phy'
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_91b0_vfb_0_0/bd_91b0_vfb_0_0_in_context.xdc] for cell 'inst/vfb_0'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_91b0_vfb_0_0/bd_91b0_vfb_0_0_in_context.xdc] for cell 'inst/vfb_0'
+Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_fixed_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/cam_mipi_csi2_rx_subsyst_0_0_fixed_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1679.473 ; gain = 0.941
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1679.473 ; gain = 193.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1679.473 ; gain = 193.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_clk_n. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_clk_n. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_clk_p. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_clk_p. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_data_n[0]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_data_n[0]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_data_n[1]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_data_n[1]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_data_p[0]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_data_p[0]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for mipi_phy_if_data_p[1]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mipi_phy_if_data_p[1]. (constraint file  d:/base/base.srcs/sources_1/bd/cam/ip/cam_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_91b0_phy_0/bd_91b0_phy_0_in_context.xdc, line 18).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/r_sync. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/phy. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/vfb_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1679.473 ; gain = 193.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1679.473 ; gain = 193.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1679.473 ; gain = 193.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:38 . Memory (MB): peak = 2339.406 ; gain = 853.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:38 . Memory (MB): peak = 2339.406 ; gain = 853.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:38 . Memory (MB): peak = 2358.512 ; gain = 872.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |bd_91b0_phy_0    |         1|
+|2     |bd_91b0_r_sync_0 |         1|
+|3     |bd_91b0_rx_0     |         1|
+|4     |bd_91b0_vfb_0_0  |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |bd_91b0_phy    |     1|
+|2     |bd_91b0_r_sync |     1|
+|3     |bd_91b0_rx     |     1|
+|4     |bd_91b0_vfb_0  |     1|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:31 . Memory (MB): peak = 2364.301 ; gain = 831.516
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:48 . Memory (MB): peak = 2364.301 ; gain = 878.383
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2364.301 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2395.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:20 . Memory (MB): peak = 2400.387 ; gain = 1328.809
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/cam_mipi_csi2_rx_subsyst_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cam_mipi_csi2_rx_subsyst_0_0, cache-ID = 24ca8b1e3aad718f
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/base/base.runs/cam_mipi_csi2_rx_subsyst_0_0_synth_1/cam_mipi_csi2_rx_subsyst_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cam_mipi_csi2_rx_subsyst_0_0_utilization_synth.rpt -pb cam_mipi_csi2_rx_subsyst_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 00:08:14 2021...
