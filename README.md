@@ -1,3 +1,7 @@
+## 简介
+- 2021年全国大学生集成电路创新创业大赛DIGILENT杯一等奖作品
+- 中山大学 李金东
+
 ## 目录
 - vivado_prj文件夹是卷积加速器硬件Vivado工程
 - vitis_prj文件夹是基于vivado_prj硬件工程的软件Vitis工程
