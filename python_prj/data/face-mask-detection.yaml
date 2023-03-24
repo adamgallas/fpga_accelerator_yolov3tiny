@@ -1,0 +1,7 @@
+train: E:/Datasets/face-mask-detection/images
+val: E:/Datasets/face-mask-detection/images
+test: E:/Datasets/face-mask-detection/images
+
+nc: 3
+
+names: [ 'with_mask', 'without_mask', 'mask_weared_incorrect' ]
