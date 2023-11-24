@@ -42,3 +42,17 @@
 - Q6：该加速器的架构是怎样的？
 
 	A：该加速器的设计借鉴了论文：Angel-Eye A Complete Design Flow for Mapping CNN Onto Embedded FPGA与Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
+
+## 引用
+如果你觉得这个工作有用，请引用
+
+```BibTex
+@inproceedings{chen2021hardware,
+  title={Hardware Resource and Computational Density Efficient CNN Accelerator Design Based on FPGA},
+  author={Chen, Xiang and Li, Jindong and Zhao, Yong},
+  booktitle={2021 IEEE International Conference on Integrated Circuits, Technologies and Applications (ICTA)},
+  pages={204--205},
+  year={2021},
+  organization={IEEE}
+}
+```
