@@ -22,7 +22,7 @@
 ## Q&A
 - Q1：该工程只能实现Yolov3tiny算法吗？
 
-	A：该工程在PL端实现了一个通用的卷积加速器，理论上可以实现任意卷积神经网络的推理。需要在PS端自己根据网络的架构设计调度程序。
+	A：该工程在PL端实现了一个通用的卷积加速器，pl端的加速器其实和网络无关，但是ps端的调度和yolov3tiny仅耦合，需要在PS端自己根据网络的架构设计调度程序，但我不建议自己魔改，工程难度大，我建议参考学习。
 - Q2：该工程支持哪些卷积神经网络的运算？
 
 	A：1x1 Conv，3x3 Conv，2x2 Maxpooling步长为=1/2，通过查表法实现任意激活函数，Relu,Tanh,sigmoid,leakyRelu
@@ -41,6 +41,10 @@
 - Q6：该加速器的架构是怎样的？
 
 	A：该加速器的设计借鉴了论文：Angel-Eye A Complete Design Flow for Mapping CNN Onto Embedded FPGA与Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
+
+- Q7: 我能把该工程当做毕设，比赛，论文或其他项目吗？
+
+	A: 不建议。该工程没有继续维护了，且注释较少，代码风格不算规范，仅建议学习参考。
 
 ## 引用
 如果你觉得这个工作有用，请引用
