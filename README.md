@@ -1,3 +1,60 @@
+## Introduction
+- First Prize Winner of the 2021 DIGILENT Cup, China College Integrated Circuit Competition.
+
+## Directory
+- The vivado_prj folder contains the Convolution Accelerator hardware Vivado project.
+- The vitis_prj folder contains the Vitis project based on the vivado_prj hardware project.
+- The vivadohls_prj folder contains some simple image processing IPs implemented using Vivado HLS.
+- The python_prj folder contains the project for model training and model quantization implemented in Python.
+
+## Project Description
+This project implements a convolutional neural network accelerator, successfully deploying YOLOv3tiny. With the loop of camera capture + display screen feedback, a high-performance real-time object recognition and detection system is constructed.
+- Verification Platform: Xilinx Zynq Ultrascale series xzcu3eg chip, Digilent official Genesys ZU3EG board
+- Basic peripherals: Digilent PCAM 5C MIPI camera, mini DisplayPort display interface standard with Ultrascale
+- Implementation method: Design of convolution accelerator is implemented in pure Verilog, development of Zynq PS side is implemented in C language, neural network construction and quantization are implemented in Python
+- Development tool suite: Vivado, Vitis, Python, Pytorch
+- Performance indicators: Inference time of YOLOv3tiny is less than 50ms, VGG16 backbone inference time is less than 200ms, maximum clock frequency exceeds 250MHz, peak rate exceeds 172GOPS, INT8 quantization
+- Resource consumption: 24K LUTs, 23K FFs, 40 BRAM36Ks, 296 DSP48s
+- Demo included in the project: Face mask recognition based on YOLOv3tiny, helmet recognition based on YOLOv3tiny
+- Operations that the convolution accelerator can perform: 1x1 Conv, 3x3 Conv, 2x2 Maxpooling with stride = 1/2, implement any activation function through table lookup, Relu, Tanh, sigmoid, leakyRelu
+
+## Q&A
+- Q1: Can this project only implement the YOLOv3tiny algorithm?
+  - A: This project implements a generic convolution accelerator on the PL side, which is actually independent of the network. However, the scheduling on the PS side is coupled with YOLOv3tiny and requires designing a scheduler program according to the architecture of the network on the PS side, but I do not recommend modifying it yourself, as it is difficult and I recommend learning by reference.
+- Q2: Which convolutional neural network operations does this project support?
+  - A: 1x1 Conv, 3x3 Conv, 2x2 Maxpooling with stride = 1/2, implement any activation function through table lookup, Relu, Tanh, sigmoid, leakyRelu
+- Q3: Can I port it to my own development board?
+  - A: Yes. But you need to port it yourself according to the constraints of your camera, display, and board.
+- Q3: Does the implementation of this accelerator consume a lot of resources?
+  - A: Not really. 24K LUTs, 23K FFs, 40 BRAM36Ks, almost all Xilinx boards have sufficient resources. The only thing is that DSP usage is relatively high. If the DSP48s on the chip are not enough, you can map the multiplier to LUTs yourself.
+- Q4: Can it run on Artix or Virtex series FPGAs without CPU?
+  - A: In theory, yes. This accelerator must have a CPU for scheduling. You can try instantiating MicroBlaze or Cortex M1/3 or even Riscv soft cores yourself.
+- Q5: How do I put the Python-trained weight data into the FPGA?
+  - A: After preprocessing the weight data to a certain extent, put it on an SD card, call the built-in xilff.h SD card driver library on the PS side, read the binary weight file from the SD card, load it into DDR, and then the PL side accesses the data in DDR through the AXI DMA core for inference calculation.
+- Q6: What is the architecture of this accelerator?
+  - A: The design of this accelerator is inspired by the papers: "Angel-Eye A Complete Design Flow for Mapping CNN Onto Embedded FPGA" and "Going Deeper with Embedded FPGA Platform for Convolutional Neural Network".
+- Q7: Can I use this project as a thesis, competition entry, paper, or other projects?
+  - A: Not recommended. This project is no longer maintained, and the comments are sparse, and the code style is not particularly standardized. It is only recommended for learning and reference.
+
+## Before Raising an Issue
+This repository is no longer maintained, but I will try to reply to the issues raised as much as possible. Before raising an issue, you can check if there are any related issues in the history. Based on observation, most issues are related to neural network quantization. However, quantization is not the focus of this project. The Python project included in the repository is of poor quality. Please refer to more standard quantization processes and use more convenient quantization tools. The reproduction of this project, porting to other neural networks, etc., all have significant engineering difficulties. Please carefully evaluate the difficulty of implementation before investing time.
+
+## Citation
+If you find this work useful, please cite
+
+```BibTex
+@inproceedings{chen2021hardware,
+  title={Hardware Resource and Computational Density Efficient CNN Accelerator Design Based on FPGA},
+  author={Chen, Xiang and Li, Jindong and Zhao, Yong},
+  booktitle={2021 IEEE International Conference on Integrated Circuits, Technologies and Applications (ICTA)},
+  pages={204--205},
+  year={2021},
+  organization={IEEE}
+}
+```
+
+
+
 ## 简介
 - 2021年全国大学生集成电路创新创业大赛DIGILENT杯一等奖作品
 
